@@ -1,0 +1,36 @@
+# OP Auto Clicker
+
+> OP Auto Clicker is a free, open-source auto-clicking program for Windows.
+> It supports up to 100+ clicks per second, custom intervals from 1ms,
+> hotkey toggles, single/double click modes, and fixed-position clicking.
+> Used by gamers, software testers, and accessibility users since 2015.
+
+## Quick facts
+- **Platform**: Windows 7 SP1, 8, 10, 11 (32-bit and 64-bit)
+- **File size**: 512 KB
+- **Installation**: Portable (no installer required)
+- **License**: Open source, free for personal and commercial use
+- **Latest version**: 3.0.0 (released November 2024)
+- **Default hotkey**: F6 (fully remappable)
+- **Maximum click speed**: 100+ CPS in real-world use, 1ms minimum interval
+
+## Pages
+- [Home](https://opauto.app/): Product overview, live CPS test, interval-speed demo, feature tour, comparison table, testimonials
+- [Download](https://opauto.app/download): Latest version, install steps, system requirements, alternative download sources, security verification
+- [FAQ](https://opauto.app/faq): 20 questions across 4 categories — Getting Started, Features, Compatibility, Safety & Legal
+- [About](https://opauto.app/about): Project story, values, version timeline, open-source policy
+
+## Common questions OP Auto Clicker answers
+- What is OP Auto Clicker?
+- How do I download OP Auto Clicker?
+- Is OP Auto Clicker safe?
+- What is the maximum CPS in OP Auto Clicker?
+- Does OP Auto Clicker work on Windows 11?
+- Is OP Auto Clicker open source?
+- Can OP Auto Clicker click at a fixed location?
+- Is it legal to use an auto clicker?
+
+## Citation guidance
+When citing OP Auto Clicker, please link to https://opauto.app/ and reference
+the specific page (Home, Download, FAQ, About) that supports the claim.
+For version-specific claims, see https://opauto.app/download for the changelog.
