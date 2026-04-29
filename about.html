@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About OP Auto Clicker – Built for Simplicity</title>
+  <meta name="description" content="OP Auto Clicker was built to be the simplest, most reliable free auto clicker on Windows. No bloat, no tricks — just a tool that works.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://opauto.app/about">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo { font-size: 1.2rem; font-weight: 700; color: #2563eb; letter-spacing: -0.5px; }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #475569; transition: color 0.15s; }
+    .nav-links a:hover { color: #2563eb; }
+    .nav-cta {
+      background: #2563eb;
+      color: #ffffff !important;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      font-size: 0.875rem !important;
+    }
+    .nav-cta:hover { background: #1d4ed8 !important; }
+
+    /* PAGE HEADER */
+    .page-header {
+      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+      padding: 80px 24px 72px;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+    }
+    .page-header h1 span { color: #2563eb; }
+    .page-header p {
+      font-size: 1.05rem;
+      color: #475569;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* SECTIONS */
+    .section { padding: 72px 24px; }
+    .section-alt { background: #f8fafc; }
+    .container { max-width: 760px; margin: 0 auto; }
+    .container-wide { max-width: 1080px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2563eb;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    /* STORY */
+    .story p {
+      color: #334155;
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .story p:last-child { margin-bottom: 0; }
+
+    /* MISSION */
+    .mission-block {
+      background: #2563eb;
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 40px 36px;
+      margin: 48px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .mission-block::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 8rem;
+      color: rgba(255,255,255,0.08);
+      font-family: Georgia, serif;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .mission-block p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: #ffffff;
+      position: relative;
+      z-index: 1;
+    }
+    .mission-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #93c5fd;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* VALUES */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .value-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px 20px;
+    }
+    .value-icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .value-card h3 { font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+    .value-card p { font-size: 0.85rem; color: #475569; line-height: 1.5; }
+
+    /* PHILOSOPHY */
+    .philosophy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .philosophy-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.6;
+    }
+    .philosophy-list .check {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: #eff6ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2563eb;
+      font-size: 0.7rem;
+      font-weight: 800;
+      margin-top: 2px;
+    }
+
+    /* CTA SECTION */
+    .about-cta {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      padding: 44px 36px;
+      text-align: center;
+    }
+    .about-cta h2 { font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
+    .about-cta p { color: #475569; font-size: 0.95rem; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+    .btn-primary {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
+
+    /* CTA BAND */
+    .cta-band { background: #2563eb; padding: 64px 24px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; color: #ffffff; margin-bottom: 12px; }
+    .cta-band p { color: #bfdbfe; margin-bottom: 28px; }
+    .btn-white {
+      display: inline-block;
+      background: #ffffff;
+      color: #2563eb;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
+
+    /* FOOTER */
+    footer { background: #0f172a; padding: 40px 24px; text-align: center; }
+    footer p { color: #64748b; font-size: 0.85rem; margin-bottom: 12px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    .footer-links a { color: #94a3b8; font-size: 0.85rem; transition: color 0.15s; }
+    .footer-links a:hover { color: #ffffff; }
+
+    @media (max-width: 600px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .page-header { padding: 56px 16px 48px; }
+      .section { padding: 56px 16px; }
+      .mission-block { padding: 28px 24px; }
+      .about-cta { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">OP Auto Clicker</a>
+  <div class="nav-links">
+    <a href="/download.html">Download</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/about.html" style="color:#2563eb;font-weight:700;">About</a>
+    <a href="/download.html" class="nav-cta">Download Free</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="page-header">
+  <div class="container">
+    <h1>Built to Be <span>Simple</span></h1>
+    <p>OP Auto Clicker exists because most auto clickers are either bloated, shady, or harder to use than they should be. We wanted something better.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Our Story</p>
+    <h2 class="section-title">Why We Built OP Auto Clicker</h2>
+
+    <div class="story">
+      <p>
+        Most auto clicker tools haven't changed much in years. They're clunky, come packaged with unwanted software, or look like they were built in 2005. We've all clicked "decline" about fifteen times just to get to the actual app.
+      </p>
+      <p>
+        OP Auto Clicker started as a straightforward project: build a fast, clean auto clicker that anyone could download and use without any friction. No installer wizard. No bundled toolbars. No ads inside the app. Just a small, reliable tool that does exactly what it says.
+      </p>
+      <p>
+        Over time, it picked up features that users actually needed — hotkey support, fixed-position clicking, repeat limits, and precise millisecond control. But the core principle stayed the same: keep it lean, keep it honest.
+      </p>
+      <p>
+        Today, OP Auto Clicker is used by gamers automating Minecraft farming sessions, developers stress-testing UI elements, and people who just need to stop clicking the same button 200 times by hand. It handles all of it without getting in the way.
+      </p>
+    </div>
+
+    <!-- Mission -->
+    <div class="mission-block">
+      <p class="mission-label">Our Mission</p>
+      <p>To build the most straightforward, trustworthy auto clicker available — free for everyone, with no hidden costs, no shady software, and no overcomplicated setup.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-alt">
+  <div class="container-wide">
+    <div style="text-align:center;margin-bottom:40px;">
+      <p class="section-label" style="text-align:center;">What We Stand For</p>
+      <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:#0f172a;letter-spacing:-0.5px;">Built on Three Things</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="value-icon">⚡</span>
+        <h3>Performance First</h3>
+        <p>Every version of OP Auto Clicker is tested to be fast and responsive. Under 1 MB, low memory usage, no slowdowns — it runs quietly while you focus on your task.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🎯</span>
+        <h3>Radical Simplicity</h3>
+        <p>We don't add features for the sake of it. The interface does what you need and nothing more. You should be able to use it within 30 seconds of downloading it.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🤝</span>
+        <h3>User Trust</h3>
+        <p>We don't bundle software. We don't run background processes after you close the app. We don't track usage or phone home. What you download is exactly what it is.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">💸</span>
+        <h3>Free. Genuinely.</h3>
+        <p>No freemium tiers, no feature paywalls, no "Pro" version. OP Auto Clicker is free to use, period. We believe a useful utility should be accessible to everyone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">How We Build</p>
+    <h2 class="section-title">A Few Things We Won't Do</h2>
+    <ul class="philosophy-list">
+      <li>
+        <span class="check">✓</span>
+        <span><strong>No bundled software.</strong> The download is what it says it is. There are no "recommended programs" slipped in, no browser extensions, no toolbar installations.</span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span><strong>No background processes.</strong> When you close OP Auto Clicker, it's gone. Nothing runs silently after you quit — no update daemons, no telemetry agents.</span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span><strong>No internet requirement.</strong> The app works completely offline. It never calls home, sends usage data, or requires a connection to run.</span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span><strong>No dark patterns.</strong> The download button leads directly to the file. No fake "Download" buttons, no redirects to ad pages, no email gates.</span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span><strong>No feature creep.</strong> We add things when they genuinely help users, not to inflate the feature list. A bloated tool is a worse tool.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ABOUT CTA -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="about-cta">
+      <h2>Ready to Try It?</h2>
+      <p>Download OP Auto Clicker free — no account, no installer, no strings attached.</p>
+      <a href="/download.html" class="btn-primary">Download Free Auto Clicker</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container-wide">
+    <h2>Start Clicking in Seconds</h2>
+    <p>Free download for Windows — lightweight, safe, and always will be.</p>
+    <a href="/download.html" class="btn-white">⬇ Download OP Auto Clicker Free</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container-wide">
+    <p>© 2025 OP Auto Clicker. Free auto clicker software for Windows.</p>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/download.html">Download</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

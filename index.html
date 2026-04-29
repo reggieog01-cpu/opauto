@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OP Auto Clicker – Free Auto Clicker for Windows</title>
+  <meta name="description" content="OP Auto Clicker is a free, lightweight auto clicker for Windows. Set custom click intervals, hotkeys, and automate repetitive clicking in seconds.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://opauto.app/">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #2563eb;
+      letter-spacing: -0.5px;
+    }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #475569;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: #2563eb; }
+    .nav-cta {
+      background: #2563eb;
+      color: #ffffff !important;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      font-size: 0.875rem !important;
+      transition: background 0.15s !important;
+    }
+    .nav-cta:hover { background: #1d4ed8 !important; color: #fff !important; }
+
+    /* BUTTONS */
+    .btn-primary {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.15s, transform 0.1s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: #2563eb;
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: 2px solid #2563eb;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn-secondary:hover { background: #eff6ff; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+      padding: 96px 24px 80px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    .hero h1 span { color: #2563eb; }
+    .hero p {
+      font-size: 1.15rem;
+      color: #475569;
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+    .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .hero-meta {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .hero-meta span { margin: 0 8px; }
+
+    /* FEATURES */
+    .section { padding: 80px 24px; }
+    .section-alt { background: #f8fafc; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .section-label {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2563eb;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .section-sub {
+      text-align: center;
+      color: #475569;
+      max-width: 520px;
+      margin: 0 auto 56px;
+      font-size: 1rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 24px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .feature-card:hover { box-shadow: 0 4px 20px rgba(37,99,235,0.1); transform: translateY(-2px); }
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 1.3rem;
+    }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+    .feature-card p { font-size: 0.9rem; color: #475569; line-height: 1.5; }
+
+    /* HOW IT WORKS */
+    .steps { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+    .step {
+      flex: 1;
+      min-width: 180px;
+      max-width: 220px;
+      text-align: center;
+      padding: 12px;
+    }
+    .step-num {
+      width: 48px;
+      height: 48px;
+      background: #2563eb;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin: 0 auto 16px;
+    }
+    .step h3 { font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+    .step p { font-size: 0.875rem; color: #475569; }
+
+    /* USE CASES */
+    .use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .use-case {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+    .use-case h3 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px; }
+    .use-case p { font-size: 0.9rem; color: #475569; line-height: 1.6; }
+    .use-case-tag {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1e40af;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    /* TRUST */
+    .trust-grid {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .trust-item span { font-size: 1.2rem; }
+
+    /* CTA BAND */
+    .cta-band {
+      background: #2563eb;
+      padding: 72px 24px;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .cta-band p { color: #bfdbfe; margin-bottom: 32px; font-size: 1rem; }
+    .btn-white {
+      display: inline-block;
+      background: #ffffff;
+      color: #2563eb;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    footer p { color: #64748b; font-size: 0.85rem; margin-bottom: 12px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    .footer-links a { color: #94a3b8; font-size: 0.85rem; transition: color 0.15s; }
+    .footer-links a:hover { color: #ffffff; }
+
+    @media (max-width: 600px) {
+      .nav-links { gap: 16px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding: 64px 16px 56px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">OP Auto Clicker</a>
+  <div class="nav-links">
+    <a href="/download.html">Download</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/about.html">About</a>
+    <a href="/download.html" class="nav-cta">Download Free</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">Free &amp; Open to Use</div>
+    <h1>The <span>Free Auto Clicker</span><br>That Just Works</h1>
+    <p>Fast, lightweight, and easy to set up. OP Auto Clicker lets you automate repetitive clicking on Windows — no bloat, no nonsense.</p>
+    <div class="hero-actions">
+      <a href="/download.html" class="btn-primary">Download Free Auto Clicker</a>
+      <a href="/faq.html" class="btn-secondary">How Does It Work?</a>
+    </div>
+    <p class="hero-meta">
+      <span>✓ Windows 7–11</span>
+      <span>✓ No install required</span>
+      <span>✓ No malware</span>
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label">Features</p>
+    <h2 class="section-title">Everything You Need, Nothing You Don't</h2>
+    <p class="section-sub">OP Auto Clicker keeps it simple — powerful enough to handle any task, small enough to run quietly in the background.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Fast Clicking</h3>
+        <p>Set click speeds from milliseconds to minutes. Handle any automation task without slowing down your PC.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Custom Intervals</h3>
+        <p>Full control over click timing — hours, minutes, seconds, and milliseconds. Precise automation on your terms.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⌨️</div>
+        <h3>Hotkey Support</h3>
+        <p>Start and stop clicking without touching the app. Assign any key as a toggle — works while other apps are in focus.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🪶</div>
+        <h3>Lightweight</h3>
+        <p>Under 1 MB. Runs without installation. Doesn't hog memory or slow your system — it's just there when you need it.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖱️</div>
+        <h3>Left, Right &amp; Middle Click</h3>
+        <p>Choose which mouse button to automate. Works with left click, right click, and middle click actions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Safe &amp; Clean</h3>
+        <p>No bundled software, no ads, no tracking. Just a clean, honest tool that does exactly what it says.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Setup</p>
+    <h2 class="section-title">Start Clicking in Seconds</h2>
+    <p class="section-sub">No installation wizard, no account sign-up. Download and run — it's that straightforward.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Download</h3>
+        <p>Grab the free .exe file — under 1 MB, no installer needed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Open the App</h3>
+        <p>Double-click to launch. No admin rights required in most cases.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Set Your Interval</h3>
+        <p>Choose how fast you want clicks — from rapid-fire to slow and steady.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Pick a Hotkey</h3>
+        <p>Assign F6 (default) or any key to toggle clicking on and off.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <h3>Click Away</h3>
+        <p>Switch to your game or app, press your hotkey, and let it run.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label">Use Cases</p>
+    <h2 class="section-title">Works For Whatever You're Doing</h2>
+    <p class="section-sub">Whether you're gaming, farming resources, or just tired of clicking the same button 500 times — OP Auto Clicker handles it.</p>
+    <div class="use-cases-grid">
+      <div class="use-case">
+        <div class="use-case-tag">Gaming</div>
+        <h3>Auto Clicker for Minecraft</h3>
+        <p>Farm resources, mine blocks, or keep your character active without burning out your mouse button. Works great with Minecraft's click-to-break mechanics.</p>
+      </div>
+      <div class="use-case">
+        <div class="use-case-tag">Gaming</div>
+        <h3>Auto Clicker for Roblox</h3>
+        <p>Automate repetitive actions in Roblox games — trading, farming, or idle clicking. Set your interval and focus on the fun parts.</p>
+      </div>
+      <div class="use-case">
+        <div class="use-case-tag">Productivity</div>
+        <h3>Repetitive Task Automation</h3>
+        <p>Automate form submissions, UI testing, or any workflow that requires repeated clicking. Save your wrist and your time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Trust</p>
+    <h2 class="section-title">Simple, Safe, No Surprises</h2>
+    <p class="section-sub">OP Auto Clicker has been used by thousands of people. It does one thing well, and it doesn't overstep.</p>
+    <div class="trust-grid">
+      <div class="trust-item"><span>🛡️</span> No malware or viruses</div>
+      <div class="trust-item"><span>📦</span> No bundled software</div>
+      <div class="trust-item"><span>🔕</span> No background processes</div>
+      <div class="trust-item"><span>🚫</span> No ads or pop-ups</div>
+      <div class="trust-item"><span>🔓</span> No account required</div>
+      <div class="trust-item"><span>💸</span> Completely free</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Stop Clicking Manually?</h2>
+    <p>Download OP Auto Clicker free — no sign-up, no install wizard, no catch.</p>
+    <a href="/download.html" class="btn-white">Download Free Auto Clicker</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 OP Auto Clicker. Free auto clicker software for Windows.</p>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/download.html">Download</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

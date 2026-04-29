@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download OP Auto Clicker Free – Windows</title>
+  <meta name="description" content="Download OP Auto Clicker free for Windows. Lightweight, safe, no malware. The fastest free auto clicker download — under 1 MB, no install required.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://opauto.app/download">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo { font-size: 1.2rem; font-weight: 700; color: #2563eb; letter-spacing: -0.5px; }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #475569; transition: color 0.15s; }
+    .nav-links a:hover { color: #2563eb; }
+    .nav-cta {
+      background: #2563eb;
+      color: #ffffff !important;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      font-size: 0.875rem !important;
+    }
+    .nav-cta:hover { background: #1d4ed8 !important; }
+
+    /* BUTTONS */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: background 0.15s, transform 0.1s;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: #2563eb;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 2px solid #2563eb;
+      transition: background 0.15s;
+    }
+    .btn-secondary:hover { background: #eff6ff; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+      padding: 80px 24px 72px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .hero h1 span { color: #2563eb; }
+    .hero p { font-size: 1.1rem; color: #475569; max-width: 500px; margin: 0 auto 36px; }
+    .download-box {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 36px 32px;
+      max-width: 480px;
+      margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .download-box h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .download-meta { font-size: 0.85rem; color: #94a3b8; margin-bottom: 24px; }
+    .download-meta span { margin: 0 6px; }
+    .trust-badges {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #475569;
+      font-weight: 500;
+    }
+    .trust-badge span { color: #16a34a; font-size: 0.9rem; }
+
+    /* SECTIONS */
+    .section { padding: 72px 24px; }
+    .section-alt { background: #f8fafc; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .section-label {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2563eb;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .section-sub {
+      text-align: center;
+      color: #475569;
+      max-width: 500px;
+      margin: 0 auto 48px;
+      font-size: 0.95rem;
+    }
+
+    /* FEATURE LIST */
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px 18px;
+    }
+    .feature-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .feature-item h3 { font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
+    .feature-item p { font-size: 0.85rem; color: #475569; }
+
+    /* INSTALL STEPS */
+    .install-steps {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .install-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 22px 20px;
+    }
+    .step-num {
+      width: 36px;
+      height: 36px;
+      background: #2563eb;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .install-step h3 { font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
+    .install-step p { font-size: 0.875rem; color: #475569; }
+
+    /* SYSTEM REQUIREMENTS */
+    .req-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .req-item {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px 18px;
+    }
+    .req-item dt { font-size: 0.78rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .req-item dd { font-size: 0.9rem; font-weight: 600; color: #0f172a; }
+
+    /* SAFETY SECTION */
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .safety-item {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 20px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .safety-item .icon { font-size: 1.2rem; margin-top: 2px; }
+    .safety-item h3 { font-size: 0.9rem; font-weight: 700; color: #15803d; margin-bottom: 4px; }
+    .safety-item p { font-size: 0.82rem; color: #166534; }
+
+    /* CTA BAND */
+    .cta-band {
+      background: #2563eb;
+      padding: 64px 24px;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .cta-band p { color: #bfdbfe; margin-bottom: 28px; }
+    .btn-white {
+      display: inline-block;
+      background: #ffffff;
+      color: #2563eb;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
+
+    /* FOOTER */
+    footer { background: #0f172a; padding: 40px 24px; text-align: center; }
+    footer p { color: #64748b; font-size: 0.85rem; margin-bottom: 12px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    .footer-links a { color: #94a3b8; font-size: 0.85rem; transition: color 0.15s; }
+    .footer-links a:hover { color: #ffffff; }
+
+    @media (max-width: 600px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding: 56px 16px 48px; }
+      .download-box { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">OP Auto Clicker</a>
+  <div class="nav-links">
+    <a href="/download.html" style="color:#2563eb;font-weight:700;">Download</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/about.html">About</a>
+    <a href="/download.html" class="nav-cta">Download Free</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">✓ No Malware &nbsp;·&nbsp; Free Download</div>
+    <h1>Download <span>OP Auto Clicker</span><br>Free for Windows</h1>
+    <p>The lightest, cleanest auto clicker you can get. No installer, no bundled junk — just download and run.</p>
+    <div class="download-box">
+      <h2>OP Auto Clicker</h2>
+      <p class="download-meta">
+        <span>v3.0</span>·<span>Windows 7–11</span>·<span>~512 KB</span>
+      </p>
+      <a href="#download-link" class="btn-primary" style="width:100%;justify-content:center;">
+        ⬇ Download Free Auto Clicker
+      </a>
+      <div class="trust-badges">
+        <div class="trust-badge"><span>✓</span> No virus</div>
+        <div class="trust-badge"><span>✓</span> No installer</div>
+        <div class="trust-badge"><span>✓</span> No account needed</div>
+        <div class="trust-badge"><span>✓</span> 100% free</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label">What You Get</p>
+    <h2 class="section-title">A Fast Auto Clicker That Stays Out of Your Way</h2>
+    <p class="section-sub">No fluff. Every feature serves a purpose, and nothing is there to slow you down.</p>
+    <div class="features-list">
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div>
+          <h3>Rapid Click Speed</h3>
+          <p>Set intervals as low as 1 millisecond. Handles any click rate your use case requires.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎛️</div>
+        <div>
+          <h3>Precise Interval Control</h3>
+          <p>Configure hours, minutes, seconds, and milliseconds independently for exact timing.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⌨️</div>
+        <div>
+          <h3>Toggle Hotkey</h3>
+          <p>Assign any keyboard shortcut to start and stop clicking without alt-tabbing.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🖱️</div>
+        <div>
+          <h3>All Mouse Buttons</h3>
+          <p>Automate left click, right click, or middle click depending on what your task needs.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📍</div>
+        <div>
+          <h3>Fixed or Dynamic Position</h3>
+          <p>Click at your current cursor position, or pin to a fixed screen coordinate.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🪶</div>
+        <div>
+          <h3>Under 1 MB</h3>
+          <p>Tiny footprint — no installation wizard, no .NET dependency downloads, no waiting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALL GUIDE -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Getting Started</p>
+    <h2 class="section-title">How to Install &amp; Use OP Auto Clicker</h2>
+    <p class="section-sub">No installer. No setup wizard. Follow these steps and you'll be up and running in under a minute.</p>
+    <div class="install-steps">
+      <div class="install-step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Download the .exe File</h3>
+          <p>Click the download button above. Your browser will download a small .exe file — no zip extraction needed.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Run the Application</h3>
+          <p>Double-click the downloaded file to open OP Auto Clicker. If Windows SmartScreen shows a prompt, click "More info" → "Run anyway" — this is normal for unsigned apps.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Set Your Click Interval</h3>
+          <p>In the time fields, enter how often you want the tool to click. For gaming, 10–50 ms is a common starting point.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Configure Your Options</h3>
+          <p>Choose left, right, or middle click. Set a repeat count or leave it on repeat indefinitely. Assign a hotkey if you haven't already.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">5</div>
+        <div>
+          <h3>Press Your Hotkey to Start</h3>
+          <p>Switch to your game or app, position your cursor, and press your hotkey (default: F6) to begin auto clicking. Press it again to stop.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM REQUIREMENTS -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label">System Requirements</p>
+    <h2 class="section-title">Runs on Almost Anything</h2>
+    <p class="section-sub">OP Auto Clicker is designed to run on any modern (or not-so-modern) Windows machine.</p>
+    <dl class="req-grid">
+      <div class="req-item">
+        <dt>Operating System</dt>
+        <dd>Windows 7, 8, 10, 11</dd>
+      </div>
+      <div class="req-item">
+        <dt>Architecture</dt>
+        <dd>32-bit &amp; 64-bit</dd>
+      </div>
+      <div class="req-item">
+        <dt>File Size</dt>
+        <dd>~512 KB</dd>
+      </div>
+      <div class="req-item">
+        <dt>Installation</dt>
+        <dd>None required</dd>
+      </div>
+      <div class="req-item">
+        <dt>RAM Usage</dt>
+        <dd>&lt; 5 MB while running</dd>
+      </div>
+      <div class="req-item">
+        <dt>Dependencies</dt>
+        <dd>None</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Safety</p>
+    <h2 class="section-title">Free Auto Clicker – No Virus, No Hidden Catch</h2>
+    <p class="section-sub">We know the concern. Here's exactly what OP Auto Clicker does and does not do.</p>
+    <div class="safety-grid">
+      <div class="safety-item">
+        <div class="icon">🛡️</div>
+        <div>
+          <h3>No Malware</h3>
+          <p>The file contains no malware, spyware, or adware. What you download is exactly what it claims to be.</p>
+        </div>
+      </div>
+      <div class="safety-item">
+        <div class="icon">📦</div>
+        <div>
+          <h3>No Bundled Software</h3>
+          <p>There is no installer, no "recommended software" checkboxes, and no toolbars getting snuck onto your machine.</p>
+        </div>
+      </div>
+      <div class="safety-item">
+        <div class="icon">🔕</div>
+        <div>
+          <h3>No Background Processes</h3>
+          <p>OP Auto Clicker stops completely when you close it. Nothing runs silently in the background.</p>
+        </div>
+      </div>
+      <div class="safety-item">
+        <div class="icon">🌐</div>
+        <div>
+          <h3>No Internet Connection Needed</h3>
+          <p>It works fully offline. No data is sent anywhere — ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Download?</h2>
+    <p>Free auto clicker for Windows — no strings attached.</p>
+    <a href="#download-link" class="btn-white">⬇ Download Free Auto Clicker</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 OP Auto Clicker. Free auto clicker download for Windows.</p>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/download.html">Download</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
