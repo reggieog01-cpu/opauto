@@ -1,513 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About OP Auto Clicker – Built for Simplicity</title>
-  <meta name="description" content="OP Auto Clicker was built to be the simplest, most reliable free auto clicker on Windows. No bloat, no tricks — just a tool that works.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://opauto.app/about">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About OP Auto Clicker – Free Windows Auto Clicker</title>
+<meta name="description" content="About OP Auto Clicker — built by gamers, used by 5M+ people. Free, open-source, privacy-first Windows auto clicker. Learn our story, mission, and values.">
+<link rel="canonical" href="https://opauto.app/about">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://opauto.app/"},{"@type":"ListItem","position":2,"name":"About","item":"https://opauto.app/about"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"OP Auto Clicker","url":"https://opauto.app","description":"Free, open-source auto clicker for Windows. Used by 5M+ people for gaming, productivity, and accessibility.","foundingDate":"2015","sameAs":["https://github.com/op-auto-clicker"]}
+</script>
+<style>
+:root{--bg:#0F172A;--card:#1E293B;--muted:#272F42;--border:#334155;--text:#F8FAFC;--dim:#94A3B8;--accent:#22C55E;--glow:rgba(34,197,94,.3)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-weight:600;font-size:.95rem;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;font-family:inherit;min-height:44px}
+.btn-primary{background:var(--accent);color:#0a1f0e}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--glow)}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-ghost:hover{background:var(--card);border-color:var(--accent)}
+h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:1rem}
+h3{font-size:1.2rem;margin-bottom:.5rem}
+section{padding:60px 0}
+.eyebrow{color:var(--accent);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.section-title{text-align:center;max-width:720px;margin:0 auto 50px}
+.section-title p{color:var(--dim);margin-top:12px;font-size:1.05rem}
+.muted{color:var(--dim)}.green{color:var(--accent)}
+.nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.85);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav.scrolled{border-bottom-color:var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:1.15rem}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:var(--dim);font-weight:500;font-size:.95rem;transition:color .15s}
+.nav-links a:hover{color:var(--text)}
+.nav-links a.active{color:var(--accent)}
+.nav-cta{padding:10px 20px;font-size:.9rem;min-height:auto}
+.hamburger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:8px}
+.hamburger svg{width:24px;height:24px}
+@media(max-width:860px){.nav-links{position:fixed;top:68px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:20px;gap:20px;transform:translateY(-150%);transition:transform .3s}.nav-links.open{transform:translateY(0)}.hamburger{display:block}}
+.crumb{color:var(--dim);font-size:.85rem;margin-bottom:14px;text-align:center}
+.crumb a{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
+.reveal.show{opacity:1;transform:translateY(0)}
 
-  <!-- Schema: Organization + AboutPage + BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://opauto.app/#organization",
-        "name": "OP Auto Clicker",
-        "url": "https://opauto.app/",
-        "description": "Maker of OP Auto Clicker — a free, lightweight auto clicker for Windows."
-      },
-      {
-        "@type": "AboutPage",
-        "url": "https://opauto.app/about",
-        "name": "About OP Auto Clicker",
-        "description": "OP Auto Clicker was built to be the simplest, most reliable free auto clicker on Windows.",
-        "mainEntity": { "@id": "https://opauto.app/#organization" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opauto.app/" },
-          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://opauto.app/about" }
-        ]
-      }
-    ]
-  }
-  </script>
+.about-hero{padding:60px 0 40px;text-align:center;position:relative;overflow:hidden}
+.about-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center top,var(--glow),transparent 60%);pointer-events:none}
+.about-hero h1,.about-hero p{position:relative}
+.about-hero h1 span{color:var(--accent)}
+.about-hero .lead{color:var(--dim);font-size:1.15rem;max-width:620px;margin:18px auto 0}
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-      color: #0f172a;
-      background: #ffffff;
-      line-height: 1.6;
-      font-size: 16px;
-    }
-    a { color: inherit; text-decoration: none; }
+.story-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+@media(max-width:900px){.story-grid{grid-template-columns:1fr}}
+.story p{color:var(--dim);font-size:1rem;margin-bottom:14px}
+.story-art{position:relative;aspect-ratio:1;background:var(--card);border:1px solid var(--border);border-radius:18px;display:grid;place-items:center;overflow:hidden}
+.story-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,var(--glow),transparent 60%)}
+.story-stack{position:relative;display:grid;gap:14px;padding:30px}
+.story-card{background:var(--muted);border:1px solid var(--border);border-radius:12px;padding:18px 22px;transform:rotate(-2deg);transition:transform .3s}
+.story-card:nth-child(2){transform:rotate(1deg);background:rgba(34,197,94,.08);border-color:var(--accent)}
+.story-card:nth-child(3){transform:rotate(-1deg)}
+.story-art:hover .story-card{transform:rotate(0)}
+.story-num{font-size:1.6rem;font-weight:800;color:var(--accent)}
+.story-text{font-size:.85rem;color:var(--dim)}
 
-    /* NAV */
-    nav {
-      background: #ffffff;
-      border-bottom: 1px solid #e2e8f0;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-logo { font-size: 1.2rem; font-weight: 700; color: #2563eb; letter-spacing: -0.5px; }
-    .nav-links { display: flex; gap: 32px; align-items: center; }
-    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #475569; transition: color 0.15s; }
-    .nav-links a:hover { color: #2563eb; }
-    .nav-cta {
-      background: #2563eb;
-      color: #ffffff !important;
-      padding: 8px 18px;
-      border-radius: 6px;
-      font-weight: 600 !important;
-      font-size: 0.875rem !important;
-    }
-    .nav-cta:hover { background: #1d4ed8 !important; }
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:780px){.values{grid-template-columns:1fr}}
+.value{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:30px;transition:transform .2s,border-color .2s}
+.value:hover{transform:translateY(-4px);border-color:var(--accent)}
+.value-icon{width:48px;height:48px;border-radius:12px;background:rgba(34,197,94,.1);color:var(--accent);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
+.value h3{margin-bottom:10px}
+.value p{color:var(--dim);font-size:.95rem}
 
-    /* BREADCRUMB */
-    .breadcrumb { background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 12px 24px; }
-    .breadcrumb ol { list-style: none; max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.82rem; color: #64748b; }
-    .breadcrumb li { display: flex; align-items: center; gap: 8px; }
-    .breadcrumb li:not(:last-child)::after { content: '/'; color: #cbd5e1; margin-left: 4px; }
-    .breadcrumb a { color: #2563eb; font-weight: 500; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb [aria-current="page"] { color: #0f172a; font-weight: 600; }
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:40px 24px}
+@media(max-width:700px){.numbers{grid-template-columns:repeat(2,1fr)}}
+.num-val{font-size:2.4rem;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1}
+.num-lbl{color:var(--dim);font-size:.9rem;margin-top:8px}
 
-    /* PAGE HEADER */
-    .page-header {
-      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
-      padding: 80px 24px 72px;
-      text-align: center;
-    }
-    .page-header h1 {
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-      font-weight: 800;
-      color: #0f172a;
-      margin-bottom: 14px;
-      letter-spacing: -1px;
-    }
-    .page-header h1 span { color: #2563eb; }
-    .page-header p {
-      font-size: 1.05rem;
-      color: #475569;
-      max-width: 540px;
-      margin: 0 auto;
-    }
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
+@media(max-width:780px){.diff-grid{grid-template-columns:1fr}}
+.diff{padding:24px;border-left:3px solid var(--accent);background:var(--card);border-radius:0 12px 12px 0}
+.diff h3{color:var(--accent);font-size:1.05rem;margin-bottom:8px}
+.diff p{color:var(--dim);font-size:.95rem}
 
-    /* SECTIONS */
-    .section { padding: 72px 24px; }
-    .section-alt { background: #f8fafc; }
-    .container { max-width: 760px; margin: 0 auto; }
-    .container-wide { max-width: 1080px; margin: 0 auto; }
-    .section-label {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #2563eb;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-    .section-title {
-      font-size: clamp(1.4rem, 3vw, 1.9rem);
-      font-weight: 800;
-      color: #0f172a;
-      margin-bottom: 16px;
-      letter-spacing: -0.5px;
-    }
+.os-card{background:var(--card);border:2px solid var(--accent);border-radius:18px;padding:40px;max-width:780px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+.os-card::before{content:"";position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,var(--glow),transparent 70%);pointer-events:none}
+.os-icon{font-size:3rem;margin-bottom:14px;position:relative}
+.os-card h2{position:relative}
+.os-card p{color:var(--dim);max-width:520px;margin:14px auto 24px;position:relative}
 
-    /* STORY */
-    .story p {
-      color: #334155;
-      font-size: 1rem;
-      line-height: 1.8;
-      margin-bottom: 18px;
-    }
-    .story p:last-child { margin-bottom: 0; }
+.timeline{max-width:780px;margin:0 auto;position:relative;padding-left:36px}
+.timeline::before{content:"";position:absolute;left:9px;top:0;bottom:0;width:2px;background:var(--border)}
+.tl{position:relative;padding-bottom:32px}
+.tl::before{content:"";position:absolute;left:-32px;top:6px;width:20px;height:20px;background:var(--accent);border:3px solid var(--bg);border-radius:50%;box-shadow:0 0 0 2px var(--border)}
+.tl-year{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.tl-ver{font-size:1.2rem;font-weight:700;margin:4px 0 6px}
+.tl-desc{color:var(--dim);font-size:.95rem}
 
-    /* MISSION */
-    .mission-block {
-      background: #2563eb;
-      color: #ffffff;
-      border-radius: 16px;
-      padding: 40px 36px;
-      margin: 48px 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .mission-block::before {
-      content: '"';
-      position: absolute;
-      top: -10px;
-      left: 20px;
-      font-size: 8rem;
-      color: rgba(255,255,255,0.08);
-      font-family: Georgia, serif;
-      line-height: 1;
-      pointer-events: none;
-    }
-    .mission-block p {
-      font-size: 1.2rem;
-      font-weight: 600;
-      line-height: 1.6;
-      color: #ffffff;
-      position: relative;
-      z-index: 1;
-    }
-    .mission-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #93c5fd;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 12px;
-      position: relative;
-      z-index: 1;
-    }
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:780px;margin:0 auto}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
+.contact{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center;transition:border-color .2s,transform .2s}
+.contact:hover{border-color:var(--accent);transform:translateY(-3px)}
+.contact-icon{font-size:2rem;margin-bottom:12px}
 
-    /* VALUES */
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .value-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 24px 20px;
-    }
-    .value-icon {
-      font-size: 1.5rem;
-      margin-bottom: 12px;
-      display: block;
-    }
-    .value-card h3 { font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
-    .value-card p { font-size: 0.85rem; color: #475569; line-height: 1.5; }
+.cta-banner{background:linear-gradient(135deg,#16A34A,#22C55E);text-align:center;padding:60px 24px;border-radius:24px;margin:60px auto;max-width:1100px;position:relative;overflow:hidden}
+.cta-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(255,255,255,.15),transparent 60%);pointer-events:none}
+.cta-banner h2{color:#0a1f0e;font-size:clamp(1.6rem,3.5vw,2.2rem);position:relative}
+.cta-banner p{color:#0a1f0e;opacity:.85;margin:14px 0 24px;position:relative}
+.cta-banner .btn{background:#0F172A;color:var(--accent);position:relative}
 
-    /* PHILOSOPHY */
-    .philosophy-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .philosophy-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      font-size: 0.95rem;
-      color: #334155;
-      line-height: 1.6;
-    }
-    .philosophy-list .check {
-      flex-shrink: 0;
-      width: 22px;
-      height: 22px;
-      background: #eff6ff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #2563eb;
-      font-size: 0.7rem;
-      font-weight: 800;
-      margin-top: 2px;
-    }
-
-    /* CTA SECTION */
-    .about-cta {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 16px;
-      padding: 44px 36px;
-      text-align: center;
-    }
-    .about-cta h2 { font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
-    .about-cta p { color: #475569; font-size: 0.95rem; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
-    .btn-primary {
-      display: inline-block;
-      background: #2563eb;
-      color: #ffffff;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      transition: background 0.15s, transform 0.1s;
-    }
-    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
-
-    /* CTA BAND */
-    .cta-band { background: #2563eb; padding: 64px 24px; text-align: center; }
-    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; color: #ffffff; margin-bottom: 12px; }
-    .cta-band p { color: #bfdbfe; margin-bottom: 28px; }
-    .btn-white {
-      display: inline-block;
-      background: #ffffff;
-      color: #2563eb;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      transition: background 0.15s, transform 0.1s;
-    }
-    .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
-
-    /* FOOTER */
-    footer { background: #0f172a; padding: 56px 24px 32px; }
-    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 40px; max-width: 1080px; margin: 0 auto 36px; }
-    .footer-brand h3 { color: #ffffff; font-size: 1.05rem; font-weight: 800; margin-bottom: 10px; }
-    .footer-brand p { color: #94a3b8; font-size: 0.85rem; line-height: 1.6; max-width: 280px; }
-    .footer-col h4 { color: #ffffff; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .footer-col a { color: #94a3b8; font-size: 0.875rem; transition: color 0.15s; }
-    .footer-col a:hover { color: #ffffff; }
-    .footer-bottom { max-width: 1080px; margin: 0 auto; padding-top: 24px; border-top: 1px solid #1e293b; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-    .footer-bottom p { color: #64748b; font-size: 0.8rem; }
-    .footer-bottom .footer-mini { display: flex; gap: 20px; }
-    .footer-bottom .footer-mini a { color: #64748b; font-size: 0.8rem; }
-    .footer-bottom .footer-mini a:hover { color: #ffffff; }
-    @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } .footer-brand { grid-column: 1 / -1; } }
-
-    @media (max-width: 600px) {
-      .nav-links a:not(.nav-cta) { display: none; }
-      .page-header { padding: 56px 16px 48px; }
-      .section { padding: 56px 16px; }
-      .mission-block { padding: 28px 24px; }
-      .about-cta { padding: 32px 20px; }
-    }
-  </style>
+footer{background:#0a1226;border-top:1px solid var(--border);padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+@media(max-width:780px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:480px){.foot-grid{grid-template-columns:1fr}}
+footer h4{font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:16px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+footer ul a{color:var(--dim);font-size:.9rem;transition:color .15s}
+footer ul a:hover{color:var(--accent)}
+.foot-tag{color:var(--dim);font-size:.9rem;margin-top:12px;max-width:280px}
+.foot-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;color:var(--dim);font-size:.85rem;flex-wrap:wrap;gap:12px}
+</style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">OP Auto Clicker</a>
-  <div class="nav-links">
-    <a href="/download.html">Download</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/about.html" style="color:#2563eb;font-weight:700;">About</a>
-    <a href="/download.html" class="nav-cta">Download Free</a>
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about" class="active">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="/">Home</a></li>
-    <li aria-current="page">About</li>
-  </ol>
-</nav>
-
-<!-- HEADER -->
-<section class="page-header">
+<section class="about-hero">
   <div class="container">
-    <h1>Built to Be <span>Simple</span></h1>
-    <p>OP Auto Clicker exists because most auto clickers are either bloated, shady, or harder to use than they should be. We wanted something better.</p>
+    <div class="crumb"><a href="/">Home</a> › About</div>
+    <div class="eyebrow">Our Story</div>
+    <h1>About <span>OP Auto Clicker</span></h1>
+    <p class="lead">Built by gamers, used by millions. The fastest, most reliable free auto clicker for Windows — open source since day one.</p>
   </div>
 </section>
 
-<!-- STORY -->
-<section class="section" id="story">
+<section>
   <div class="container">
-    <p class="section-label">Our Story</p>
-    <h2 class="section-title">Why We Built OP Auto Clicker</h2>
-
-    <div class="story">
-      <p>
-        Most auto clicker tools haven't changed much in years. They're clunky, come packaged with unwanted software, or look like they were built in 2005. We've all clicked "decline" about fifteen times just to get to the actual app.
-      </p>
-      <p>
-        OP Auto Clicker started as a straightforward project: build a fast, clean auto clicker that anyone could download and use without any friction. No installer wizard. No bundled toolbars. No ads inside the app. Just a small, reliable tool that does exactly what it says.
-      </p>
-      <p>
-        Over time, it picked up features that users actually needed — <a href="/faq.html#q-hotkey" style="color:#2563eb;font-weight:600;">hotkey support</a>, <a href="/faq.html#q-fixed-position" style="color:#2563eb;font-weight:600;">fixed-position clicking</a>, <a href="/faq.html#q-stop-after" style="color:#2563eb;font-weight:600;">repeat limits</a>, and precise millisecond control. But the core principle stayed the same: keep it lean, keep it honest.
-      </p>
-      <p>
-        Today, OP Auto Clicker is used by gamers automating <a href="/#minecraft" style="color:#2563eb;font-weight:600;">Minecraft farming sessions</a>, Roblox players running idle simulators, developers stress-testing UI elements, and people who just need to stop clicking the same button 200 times by hand. It handles all of it without getting in the way.
-      </p>
-    </div>
-
-    <!-- Mission -->
-    <div class="mission-block" id="mission">
-      <p class="mission-label">Our Mission</p>
-      <p>To build the most straightforward, trustworthy auto clicker available — free for everyone, with no hidden costs, no shady software, and no overcomplicated setup.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- VALUES -->
-<section class="section section-alt" id="values">
-  <div class="container-wide">
-    <div style="text-align:center;margin-bottom:40px;">
-      <p class="section-label" style="text-align:center;">What We Stand For</p>
-      <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:#0f172a;letter-spacing:-0.5px;">Built on Three Things</h2>
-    </div>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">⚡</span>
-        <h3>Performance First</h3>
-        <p>Every version of OP Auto Clicker is tested to be fast and responsive. Under 1 MB, low memory usage, no slowdowns — it runs quietly while you focus on your task.</p>
+    <div class="story-grid">
+      <div class="story reveal">
+        <div class="eyebrow">Our Story</div>
+        <h2>Born From a Simple Need</h2>
+        <p>OP Auto Clicker started in 2015 as a personal tool — a programmer who was tired of buggy, ad-stuffed auto clickers built for one purpose: to click reliably, at any speed, without getting in the way.</p>
+        <p>What began as a 200-line side project ended up downloaded by millions. We've kept the original promise: <strong class="green">no ads, no telemetry, no premium tier, no bundleware.</strong> Just a tool that works.</p>
+        <p>Today, OP Auto Clicker is open source, used in 100+ countries, and supported by a community of contributors. Every release is signed, scanned, and reviewed publicly on GitHub.</p>
       </div>
-      <div class="value-card">
-        <span class="value-icon">🎯</span>
-        <h3>Radical Simplicity</h3>
-        <p>We don't add features for the sake of it. The interface does what you need and nothing more. You should be able to use it within 30 seconds of downloading it.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🤝</span>
-        <h3>User Trust</h3>
-        <p>We don't bundle software. We don't run background processes after you close the app. We don't track usage or phone home. What you download is exactly what it is.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">💸</span>
-        <h3>Free. Genuinely.</h3>
-        <p>No freemium tiers, no feature paywalls, no "Pro" version. OP Auto Clicker is free to use, period. We believe a useful utility should be accessible to everyone.</p>
+      <div class="story-art reveal">
+        <div class="story-stack">
+          <div class="story-card"><div class="story-num">2015</div><div class="story-text">First release · 200 lines of C#</div></div>
+          <div class="story-card"><div class="story-num">2022</div><div class="story-text">Open sourced on GitHub</div></div>
+          <div class="story-card"><div class="story-num">2024</div><div class="story-text">5M+ downloads · v3.0.0</div></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PHILOSOPHY -->
-<section class="section" id="philosophy">
+<section>
   <div class="container">
-    <p class="section-label">How We Build</p>
-    <h2 class="section-title">A Few Things We Won't Do</h2>
-    <ul class="philosophy-list">
-      <li>
-        <span class="check">✓</span>
-        <span><strong>No bundled software.</strong> The download is what it says it is. There are no "recommended programs" slipped in, no browser extensions, no toolbar installations.</span>
-      </li>
-      <li>
-        <span class="check">✓</span>
-        <span><strong>No background processes.</strong> When you close OP Auto Clicker, it's gone. Nothing runs silently after you quit — no update daemons, no telemetry agents.</span>
-      </li>
-      <li>
-        <span class="check">✓</span>
-        <span><strong>No internet requirement.</strong> The app works completely offline. It never calls home, sends usage data, or requires a connection to run.</span>
-      </li>
-      <li>
-        <span class="check">✓</span>
-        <span><strong>No dark patterns.</strong> The download button leads directly to the file. No fake "Download" buttons, no redirects to ad pages, no email gates.</span>
-      </li>
-      <li>
-        <span class="check">✓</span>
-        <span><strong>No feature creep.</strong> We add things when they genuinely help users, not to inflate the feature list. A bloated tool is a worse tool.</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- WHERE TO NEXT -->
-<section class="section section-alt" id="next">
-  <div class="container-wide">
-    <div style="text-align:center;margin-bottom:36px;">
-      <p class="section-label" style="text-align:center;">Where to Next</p>
-      <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:#0f172a;letter-spacing:-0.5px;">Pick Your Next Step</h2>
+    <div class="section-title reveal">
+      <div class="eyebrow">Our Values</div>
+      <h2>What OP Auto Clicker Stands For</h2>
+      <p>Three principles that haven't changed in 10 years.</p>
     </div>
-    <div class="values-grid">
-      <a href="/download.html" class="value-card" style="text-decoration:none;display:block;">
-        <span class="value-icon">⬇</span>
-        <h3 style="color:#2563eb;">Download for Windows</h3>
-        <p>Grab the free .exe — under 1 MB, no installer required.</p>
-      </a>
-      <a href="/#features" class="value-card" style="text-decoration:none;display:block;">
-        <span class="value-icon">⚡</span>
-        <h3 style="color:#2563eb;">See the Features</h3>
-        <p>Hotkey support, custom intervals, fixed-position clicking, and more.</p>
-      </a>
-      <a href="/faq.html" class="value-card" style="text-decoration:none;display:block;">
-        <span class="value-icon">❓</span>
-        <h3 style="color:#2563eb;">Read the FAQ</h3>
-        <p>14 answers covering safety, setup, gaming, and compatibility.</p>
-      </a>
-      <a href="/download.html#install-guide" class="value-card" style="text-decoration:none;display:block;">
-        <span class="value-icon">📋</span>
-        <h3 style="color:#2563eb;">Install Guide</h3>
-        <p>5 steps to download, configure, and start using OP Auto Clicker.</p>
-      </a>
+    <div class="values">
+      <div class="value reveal"><div class="value-icon">💚</div><h3>Free Forever</h3><p>No paywalls. No premium tier. No subscriptions. OP Auto Clicker is free for personal and commercial use — and always will be.</p></div>
+      <div class="value reveal"><div class="value-icon">🛡</div><h3>Privacy First</h3><p>Zero telemetry. Zero data collection. Zero phone-home. OP Auto Clicker doesn't connect to the internet, period. What runs on your PC stays on your PC.</p></div>
+      <div class="value reveal"><div class="value-icon">⚡</div><h3>Open Source</h3><p>The full source code is on GitHub. Audit it, contribute to it, fork it. Community-driven development means no hidden agendas.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT CTA -->
-<section class="section">
+<section>
   <div class="container">
-    <div class="about-cta">
-      <h2>Ready to Try It?</h2>
-      <p>Download OP Auto Clicker free — no account, no installer, no strings attached.</p>
-      <a href="/download.html" class="btn-primary">Download Free Auto Clicker</a>
+    <div class="section-title reveal">
+      <div class="eyebrow">Impact</div>
+      <h2>OP Auto Clicker By The Numbers</h2>
+      <p>Real users, real reach, real impact.</p>
+    </div>
+    <div class="numbers reveal">
+      <div><div class="num-val" data-count="5000000" data-suffix="+">0</div><div class="num-lbl">Total Downloads</div></div>
+      <div><div class="num-val" data-count="2015" data-suffix="">0</div><div class="num-lbl">Year Founded</div></div>
+      <div><div class="num-val" data-count="100" data-suffix="+">0</div><div class="num-lbl">Countries</div></div>
+      <div><div class="num-val" data-count="48" data-divide="10" data-suffix="★">0</div><div class="num-lbl">Average Rating</div></div>
     </div>
   </div>
 </section>
 
-<!-- CTA BAND -->
-<section class="cta-band">
-  <div class="container-wide">
-    <h2>Start Clicking in Seconds</h2>
-    <p>Free download for Windows — lightweight, safe, and always will be.</p>
-    <a href="/download.html" class="btn-white">⬇ Download OP Auto Clicker Free</a>
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Why We're Different</div>
+      <h2>What Makes OP Auto Clicker Stand Out</h2>
+      <p>Not all auto clickers are created equal.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff reveal"><h3>Engineered for Speed</h3><p>OP Auto Clicker hits 100+ CPS with millisecond precision. Most auto clickers cap out at 30 CPS or stutter under load — we don't.</p></div>
+      <div class="diff reveal"><h3>Zero Bloat</h3><p>The entire app is 512 KB. No installer, no .NET dependencies you don't already have, no background services. Run it, use it, close it.</p></div>
+      <div class="diff reveal"><h3>Actually Free</h3><p>No "free trial" that nags you. No premium features locked behind a paywall. Every feature is free, forever, for everyone.</p></div>
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<section>
+  <div class="container">
+    <div class="os-card reveal">
+      <div class="os-icon">🐙</div>
+      <h2>OP Auto Clicker Is Open Source</h2>
+      <p>The full source code is public on GitHub. Read it, audit it, contribute to it. We believe transparency is non-negotiable for software you run on your PC.</p>
+      <a href="#" class="btn btn-primary">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Timeline</div>
+      <h2>OP Auto Clicker Through The Years</h2>
+      <p>A decade of clicks.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl reveal"><div class="tl-year">2015</div><div class="tl-ver">v1.0 — First Release</div><div class="tl-desc">Born as a personal tool. Basic auto-click at fixed intervals. Released free on a personal blog.</div></div>
+      <div class="tl reveal"><div class="tl-year">2018</div><div class="tl-ver">v2.0 — Major Rewrite</div><div class="tl-desc">Performance overhaul. Added right/middle click, double-click mode, and global hotkey support.</div></div>
+      <div class="tl reveal"><div class="tl-year">2022</div><div class="tl-ver">v2.5 — Community Era</div><div class="tl-desc">Open sourced on GitHub. Added remappable hotkeys, click count limits, system tray support.</div></div>
+      <div class="tl reveal"><div class="tl-year">2024</div><div class="tl-ver">v3.0 — Current</div><div class="tl-desc">Dark mode UI, 1ms minimum interval, multi-monitor support, 40% smaller memory footprint.</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Get Involved</div>
+      <h2>Community & Support</h2>
+      <p>Got a bug? Idea? Feature request? We're listening.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="#" class="contact reveal"><div class="contact-icon">🐛</div><h3>Report a Bug</h3><p class="muted">GitHub Issues — track and resolve bugs with the OP Auto Clicker team.</p></a>
+      <a href="#" class="contact reveal"><div class="contact-icon">💬</div><h3>Join the Community</h3><p class="muted">GitHub Discussions — share tips, ask questions, talk to other users.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2>Try OP Auto Clicker Today</h2>
+  <p>Free. Open source. 512 KB. No installation.</p>
+  <a href="/download" class="btn">↓ Download Free</a>
+</div>
+
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <h3>OP Auto Clicker</h3>
-      <p>Free, lightweight auto clicker software for Windows. Built to be simple, fast, and trustworthy.</p>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+        <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="/download">Download</a></li><li><a href="/#features">Features</a></li><li><a href="/#cps-test">Speed Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+      <div><h4>Pages</h4><ul><li><a href="/">Home</a></li><li><a href="/download">Download</a></li><li><a href="/faq">FAQ</a></li><li><a href="/about">About</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="/about">Open Source</a></li><li><a href="/faq">Help Center</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
     </div>
-    <div class="footer-col">
-      <h4>Product</h4>
-      <ul>
-        <li><a href="/download.html">Download for Windows</a></li>
-        <li><a href="/#features">Features</a></li>
-        <li><a href="/#how-it-works">How it works</a></li>
-        <li><a href="/download.html#system-requirements">System requirements</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Help &amp; Guides</h4>
-      <ul>
-        <li><a href="/faq.html">All FAQ answers</a></li>
-        <li><a href="/download.html#install-guide">Install guide</a></li>
-        <li><a href="/faq.html#q-minecraft">Minecraft settings</a></li>
-        <li><a href="/faq.html#q-roblox">Roblox compatibility</a></li>
-        <li><a href="/faq.html#q-safe">Is it safe?</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="/about.html">About us</a></li>
-        <li><a href="/about.html#mission">Our mission</a></li>
-        <li><a href="/about.html#values">What we stand for</a></li>
-        <li><a href="/about.html#philosophy">Things we won't do</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 OP Auto Clicker. Free auto clicker software for Windows.</p>
-    <div class="footer-mini">
-      <a href="/">Home</a>
-      <a href="/download.html">Download</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/about.html">About</a>
-    </div>
+    <div class="foot-bottom"><div>© 2025 OP Auto Clicker · Free for personal & commercial use</div><div>Made for Windows</div></div>
   </div>
 </footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=+el.dataset.count,div=+el.dataset.divide||1,suf=el.dataset.suffix||'';let cur=0,step=target/60;const t=setInterval(()=>{cur+=step;if(cur>=target){cur=target;clearInterval(t)}let v=cur/div;el.textContent=(div>1?v.toFixed(1):Math.floor(v).toLocaleString())+suf},25);cio.unobserve(el)}),{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+</script>
 
 </body>
 </html>

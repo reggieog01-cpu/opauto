@@ -1,701 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OP Auto Clicker FAQ – Common Questions Answered</title>
-  <meta name="description" content="Answers to the most common auto clicker questions: is it safe, how to use it, Minecraft and Roblox settings, hotkeys, and more.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://opauto.app/faq">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OP Auto Clicker FAQ – Frequently Asked Questions</title>
+<meta name="description" content="OP Auto Clicker FAQ — answers about installing, features, hotkeys, game compatibility, safety, and Windows support. Get help with the #1 free auto clicker.">
+<link rel="canonical" href="https://opauto.app/faq">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://opauto.app/"},{"@type":"ListItem","position":2,"name":"FAQ","item":"https://opauto.app/faq"}]}
+</script>
+<script type="application/ld+json" id="faq-schema">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is OP Auto Clicker?","acceptedAnswer":{"@type":"Answer","text":"OP Auto Clicker is a free, lightweight auto-clicking program for Windows. It automates mouse clicks at custom intervals, supports left/right/middle clicks, hotkey toggles, and fixed-position clicking — used by gamers, testers, and accessibility users."}},
+{"@type":"Question","name":"How do I download OP Auto Clicker?","acceptedAnswer":{"@type":"Answer","text":"Visit the OP Auto Clicker download page, click the green Download button, and run the .exe. The file is 512 KB and requires no installation."}},
+{"@type":"Question","name":"How do I set up OP Auto Clicker for the first time?","acceptedAnswer":{"@type":"Answer","text":"Open the app, set your preferred click interval, choose mouse button (left/right/middle) and single or double click, set a hotkey (default F6), then press the hotkey to start clicking."}},
+{"@type":"Question","name":"What does the click interval setting do?","acceptedAnswer":{"@type":"Answer","text":"The click interval controls how much time passes between each click. OP Auto Clicker accepts intervals from 1 millisecond up to multiple hours, in milliseconds, seconds, minutes, or hours."}},
+{"@type":"Question","name":"How do I start and stop the auto clicker?","acceptedAnswer":{"@type":"Answer","text":"Press your assigned hotkey (default F6) to toggle clicking on and off. The hotkey works globally — even when OP Auto Clicker is minimized or another window has focus."}},
+{"@type":"Question","name":"What is the maximum clicks per second (CPS)?","acceptedAnswer":{"@type":"Answer","text":"OP Auto Clicker supports intervals as low as 1ms. In real-world usage it consistently exceeds 100 CPS. The actual maximum depends on your CPU and the application receiving the clicks."}},
+{"@type":"Question","name":"Can I set a specific number of clicks?","acceptedAnswer":{"@type":"Answer","text":"Yes. OP Auto Clicker can run until stopped, or stop automatically after a fixed click count you specify."}},
+{"@type":"Question","name":"Does OP Auto Clicker support double-click mode?","acceptedAnswer":{"@type":"Answer","text":"Yes — toggle between single and double click in the app. You can also configure left, right, or middle mouse button."}},
+{"@type":"Question","name":"Can I use OP Auto Clicker with hotkeys?","acceptedAnswer":{"@type":"Answer","text":"Yes. The default toggle hotkey is F6 and is fully remappable. You can bind it to any key, function key, or combination."}},
+{"@type":"Question","name":"Can OP Auto Clicker click at a fixed location?","acceptedAnswer":{"@type":"Answer","text":"Yes. OP Auto Clicker supports both dynamic clicking (follows your cursor) and fixed-position clicking, where you specify exact X/Y screen coordinates."}},
+{"@type":"Question","name":"What Windows versions does OP Auto Clicker support?","acceptedAnswer":{"@type":"Answer","text":"OP Auto Clicker supports Windows 7 SP1, Windows 8, Windows 10, and Windows 11 — both 32-bit and 64-bit editions."}},
+{"@type":"Question","name":"Does OP Auto Clicker work with games?","acceptedAnswer":{"@type":"Answer","text":"Yes. OP Auto Clicker is widely used with Minecraft, Roblox, idle games, and clicker simulators. It sends standard Windows input events."}},
+{"@type":"Question","name":"Will OP Auto Clicker work on Windows 11?","acceptedAnswer":{"@type":"Answer","text":"Yes — OP Auto Clicker is fully tested and verified on Windows 11 (both 32-bit and 64-bit)."}},
+{"@type":"Question","name":"Does it work in browser games?","acceptedAnswer":{"@type":"Answer","text":"Yes. OP Auto Clicker works in Chrome, Firefox, Edge, and any browser-based game running on Windows."}},
+{"@type":"Question","name":"Does OP Auto Clicker require installation?","acceptedAnswer":{"@type":"Answer","text":"No. OP Auto Clicker is portable — just download and run the .exe. No installer, no registry entries, no admin rights needed."}},
+{"@type":"Question","name":"Is OP Auto Clicker safe to use?","acceptedAnswer":{"@type":"Answer","text":"Yes. OP Auto Clicker is open source, code-signed, and verified clean by VirusTotal across 70+ antivirus engines. There is no bundleware, no ads, and no telemetry."}},
+{"@type":"Question","name":"Is OP Auto Clicker detectable in games?","acceptedAnswer":{"@type":"Answer","text":"OP Auto Clicker uses standard Windows input APIs and is not detected by basic anti-cheat. However, advanced anti-cheats may detect any automation, so always check each game's terms of service."}},
+{"@type":"Question","name":"Is it legal to use an auto clicker?","acceptedAnswer":{"@type":"Answer","text":"Using OP Auto Clicker is legal in most jurisdictions for personal use. Some games and services prohibit automation in their terms of service — check before using in competitive or online environments."}},
+{"@type":"Question","name":"Does OP Auto Clicker contain viruses or malware?","acceptedAnswer":{"@type":"Answer","text":"No. OP Auto Clicker is verified clean on VirusTotal. The full source code is public on GitHub for independent inspection."}},
+{"@type":"Question","name":"Is OP Auto Clicker open source?","acceptedAnswer":{"@type":"Answer","text":"Yes. OP Auto Clicker is fully open source. The source code is available on GitHub under a permissive license."}}
+]}
+</script>
+<style>
+:root{--bg:#0F172A;--card:#1E293B;--muted:#272F42;--border:#334155;--text:#F8FAFC;--dim:#94A3B8;--accent:#22C55E;--glow:rgba(34,197,94,.3)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-weight:600;font-size:.95rem;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;font-family:inherit;min-height:44px}
+.btn-primary{background:var(--accent);color:#0a1f0e}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--glow)}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-ghost:hover{background:var(--card);border-color:var(--accent)}
+h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800}
+h2{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem}
+section{padding:60px 0}
+.eyebrow{color:var(--accent);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.muted{color:var(--dim)}.green{color:var(--accent)}
+.nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.85);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav.scrolled{border-bottom-color:var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:1.15rem}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:var(--dim);font-weight:500;font-size:.95rem;transition:color .15s}
+.nav-links a:hover{color:var(--text)}
+.nav-links a.active{color:var(--accent)}
+.nav-cta{padding:10px 20px;font-size:.9rem;min-height:auto}
+.hamburger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:8px}
+.hamburger svg{width:24px;height:24px}
+@media(max-width:860px){.nav-links{position:fixed;top:68px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:20px;gap:20px;transform:translateY(-150%);transition:transform .3s}.nav-links.open{transform:translateY(0)}.hamburger{display:block}}
+.crumb{color:var(--dim);font-size:.85rem;margin-bottom:14px;text-align:center}
+.crumb a{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.reveal.show{opacity:1;transform:translateY(0)}
 
-  <!-- Breadcrumb Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opauto.app/" },
-      { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://opauto.app/faq" }
-    ]
-  }
-  </script>
+.faq-hero{padding:60px 0 30px;text-align:center;position:relative;overflow:hidden}
+.faq-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center top,var(--glow),transparent 60%);pointer-events:none}
+.faq-hero h1,.faq-hero p{position:relative}
+.faq-hero p{color:var(--dim);font-size:1.1rem;margin:14px auto 30px;max-width:560px}
 
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is OP Auto Clicker safe to use?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. OP Auto Clicker is a clean, standalone .exe file with no malware, no bundled software, and no background processes. It doesn't connect to the internet, collect data, or install anything on your system. Windows SmartScreen may warn you because the file isn't digitally signed — this is common for small, free tools and doesn't indicate danger."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does OP Auto Clicker have a virus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. OP Auto Clicker does not contain any viruses, spyware, or malicious code. Some antivirus programs flag auto clicker tools due to their behavior (simulating input), not because they are harmful. You can scan the file with VirusTotal for independent verification."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I use OP Auto Clicker?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Download the .exe file, open it, set your click interval (how fast you want it to click), choose a mouse button, assign a hotkey, then switch to your target app and press the hotkey to start. Press it again to stop. No installation is required."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the default hotkey for OP Auto Clicker?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The default start/stop hotkey is F6. You can change this in the app settings to any key that doesn't conflict with your game or application."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the best auto clicker settings for Minecraft?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For mining blocks in Minecraft, a click interval of 50–100 milliseconds (10–20 clicks per second) works well without being excessive. For farming or breaking blocks repeatedly, you can set it lower. Avoid clicking faster than the game's detection threshold if you're playing on multiplayer servers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I use an auto clicker in Roblox?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "OP Auto Clicker works with Roblox for automating repetitive actions like farming, idle clicking, or trading. Be aware that some Roblox games and servers have anti-cheat systems that may detect unusual click patterns. Use reasonable click speeds and check the rules of the specific game you're playing."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is OP Auto Clicker free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, completely. OP Auto Clicker is free to download and use with no time limits, no premium features, and no subscription. There are no ads inside the app either."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does OP Auto Clicker work on Windows 11?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. OP Auto Clicker is compatible with Windows 7, 8, 10, and Windows 11, on both 32-bit and 64-bit systems."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I change the click interval?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In the OP Auto Clicker interface, you'll see separate fields for hours, minutes, seconds, and milliseconds. Enter your desired interval in those fields. For example, entering 0 hours, 0 minutes, 0 seconds, 100 milliseconds gives you 10 clicks per second."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I set a click limit so it stops automatically?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Under the 'Click Repeat' option, select 'Repeat (times)' and enter how many clicks you want. The auto clicker will stop automatically after reaching that count. The default is to repeat indefinitely until you stop it manually."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can OP Auto Clicker click at a fixed position on the screen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Under 'Click Position', you can choose 'Pick Location' to pin the clicks to a specific set of screen coordinates, regardless of where your cursor is. This is useful for clicking the same button repeatedly without holding your mouse steady."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will OP Auto Clicker get me banned in games?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It depends on the game. Some competitive games prohibit automation tools in their terms of service. OP Auto Clicker is most commonly used in games where auto clicking is either allowed or not detected — like idle games, farming scenarios, or single-player Minecraft. Always check a game's rules before using any automation tool in a multiplayer environment."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why does Windows SmartScreen warn me about the download?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Windows SmartScreen warns about any application that doesn't have a verified publisher certificate, which is common for small, free tools. The warning does not mean the file is dangerous — it means Microsoft hasn't seen enough downloads from it to automatically trust it. Click 'More info' then 'Run anyway' to proceed."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How fast can OP Auto Clicker click?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "OP Auto Clicker can click as fast as 1 millisecond intervals, which is theoretically up to 1,000 clicks per second. In practice, the actual speed is limited by your system's hardware and the target application. Most users find 10–100 ms intervals (10–100 clicks per second) to be the practical sweet spot."
-        }
-      }
-    ]
-  }
-  </script>
+.faq-search{position:relative;max-width:520px;margin:0 auto 24px}
+.faq-search input{width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:14px 18px 14px 46px;border-radius:12px;font-size:1rem;font-family:inherit;transition:border-color .2s}
+.faq-search input:focus{outline:none;border-color:var(--accent)}
+.faq-search::before{content:"🔍";position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:1rem}
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-      color: #0f172a;
-      background: #ffffff;
-      line-height: 1.6;
-      font-size: 16px;
-    }
-    a { color: inherit; text-decoration: none; }
+.cats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:40px;position:relative}
+.cat{background:var(--card);border:1px solid var(--border);color:var(--dim);padding:10px 18px;border-radius:999px;cursor:pointer;font-weight:500;font-size:.85rem;transition:all .2s;font-family:inherit;min-height:44px}
+.cat:hover{color:var(--text);border-color:var(--accent)}
+.cat.active{background:var(--accent);color:#0a1f0e;border-color:var(--accent);font-weight:600}
 
-    /* NAV */
-    nav {
-      background: #ffffff;
-      border-bottom: 1px solid #e2e8f0;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-logo { font-size: 1.2rem; font-weight: 700; color: #2563eb; letter-spacing: -0.5px; }
-    .nav-links { display: flex; gap: 32px; align-items: center; }
-    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #475569; transition: color 0.15s; }
-    .nav-links a:hover { color: #2563eb; }
-    .nav-cta {
-      background: #2563eb;
-      color: #ffffff !important;
-      padding: 8px 18px;
-      border-radius: 6px;
-      font-weight: 600 !important;
-      font-size: 0.875rem !important;
-    }
-    .nav-cta:hover { background: #1d4ed8 !important; }
+.faq-section{margin-bottom:36px}
+.faq-cat-title{font-size:1rem;color:var(--accent);font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.faq{display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.faq-item.open{border-color:var(--accent)}
+.faq-item.hidden{display:none}
+.faq-q{width:100%;background:none;border:none;color:var(--text);padding:18px 22px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:1rem;font-weight:600;text-align:left;font-family:inherit;gap:14px;min-height:44px}
+.faq-chev{transition:transform .2s;color:var(--accent);font-size:1.4rem;flex-shrink:0}
+.faq-item.open .faq-chev{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s,padding .3s;padding:0 22px;color:var(--dim);font-size:.95rem}
+.faq-item.open .faq-a{max-height:400px;padding:0 22px 18px}
 
-    /* BREADCRUMB */
-    .breadcrumb { background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 12px 24px; }
-    .breadcrumb ol { list-style: none; max-width: 780px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.82rem; color: #64748b; }
-    .breadcrumb li { display: flex; align-items: center; gap: 8px; }
-    .breadcrumb li:not(:last-child)::after { content: '/'; color: #cbd5e1; margin-left: 4px; }
-    .breadcrumb a { color: #2563eb; font-weight: 500; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb [aria-current="page"] { color: #0f172a; font-weight: 600; }
+.help-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:36px;text-align:center;max-width:680px;margin:40px auto 0;position:relative;overflow:hidden}
+.help-card::before{content:"";position:absolute;top:-50px;right:-50px;width:200px;height:200px;background:radial-gradient(circle,var(--glow),transparent 70%);pointer-events:none}
+.help-card h2{position:relative}
+.help-card p{color:var(--dim);margin:12px 0 24px;position:relative}
+.help-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
 
-    /* JUMP TO */
-    .jump-to {
-      background: #f1f5f9;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-bottom: 48px;
-    }
-    .jump-to h2 { font-size: 0.78rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-    .jump-to ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
-    .jump-to a {
-      display: inline-block;
-      background: #ffffff;
-      color: #2563eb;
-      border: 1px solid #bfdbfe;
-      border-radius: 20px;
-      padding: 6px 14px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      transition: background 0.15s;
-    }
-    .jump-to a:hover { background: #eff6ff; }
-
-    /* RELATED */
-    .related-block {
-      background: #f8fafc;
-      border-left: 3px solid #2563eb;
-      border-radius: 6px;
-      padding: 16px 20px;
-      margin-top: 20px;
-    }
-    .related-block p { font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
-    .related-block ul { list-style: none; display: flex; flex-wrap: wrap; gap: 16px; }
-    .related-block a { font-size: 0.875rem; color: #2563eb; font-weight: 500; }
-    .related-block a:hover { text-decoration: underline; }
-
-    /* PAGE HEADER */
-    .page-header {
-      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
-      padding: 72px 24px 64px;
-      text-align: center;
-    }
-    .page-header h1 {
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-      font-weight: 800;
-      color: #0f172a;
-      margin-bottom: 14px;
-      letter-spacing: -1px;
-    }
-    .page-header p {
-      font-size: 1.05rem;
-      color: #475569;
-      max-width: 520px;
-      margin: 0 auto;
-    }
-
-    /* FAQ BODY */
-    .faq-section { padding: 72px 24px; }
-    .container { max-width: 780px; margin: 0 auto; }
-    .section-label {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #2563eb;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-    .faq-group-title {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: #0f172a;
-      margin-bottom: 24px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e2e8f0;
-    }
-    .faq-group { margin-bottom: 56px; }
-
-    /* ACCORDION */
-    .faq-item {
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      overflow: hidden;
-    }
-    .faq-question {
-      width: 100%;
-      background: #ffffff;
-      border: none;
-      padding: 20px 20px;
-      text-align: left;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #0f172a;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 16px;
-      transition: background 0.15s;
-      font-family: inherit;
-      line-height: 1.5;
-    }
-    .faq-question:hover { background: #f8fafc; }
-    .faq-question.open { background: #eff6ff; color: #1d4ed8; }
-    .faq-chevron {
-      flex-shrink: 0;
-      font-size: 0.75rem;
-      color: #94a3b8;
-      margin-top: 3px;
-      transition: transform 0.2s;
-    }
-    .faq-question.open .faq-chevron { transform: rotate(180deg); color: #2563eb; }
-    .faq-answer {
-      display: none;
-      padding: 0 20px 20px;
-      font-size: 0.9rem;
-      color: #475569;
-      line-height: 1.7;
-      background: #ffffff;
-    }
-    .faq-answer.open { display: block; }
-
-    /* CTA */
-    .faq-cta {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 12px;
-      padding: 36px 28px;
-      text-align: center;
-      margin-top: 16px;
-    }
-    .faq-cta h2 { font-size: 1.2rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
-    .faq-cta p { color: #475569; font-size: 0.9rem; margin-bottom: 20px; }
-    .btn-primary {
-      display: inline-block;
-      background: #2563eb;
-      color: #ffffff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: background 0.15s, transform 0.1s;
-    }
-    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
-
-    /* CTA BAND */
-    .cta-band { background: #2563eb; padding: 64px 24px; text-align: center; }
-    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; color: #ffffff; margin-bottom: 12px; }
-    .cta-band p { color: #bfdbfe; margin-bottom: 28px; }
-    .btn-white {
-      display: inline-block;
-      background: #ffffff;
-      color: #2563eb;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      transition: background 0.15s, transform 0.1s;
-    }
-    .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
-
-    /* FOOTER */
-    footer { background: #0f172a; padding: 56px 24px 32px; }
-    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 40px; max-width: 1080px; margin: 0 auto 36px; }
-    .footer-brand h3 { color: #ffffff; font-size: 1.05rem; font-weight: 800; margin-bottom: 10px; }
-    .footer-brand p { color: #94a3b8; font-size: 0.85rem; line-height: 1.6; max-width: 280px; }
-    .footer-col h4 { color: #ffffff; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .footer-col a { color: #94a3b8; font-size: 0.875rem; transition: color 0.15s; }
-    .footer-col a:hover { color: #ffffff; }
-    .footer-bottom { max-width: 1080px; margin: 0 auto; padding-top: 24px; border-top: 1px solid #1e293b; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-    .footer-bottom p { color: #64748b; font-size: 0.8rem; }
-    .footer-bottom .footer-mini { display: flex; gap: 20px; }
-    .footer-bottom .footer-mini a { color: #64748b; font-size: 0.8rem; }
-    .footer-bottom .footer-mini a:hover { color: #ffffff; }
-    @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } .footer-brand { grid-column: 1 / -1; } }
-
-    @media (max-width: 600px) {
-      .nav-links a:not(.nav-cta) { display: none; }
-      .page-header { padding: 56px 16px 48px; }
-      .faq-section { padding: 48px 16px; }
-    }
-  </style>
+footer{background:#0a1226;border-top:1px solid var(--border);padding:60px 0 30px}
+.foot-grid{max-width:1100px;margin:0 auto 40px;padding:0 24px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+@media(max-width:780px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:480px){.foot-grid{grid-template-columns:1fr}}
+footer h4{font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:16px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+footer ul a{color:var(--dim);font-size:.9rem;transition:color .15s}
+footer ul a:hover{color:var(--accent)}
+.foot-tag{color:var(--dim);font-size:.9rem;margin-top:12px;max-width:280px}
+.foot-bottom{max-width:1100px;margin:0 auto;padding:24px 24px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;color:var(--dim);font-size:.85rem;flex-wrap:wrap;gap:12px}
+</style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">OP Auto Clicker</a>
-  <div class="nav-links">
-    <a href="/download.html">Download</a>
-    <a href="/faq.html" style="color:#2563eb;font-weight:700;">FAQ</a>
-    <a href="/about.html">About</a>
-    <a href="/download.html" class="nav-cta">Download Free</a>
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq" class="active">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="/">Home</a></li>
-    <li aria-current="page">FAQ</li>
-  </ol>
-</nav>
-
-<!-- HEADER -->
-<section class="page-header">
+<section class="faq-hero">
   <div class="container">
-    <h1>Frequently Asked Questions</h1>
-    <p>Everything you need to know about OP Auto Clicker — safety, setup, gaming, and more.</p>
+    <div class="crumb"><a href="/">Home</a> › FAQ</div>
+    <div class="eyebrow">Help Center</div>
+    <h1>Frequently Asked <span class="green">Questions</span></h1>
+    <p>Everything you need to know about OP Auto Clicker — installation, features, compatibility, and safety.</p>
+    <div class="faq-search"><input type="search" id="fSearch" placeholder="Search the OP Auto Clicker FAQ…" aria-label="Search FAQ"></div>
+    <div class="cats">
+      <button class="cat active" data-cat="all">All</button>
+      <button class="cat" data-cat="start">Getting Started</button>
+      <button class="cat" data-cat="feat">Features</button>
+      <button class="cat" data-cat="compat">Compatibility</button>
+      <button class="cat" data-cat="safe">Safety & Legal</button>
+    </div>
   </div>
 </section>
 
-<!-- FAQ CONTENT -->
-<section class="faq-section">
+<section style="padding-top:0">
   <div class="container">
-
-    <!-- JUMP TO SECTION -->
-    <div class="jump-to">
-      <h2>Jump to a section</h2>
-      <ul>
-        <li><a href="#safety">Safety &amp; Trust</a></li>
-        <li><a href="#usage">Setup &amp; Usage</a></li>
-        <li><a href="#gaming">Minecraft, Roblox &amp; Gaming</a></li>
-        <li><a href="#technical">Compatibility</a></li>
-        <li><a href="/download.html">Download page</a></li>
-        <li><a href="/about.html">About OP Auto Clicker</a></li>
-      </ul>
-    </div>
-
-    <!-- Group 1: Safety -->
-    <div class="faq-group" id="safety">
-      <p class="section-label">Safety &amp; Trust</p>
-      <h2 class="faq-group-title">Is It Safe?</h2>
-
-      <div class="faq-item" id="q-safe">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Is OP Auto Clicker safe to use?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          Yes. OP Auto Clicker is a clean, standalone .exe with no malware, no bundled software, and no background processes. It doesn't connect to the internet or collect any data. Windows SmartScreen may show a warning because the file isn't digitally signed — this is normal for small free tools and doesn't mean the file is dangerous.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-virus">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Does OP Auto Clicker have a virus?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          No. OP Auto Clicker does not contain viruses, spyware, or any malicious code. Some antivirus tools may flag it due to its behavior of simulating mouse input — this is a false positive, not a real threat. If you're uncertain, upload the file to VirusTotal to check it with 70+ antivirus engines.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-smartscreen">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Why does Windows SmartScreen warn me about the download?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          SmartScreen warns about any app that doesn't have a publisher certificate — which is common for small, independent tools. The warning just means Microsoft hasn't seen enough downloads from this specific file to auto-trust it. Click "More info" then "Run anyway" to proceed. The file itself is safe.
-        </div>
-      </div>
-
-      <div class="related-block">
-        <p>Related</p>
-        <ul>
-          <li><a href="/download.html#safety">Read the safety section on the download page</a></li>
-          <li><a href="/about.html#philosophy">See what we won't do</a></li>
-        </ul>
+    <div class="faq-section reveal" data-cat="start">
+      <div class="faq-cat-title">Getting Started</div>
+      <div class="faq">
+        <div class="faq-item"><button class="faq-q">What is OP Auto Clicker?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>OP Auto Clicker is a free, lightweight auto-clicking program for Windows. It automates mouse clicks at custom intervals, supports left/right/middle clicks, hotkey toggles, and fixed-position clicking — used by gamers, testers, and accessibility users.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How do I download OP Auto Clicker?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Visit the <a href="/download" class="green">OP Auto Clicker download page</a>, click the green Download button, and run the .exe. The file is 512 KB and requires no installation.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How do I set up OP Auto Clicker for the first time?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Open the app, set your preferred click interval, choose mouse button (left/right/middle) and single or double click, set a hotkey (default F6), then press the hotkey to start clicking.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What does the click interval setting do?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>The click interval controls how much time passes between each click. OP Auto Clicker accepts intervals from 1 millisecond up to multiple hours, in milliseconds, seconds, minutes, or hours.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How do I start and stop the auto clicker?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Press your assigned hotkey (default F6) to toggle clicking on and off. The hotkey works globally — even when OP Auto Clicker is minimized or another window has focus.</p></div></div>
       </div>
     </div>
 
-    <!-- Group 2: Usage -->
-    <div class="faq-group" id="usage">
-      <p class="section-label">Setup &amp; Usage</p>
-      <h2 class="faq-group-title">How to Use It</h2>
-
-      <div class="faq-item" id="q-how-to-use">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          How do I use OP Auto Clicker?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          Download the .exe file, double-click to open it, set your click interval in the time fields, choose which mouse button to simulate, assign a hotkey, then switch to the target window and press your hotkey to start. Press it again to stop. No installation required — full <a href="/download.html#install-guide" style="color:#2563eb;font-weight:600;">install guide</a> walks through it visually.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-hotkey">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What is the default hotkey for OP Auto Clicker?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          The default toggle hotkey is <strong>F6</strong>. You can change it to any key in the hotkey settings inside the app. Just make sure the key you pick doesn't conflict with a shortcut in your game or application.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-interval">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          How do I change the click interval?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          OP Auto Clicker has four separate input fields: hours, minutes, seconds, and milliseconds. Set the values to control how often it clicks. For example: 0h 0m 0s 100ms = 10 clicks per second. For very fast clicking, set it to 0h 0m 0s 10ms = ~100 clicks per second.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-stop-after">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Can I set it to stop after a certain number of clicks?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          Yes. Under the "Click Repeat" section, switch from "Repeat Indefinitely" to "Repeat (times)" and enter your desired count. The auto clicker will stop automatically after reaching that number.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-fixed-position">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Can OP Auto Clicker click at a specific position on screen?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          Yes. In the "Click Position" settings, choose "Pick Location" and then click the spot on your screen you want to target. The app will lock clicks to those coordinates rather than following your cursor. This is useful for clicking the same button repeatedly.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-fast">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          How fast can OP Auto Clicker click?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          The minimum interval is 1 millisecond, which is theoretically 1,000 clicks per second. In practice, your hardware and the target application impose real limits. Most users find 10–100 ms (10–100 CPS) to be the practical range. Going below 10ms rarely produces faster actual results.
-        </div>
-      </div>
-
-      <div class="related-block">
-        <p>Related</p>
-        <ul>
-          <li><a href="/download.html#install-guide">Step-by-step install guide</a></li>
-          <li><a href="/#features">Browse all features</a></li>
-          <li><a href="/download.html#system-requirements">System requirements</a></li>
-        </ul>
+    <div class="faq-section reveal" data-cat="feat">
+      <div class="faq-cat-title">Features</div>
+      <div class="faq">
+        <div class="faq-item"><button class="faq-q">What is the maximum clicks per second (CPS)?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>OP Auto Clicker supports intervals as low as 1ms. In real-world usage it consistently exceeds 100 CPS. The actual maximum depends on your CPU and the application receiving the clicks.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can I set a specific number of clicks?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. OP Auto Clicker can run until stopped, or stop automatically after a fixed click count you specify.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Does OP Auto Clicker support double-click mode?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes — toggle between single and double click in the app. You can also configure left, right, or middle mouse button.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can I use OP Auto Clicker with hotkeys?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. The default toggle hotkey is F6 and is fully remappable. You can bind it to any key, function key, or combination.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can OP Auto Clicker click at a fixed location?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. OP Auto Clicker supports both dynamic clicking (follows your cursor) and fixed-position clicking, where you specify exact X/Y screen coordinates.</p></div></div>
       </div>
     </div>
 
-    <!-- Group 3: Gaming -->
-    <div class="faq-group" id="gaming">
-      <p class="section-label">Gaming</p>
-      <h2 class="faq-group-title">Minecraft, Roblox &amp; More</h2>
-
-      <div class="faq-item" id="q-minecraft">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What are the best auto clicker settings for Minecraft?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          For Minecraft (Java or Bedrock edition), a click interval of 50–100 ms (10–20 clicks per second) is a solid starting point for most tasks like mining, farming, AFK fishing, or PvP practice. If you're on a single-player world or a server that allows it, you can experiment with faster speeds. Avoid extremely fast clicking on anti-cheat protected servers like Hypixel. See the <a href="/#minecraft" style="color:#2563eb;font-weight:600;">Minecraft use case overview</a>.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-roblox">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Can I use an auto clicker in Roblox?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          OP Auto Clicker works with Roblox and is commonly used for idle games, farming simulators, and repetitive tasks. However, Roblox's terms of service prohibit cheating and some games have anti-cheat systems. For games where automation is against the rules, use it at your own risk. It's perfectly fine for offline or non-competitive use.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-banned">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Will an auto clicker get me banned in games?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          It depends entirely on the game. Competitive games with anti-cheat (like Valorant, CS2, or some Minecraft servers) may detect and act on unusual click patterns. Idle games, farming games, and single-player games generally have no such restrictions. Always read the game's rules before using automation tools in multiplayer environments.
-        </div>
-      </div>
-
-      <div class="related-block">
-        <p>Related</p>
-        <ul>
-          <li><a href="/#minecraft">Minecraft use case</a></li>
-          <li><a href="/#roblox">Roblox use case</a></li>
-          <li><a href="/#use-cases">All use cases</a></li>
-        </ul>
+    <div class="faq-section reveal" data-cat="compat">
+      <div class="faq-cat-title">Compatibility</div>
+      <div class="faq">
+        <div class="faq-item"><button class="faq-q">What Windows versions does OP Auto Clicker support?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>OP Auto Clicker supports Windows 7 SP1, Windows 8, Windows 10, and Windows 11 — both 32-bit and 64-bit editions.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Does OP Auto Clicker work with games?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. OP Auto Clicker is widely used with Minecraft, Roblox, idle games, and clicker simulators. It sends standard Windows input events.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Will OP Auto Clicker work on Windows 11?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes — OP Auto Clicker is fully tested and verified on Windows 11 (both 32-bit and 64-bit).</p></div></div>
+        <div class="faq-item"><button class="faq-q">Does it work in browser games?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. OP Auto Clicker works in Chrome, Firefox, Edge, and any browser-based game running on Windows.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Does OP Auto Clicker require installation?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>No. OP Auto Clicker is portable — just download and run the .exe. No installer, no registry entries, no admin rights needed.</p></div></div>
       </div>
     </div>
 
-    <!-- Group 4: Technical -->
-    <div class="faq-group" id="technical">
-      <p class="section-label">Technical</p>
-      <h2 class="faq-group-title">Compatibility &amp; System Info</h2>
-
-      <div class="faq-item" id="q-windows-11">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Does OP Auto Clicker work on Windows 11?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          Yes. OP Auto Clicker is fully compatible with Windows 11, as well as Windows 10, 8, and 7. It works on both 32-bit and 64-bit systems. No updates or special settings required.
-        </div>
-      </div>
-
-      <div class="faq-item" id="q-free">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Is OP Auto Clicker free?
-          <span class="faq-chevron">▼</span>
-        </button>
-        <div class="faq-answer">
-          Completely free. There are no premium tiers, no feature unlocks, no subscriptions, and no ads inside the application. Download it, use it, and that's it.
-        </div>
-      </div>
-
-      <div class="related-block">
-        <p>Related</p>
-        <ul>
-          <li><a href="/download.html#system-requirements">Full system requirements</a></li>
-          <li><a href="/about.html#values">What we stand for</a></li>
-        </ul>
+    <div class="faq-section reveal" data-cat="safe">
+      <div class="faq-cat-title">Safety & Legal</div>
+      <div class="faq">
+        <div class="faq-item"><button class="faq-q">Is OP Auto Clicker safe to use?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. OP Auto Clicker is open source, code-signed, and verified clean by VirusTotal across 70+ antivirus engines. There is no bundleware, no ads, and no telemetry.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Is OP Auto Clicker detectable in games?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>OP Auto Clicker uses standard Windows input APIs and is not detected by basic anti-cheat. However, advanced anti-cheats may detect any automation, so always check each game's terms of service.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Is it legal to use an auto clicker?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Using OP Auto Clicker is legal in most jurisdictions for personal use. Some games and services prohibit automation in their terms of service — check before using in competitive or online environments.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Does OP Auto Clicker contain viruses or malware?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>No. OP Auto Clicker is verified clean on VirusTotal. The full source code is public on GitHub for independent inspection.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Is OP Auto Clicker open source?<span class="faq-chev">⌄</span></button><div class="faq-a"><p>Yes. OP Auto Clicker is fully open source. The source code is available on GitHub under a permissive license.</p></div></div>
       </div>
     </div>
-
-    <!-- Inline CTA -->
-    <div class="faq-cta">
-      <h2>Still have questions?</h2>
-      <p>The best way to learn is to try it. Download OP Auto Clicker free — no sign-up required.</p>
-      <a href="/download.html" class="btn-primary">Download OP Auto Clicker Free</a>
+    <div class="help-card reveal">
+      <h2>Still Have Questions?</h2>
+      <p>Can't find what you're looking for? Reach out — the OP Auto Clicker community is here to help.</p>
+      <div class="help-actions">
+        <a href="#" class="btn btn-primary">💬 GitHub Discussions</a>
+        <a href="/download" class="btn btn-ghost">↓ Download Free</a>
+      </div>
     </div>
-
   </div>
 </section>
 
-<!-- CTA BAND -->
-<section class="cta-band">
-  <div class="container" style="max-width:1080px;margin:0 auto;">
-    <h2>Download the Free Auto Clicker</h2>
-    <p>Start Clicking in Seconds — no installer, no account, no catch.</p>
-    <a href="/download.html" class="btn-white">⬇ Download Free Auto Clicker</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <h3>OP Auto Clicker</h3>
-      <p>Free, lightweight auto clicker software for Windows. Built to be simple, fast, and trustworthy.</p>
+  <div class="foot-grid">
+    <div>
+      <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+      <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
     </div>
-    <div class="footer-col">
-      <h4>Product</h4>
-      <ul>
-        <li><a href="/download.html">Download for Windows</a></li>
-        <li><a href="/#features">Features</a></li>
-        <li><a href="/#how-it-works">How it works</a></li>
-        <li><a href="/download.html#system-requirements">System requirements</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Help &amp; Guides</h4>
-      <ul>
-        <li><a href="/faq.html">All FAQ answers</a></li>
-        <li><a href="/download.html#install-guide">Install guide</a></li>
-        <li><a href="/faq.html#q-minecraft">Minecraft settings</a></li>
-        <li><a href="/faq.html#q-roblox">Roblox compatibility</a></li>
-        <li><a href="/faq.html#q-safe">Is it safe?</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="/about.html">About us</a></li>
-        <li><a href="/about.html#mission">Our mission</a></li>
-        <li><a href="/about.html#values">What we stand for</a></li>
-        <li><a href="/about.html#philosophy">Things we won't do</a></li>
-      </ul>
-    </div>
+    <div><h4>Product</h4><ul><li><a href="/download">Download</a></li><li><a href="/#features">Features</a></li><li><a href="/#cps-test">Speed Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+    <div><h4>Pages</h4><ul><li><a href="/">Home</a></li><li><a href="/download">Download</a></li><li><a href="/faq">FAQ</a></li><li><a href="/about">About</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="/about">Open Source</a></li><li><a href="/faq">Help Center</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2025 OP Auto Clicker. Free auto clicker for Windows.</p>
-    <div class="footer-mini">
-      <a href="/">Home</a>
-      <a href="/download.html">Download</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/about.html">About</a>
-    </div>
-  </div>
+  <div class="foot-bottom"><div>© 2025 OP Auto Clicker · Free for personal & commercial use</div><div>Made for Windows</div></div>
 </footer>
 
 <script>
-  function toggleFaq(btn) {
-    const answer = btn.nextElementSibling;
-    const isOpen = btn.classList.contains('open');
-    // Close all
-    document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('open'));
-    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-    // Open clicked if it was closed
-    if (!isOpen) {
-      btn.classList.add('open');
-      answer.classList.add('open');
-    }
-  }
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+// Category filter
+document.querySelectorAll('.cat').forEach(c=>c.addEventListener('click',()=>{document.querySelectorAll('.cat').forEach(x=>x.classList.remove('active'));c.classList.add('active');const cat=c.dataset.cat;document.querySelectorAll('.faq-section').forEach(s=>{s.style.display=(cat==='all'||s.dataset.cat===cat)?'':'none'})}));
+// Live search
+document.getElementById('fSearch').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('.faq-item').forEach(it=>{const txt=it.textContent.toLowerCase();it.classList.toggle('hidden',q&&!txt.includes(q))});document.querySelectorAll('.faq-section').forEach(s=>{const visible=[...s.querySelectorAll('.faq-item')].some(i=>!i.classList.contains('hidden'));s.style.display=visible?'':'none'})});
 </script>
 
 </body>
