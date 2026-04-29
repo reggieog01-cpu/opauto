@@ -7,6 +7,37 @@
   <meta name="description" content="OP Auto Clicker was built to be the simplest, most reliable free auto clicker on Windows. No bloat, no tricks — just a tool that works.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://opauto.app/about">
+
+  <!-- Schema: Organization + AboutPage + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://opauto.app/#organization",
+        "name": "OP Auto Clicker",
+        "url": "https://opauto.app/",
+        "description": "Maker of OP Auto Clicker — a free, lightweight auto clicker for Windows."
+      },
+      {
+        "@type": "AboutPage",
+        "url": "https://opauto.app/about",
+        "name": "About OP Auto Clicker",
+        "description": "OP Auto Clicker was built to be the simplest, most reliable free auto clicker on Windows.",
+        "mainEntity": { "@id": "https://opauto.app/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opauto.app/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://opauto.app/about" }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -44,6 +75,15 @@
       font-size: 0.875rem !important;
     }
     .nav-cta:hover { background: #1d4ed8 !important; }
+
+    /* BREADCRUMB */
+    .breadcrumb { background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 12px 24px; }
+    .breadcrumb ol { list-style: none; max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.82rem; color: #64748b; }
+    .breadcrumb li { display: flex; align-items: center; gap: 8px; }
+    .breadcrumb li:not(:last-child)::after { content: '/'; color: #cbd5e1; margin-left: 4px; }
+    .breadcrumb a { color: #2563eb; font-weight: 500; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb [aria-current="page"] { color: #0f172a; font-weight: 600; }
 
     /* PAGE HEADER */
     .page-header {
@@ -225,11 +265,20 @@
     .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
 
     /* FOOTER */
-    footer { background: #0f172a; padding: 40px 24px; text-align: center; }
-    footer p { color: #64748b; font-size: 0.85rem; margin-bottom: 12px; }
-    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
-    .footer-links a { color: #94a3b8; font-size: 0.85rem; transition: color 0.15s; }
-    .footer-links a:hover { color: #ffffff; }
+    footer { background: #0f172a; padding: 56px 24px 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 40px; max-width: 1080px; margin: 0 auto 36px; }
+    .footer-brand h3 { color: #ffffff; font-size: 1.05rem; font-weight: 800; margin-bottom: 10px; }
+    .footer-brand p { color: #94a3b8; font-size: 0.85rem; line-height: 1.6; max-width: 280px; }
+    .footer-col h4 { color: #ffffff; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.875rem; transition: color 0.15s; }
+    .footer-col a:hover { color: #ffffff; }
+    .footer-bottom { max-width: 1080px; margin: 0 auto; padding-top: 24px; border-top: 1px solid #1e293b; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { color: #64748b; font-size: 0.8rem; }
+    .footer-bottom .footer-mini { display: flex; gap: 20px; }
+    .footer-bottom .footer-mini a { color: #64748b; font-size: 0.8rem; }
+    .footer-bottom .footer-mini a:hover { color: #ffffff; }
+    @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } .footer-brand { grid-column: 1 / -1; } }
 
     @media (max-width: 600px) {
       .nav-links a:not(.nav-cta) { display: none; }
@@ -253,6 +302,14 @@
   </div>
 </nav>
 
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li aria-current="page">About</li>
+  </ol>
+</nav>
+
 <!-- HEADER -->
 <section class="page-header">
   <div class="container">
@@ -262,7 +319,7 @@
 </section>
 
 <!-- STORY -->
-<section class="section">
+<section class="section" id="story">
   <div class="container">
     <p class="section-label">Our Story</p>
     <h2 class="section-title">Why We Built OP Auto Clicker</h2>
@@ -275,15 +332,15 @@
         OP Auto Clicker started as a straightforward project: build a fast, clean auto clicker that anyone could download and use without any friction. No installer wizard. No bundled toolbars. No ads inside the app. Just a small, reliable tool that does exactly what it says.
       </p>
       <p>
-        Over time, it picked up features that users actually needed — hotkey support, fixed-position clicking, repeat limits, and precise millisecond control. But the core principle stayed the same: keep it lean, keep it honest.
+        Over time, it picked up features that users actually needed — <a href="/faq.html#q-hotkey" style="color:#2563eb;font-weight:600;">hotkey support</a>, <a href="/faq.html#q-fixed-position" style="color:#2563eb;font-weight:600;">fixed-position clicking</a>, <a href="/faq.html#q-stop-after" style="color:#2563eb;font-weight:600;">repeat limits</a>, and precise millisecond control. But the core principle stayed the same: keep it lean, keep it honest.
       </p>
       <p>
-        Today, OP Auto Clicker is used by gamers automating Minecraft farming sessions, developers stress-testing UI elements, and people who just need to stop clicking the same button 200 times by hand. It handles all of it without getting in the way.
+        Today, OP Auto Clicker is used by gamers automating <a href="/#minecraft" style="color:#2563eb;font-weight:600;">Minecraft farming sessions</a>, Roblox players running idle simulators, developers stress-testing UI elements, and people who just need to stop clicking the same button 200 times by hand. It handles all of it without getting in the way.
       </p>
     </div>
 
     <!-- Mission -->
-    <div class="mission-block">
+    <div class="mission-block" id="mission">
       <p class="mission-label">Our Mission</p>
       <p>To build the most straightforward, trustworthy auto clicker available — free for everyone, with no hidden costs, no shady software, and no overcomplicated setup.</p>
     </div>
@@ -292,7 +349,7 @@
 </section>
 
 <!-- VALUES -->
-<section class="section section-alt">
+<section class="section section-alt" id="values">
   <div class="container-wide">
     <div style="text-align:center;margin-bottom:40px;">
       <p class="section-label" style="text-align:center;">What We Stand For</p>
@@ -324,7 +381,7 @@
 </section>
 
 <!-- PHILOSOPHY -->
-<section class="section">
+<section class="section" id="philosophy">
   <div class="container">
     <p class="section-label">How We Build</p>
     <h2 class="section-title">A Few Things We Won't Do</h2>
@@ -353,8 +410,40 @@
   </div>
 </section>
 
+<!-- WHERE TO NEXT -->
+<section class="section section-alt" id="next">
+  <div class="container-wide">
+    <div style="text-align:center;margin-bottom:36px;">
+      <p class="section-label" style="text-align:center;">Where to Next</p>
+      <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:#0f172a;letter-spacing:-0.5px;">Pick Your Next Step</h2>
+    </div>
+    <div class="values-grid">
+      <a href="/download.html" class="value-card" style="text-decoration:none;display:block;">
+        <span class="value-icon">⬇</span>
+        <h3 style="color:#2563eb;">Download for Windows</h3>
+        <p>Grab the free .exe — under 1 MB, no installer required.</p>
+      </a>
+      <a href="/#features" class="value-card" style="text-decoration:none;display:block;">
+        <span class="value-icon">⚡</span>
+        <h3 style="color:#2563eb;">See the Features</h3>
+        <p>Hotkey support, custom intervals, fixed-position clicking, and more.</p>
+      </a>
+      <a href="/faq.html" class="value-card" style="text-decoration:none;display:block;">
+        <span class="value-icon">❓</span>
+        <h3 style="color:#2563eb;">Read the FAQ</h3>
+        <p>14 answers covering safety, setup, gaming, and compatibility.</p>
+      </a>
+      <a href="/download.html#install-guide" class="value-card" style="text-decoration:none;display:block;">
+        <span class="value-icon">📋</span>
+        <h3 style="color:#2563eb;">Install Guide</h3>
+        <p>5 steps to download, configure, and start using OP Auto Clicker.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT CTA -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="about-cta">
       <h2>Ready to Try It?</h2>
@@ -375,9 +464,43 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="container-wide">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>OP Auto Clicker</h3>
+      <p>Free, lightweight auto clicker software for Windows. Built to be simple, fast, and trustworthy.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="/download.html">Download for Windows</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#how-it-works">How it works</a></li>
+        <li><a href="/download.html#system-requirements">System requirements</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help &amp; Guides</h4>
+      <ul>
+        <li><a href="/faq.html">All FAQ answers</a></li>
+        <li><a href="/download.html#install-guide">Install guide</a></li>
+        <li><a href="/faq.html#q-minecraft">Minecraft settings</a></li>
+        <li><a href="/faq.html#q-roblox">Roblox compatibility</a></li>
+        <li><a href="/faq.html#q-safe">Is it safe?</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="/about.html#mission">Our mission</a></li>
+        <li><a href="/about.html#values">What we stand for</a></li>
+        <li><a href="/about.html#philosophy">Things we won't do</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
     <p>© 2025 OP Auto Clicker. Free auto clicker software for Windows.</p>
-    <div class="footer-links">
+    <div class="footer-mini">
       <a href="/">Home</a>
       <a href="/download.html">Download</a>
       <a href="/faq.html">FAQ</a>

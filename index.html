@@ -7,6 +7,65 @@
   <meta name="description" content="OP Auto Clicker is a free, lightweight auto clicker for Windows. Set custom click intervals, hotkeys, and automate repetitive clicking in seconds.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://opauto.app/">
+
+  <!-- Schema: WebSite + Organization + SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://opauto.app/#website",
+        "url": "https://opauto.app/",
+        "name": "OP Auto Clicker",
+        "description": "Free, lightweight auto clicker software for Windows.",
+        "publisher": { "@id": "https://opauto.app/#organization" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://opauto.app/#organization",
+        "name": "OP Auto Clicker",
+        "url": "https://opauto.app/",
+        "description": "Maker of OP Auto Clicker — a free, lightweight auto clicker for Windows."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://opauto.app/#software",
+        "name": "OP Auto Clicker",
+        "operatingSystem": "Windows 7, 8, 10, 11",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Auto Clicker",
+        "softwareVersion": "3.0",
+        "fileSize": "512KB",
+        "downloadUrl": "https://opauto.app/download",
+        "url": "https://opauto.app/",
+        "description": "Free auto clicker for Windows with custom intervals, hotkey support, and click position control. Works for gaming, automation, and repetitive tasks.",
+        "featureList": [
+          "Custom click interval (1ms to hours)",
+          "Hotkey toggle (default F6)",
+          "Left, right, and middle click support",
+          "Fixed-position or dynamic clicking",
+          "Click count limit",
+          "Lightweight (under 1 MB)"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "ratingCount": "1280",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -273,15 +332,45 @@
     .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
 
     /* FOOTER */
-    footer {
-      background: #0f172a;
-      padding: 40px 24px;
-      text-align: center;
+    footer { background: #0f172a; padding: 56px 24px 32px; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1080px;
+      margin: 0 auto 36px;
     }
-    footer p { color: #64748b; font-size: 0.85rem; margin-bottom: 12px; }
-    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
-    .footer-links a { color: #94a3b8; font-size: 0.85rem; transition: color 0.15s; }
-    .footer-links a:hover { color: #ffffff; }
+    .footer-brand h3 { color: #ffffff; font-size: 1.05rem; font-weight: 800; margin-bottom: 10px; }
+    .footer-brand p { color: #94a3b8; font-size: 0.85rem; line-height: 1.6; max-width: 280px; }
+    .footer-col h4 {
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.875rem; transition: color 0.15s; }
+    .footer-col a:hover { color: #ffffff; }
+    .footer-bottom {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { color: #64748b; font-size: 0.8rem; }
+    .footer-bottom .footer-mini { display: flex; gap: 20px; }
+    .footer-bottom .footer-mini a { color: #64748b; font-size: 0.8rem; }
+    .footer-bottom .footer-mini a:hover { color: #ffffff; }
+    @media (max-width: 720px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
 
     @media (max-width: 600px) {
       .nav-links { gap: 16px; }
@@ -304,11 +393,11 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="top">
   <div class="container">
     <div class="hero-badge">Free &amp; Open to Use</div>
     <h1>The <span>Free Auto Clicker</span><br>That Just Works</h1>
-    <p>Fast, lightweight, and easy to set up. OP Auto Clicker lets you automate repetitive clicking on Windows — no bloat, no nonsense.</p>
+    <p>Fast, lightweight, and easy to set up. OP Auto Clicker lets you automate repetitive clicking on Windows — set your clicks per second, pick a hotkey, and go. No bloat, no nonsense.</p>
     <div class="hero-actions">
       <a href="/download.html" class="btn-primary">Download Free Auto Clicker</a>
       <a href="/faq.html" class="btn-secondary">How Does It Work?</a>
@@ -322,7 +411,7 @@
 </section>
 
 <!-- FEATURES -->
-<section class="section section-alt">
+<section class="section section-alt" id="features">
   <div class="container">
     <p class="section-label">Features</p>
     <h2 class="section-title">Everything You Need, Nothing You Don't</h2>
@@ -331,43 +420,43 @@
       <div class="feature-card">
         <div class="feature-icon">⚡</div>
         <h3>Fast Clicking</h3>
-        <p>Set click speeds from milliseconds to minutes. Handle any automation task without slowing down your PC.</p>
+        <p>Set click speeds from milliseconds to minutes. Hit hundreds of clicks per second (CPS) or a slow, steady pace — your call. <a href="/faq.html#q-fast" style="color:#2563eb;font-weight:600;">See max click speed →</a></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🎯</div>
         <h3>Custom Intervals</h3>
-        <p>Full control over click timing — hours, minutes, seconds, and milliseconds. Precise automation on your terms.</p>
+        <p>Full control over click timing — hours, minutes, seconds, and milliseconds. <a href="/faq.html#q-interval" style="color:#2563eb;font-weight:600;">How to set the interval →</a></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">⌨️</div>
         <h3>Hotkey Support</h3>
-        <p>Start and stop clicking without touching the app. Assign any key as a toggle — works while other apps are in focus.</p>
+        <p>Start and stop clicking without touching the app. Default toggle is F6 — reassign to any key that won't clash with your game. <a href="/faq.html#q-hotkey" style="color:#2563eb;font-weight:600;">Change the default hotkey →</a></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🪶</div>
         <h3>Lightweight</h3>
-        <p>Under 1 MB. Runs without installation. Doesn't hog memory or slow your system — it's just there when you need it.</p>
+        <p>Under 1 MB. Runs without an installer. Doesn't hog memory — see the full <a href="/download.html#system-requirements" style="color:#2563eb;font-weight:600;">system requirements</a>.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🖱️</div>
         <h3>Left, Right &amp; Middle Click</h3>
-        <p>Choose which mouse button to automate. Works with left click, right click, and middle click actions.</p>
+        <p>Choose which mouse button to automate. Pin clicks to a fixed screen position or follow your cursor — useful for repetitive UI testing or farming the same button.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🔒</div>
         <h3>Safe &amp; Clean</h3>
-        <p>No bundled software, no ads, no tracking. Just a clean, honest tool that does exactly what it says.</p>
+        <p>No bundled software, no ads, no tracking. <a href="/about.html#philosophy" style="color:#2563eb;font-weight:600;">Read what we won't do →</a></p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section">
+<section class="section" id="how-it-works">
   <div class="container">
     <p class="section-label">Setup</p>
     <h2 class="section-title">Start Clicking in Seconds</h2>
-    <p class="section-sub">No installation wizard, no account sign-up. Download and run — it's that straightforward.</p>
+    <p class="section-sub">No installation wizard, no account sign-up. Download and run — or follow the full <a href="/download.html#install-guide" style="color:#2563eb;font-weight:700;">step-by-step install guide</a>.</p>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
@@ -399,37 +488,64 @@
 </section>
 
 <!-- USE CASES -->
-<section class="section section-alt">
+<section class="section section-alt" id="use-cases">
   <div class="container">
     <p class="section-label">Use Cases</p>
     <h2 class="section-title">Works For Whatever You're Doing</h2>
     <p class="section-sub">Whether you're gaming, farming resources, or just tired of clicking the same button 500 times — OP Auto Clicker handles it.</p>
     <div class="use-cases-grid">
-      <div class="use-case">
+      <div class="use-case" id="minecraft">
         <div class="use-case-tag">Gaming</div>
         <h3>Auto Clicker for Minecraft</h3>
-        <p>Farm resources, mine blocks, or keep your character active without burning out your mouse button. Works great with Minecraft's click-to-break mechanics.</p>
+        <p>Farm resources, mine blocks, AFK at a fishing spot, or keep your character active without burning out your mouse button. Works on both Java and Bedrock editions for single-player worlds and supported servers. <a href="/faq.html#q-minecraft" style="color:#2563eb;font-weight:600;">Recommended Minecraft settings →</a></p>
       </div>
-      <div class="use-case">
+      <div class="use-case" id="roblox">
         <div class="use-case-tag">Gaming</div>
         <h3>Auto Clicker for Roblox</h3>
-        <p>Automate repetitive actions in Roblox games — trading, farming, or idle clicking. Set your interval and focus on the fun parts.</p>
+        <p>Automate repetitive actions in Roblox simulators — farming, trading, or idle clicking. Configure your CPS and let it run. <a href="/faq.html#q-roblox" style="color:#2563eb;font-weight:600;">Roblox compatibility notes →</a></p>
       </div>
-      <div class="use-case">
+      <div class="use-case" id="productivity">
         <div class="use-case-tag">Productivity</div>
         <h3>Repetitive Task Automation</h3>
-        <p>Automate form submissions, UI testing, or any workflow that requires repeated clicking. Save your wrist and your time.</p>
+        <p>Automate form submissions, UI tests, or any workflow that needs the same click pattern over and over. A simple alternative to writing a mouse macro — and gentler on your wrist than doing it by hand.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
+<!-- COMMON QUESTIONS PREVIEW -->
 <section class="section">
+  <div class="container">
+    <p class="section-label">Common Questions</p>
+    <h2 class="section-title">Quick Answers Before You Download</h2>
+    <p class="section-sub">A few of the most-asked questions — full answers (and 10 more) live on the <a href="/faq.html" style="color:#2563eb;font-weight:700;">FAQ page</a>.</p>
+    <div class="features-grid">
+      <a href="/faq.html#q-safe" class="feature-card" style="display:block;text-decoration:none;">
+        <h3 style="color:#2563eb;">Is OP Auto Clicker safe?</h3>
+        <p>Yes — no malware, no bundled software, no background processes. Open the answer for the full breakdown.</p>
+      </a>
+      <a href="/faq.html#q-hotkey" class="feature-card" style="display:block;text-decoration:none;">
+        <h3 style="color:#2563eb;">What's the default hotkey?</h3>
+        <p>F6 toggles clicking on and off. You can rebind it to any key in the settings.</p>
+      </a>
+      <a href="/faq.html#q-windows-11" class="feature-card" style="display:block;text-decoration:none;">
+        <h3 style="color:#2563eb;">Does it work on Windows 11?</h3>
+        <p>Yes — fully compatible with Windows 7, 8, 10, and 11 on 32-bit and 64-bit systems.</p>
+      </a>
+      <a href="/faq.html#q-banned" class="feature-card" style="display:block;text-decoration:none;">
+        <h3 style="color:#2563eb;">Will I get banned in games?</h3>
+        <p>Depends on the game. Idle and farming games are usually fine. Read the answer for game-specific guidance.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section section-alt" id="trust">
   <div class="container">
     <p class="section-label">Trust</p>
     <h2 class="section-title">Simple, Safe, No Surprises</h2>
-    <p class="section-sub">OP Auto Clicker has been used by thousands of people. It does one thing well, and it doesn't overstep.</p>
+    <p class="section-sub">OP Auto Clicker has been used by thousands of people. It does one thing well, and it doesn't overstep. Learn more on our <a href="/about.html" style="color:#2563eb;font-weight:700;">about page</a>.</p>
     <div class="trust-grid">
       <div class="trust-item"><span>🛡️</span> No malware or viruses</div>
       <div class="trust-item"><span>📦</span> No bundled software</div>
@@ -452,9 +568,43 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>OP Auto Clicker</h3>
+      <p>Free, lightweight auto clicker software for Windows. Built to be simple, fast, and trustworthy.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="/download.html">Download for Windows</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#how-it-works">How it works</a></li>
+        <li><a href="/download.html#system-requirements">System requirements</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help &amp; Guides</h4>
+      <ul>
+        <li><a href="/faq.html">All FAQ answers</a></li>
+        <li><a href="/download.html#install-guide">Install guide</a></li>
+        <li><a href="/faq.html#q-minecraft">Minecraft settings</a></li>
+        <li><a href="/faq.html#q-roblox">Roblox compatibility</a></li>
+        <li><a href="/faq.html#q-safe">Is it safe?</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="/about.html#mission">Our mission</a></li>
+        <li><a href="/about.html#values">What we stand for</a></li>
+        <li><a href="/about.html#philosophy">Things we won't do</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
     <p>© 2025 OP Auto Clicker. Free auto clicker software for Windows.</p>
-    <div class="footer-links">
+    <div class="footer-mini">
       <a href="/">Home</a>
       <a href="/download.html">Download</a>
       <a href="/faq.html">FAQ</a>

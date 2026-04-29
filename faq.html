@@ -8,6 +8,18 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://opauto.app/faq">
 
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opauto.app/" },
+      { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://opauto.app/faq" }
+    ]
+  }
+  </script>
+
   <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
@@ -168,6 +180,51 @@
     }
     .nav-cta:hover { background: #1d4ed8 !important; }
 
+    /* BREADCRUMB */
+    .breadcrumb { background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 12px 24px; }
+    .breadcrumb ol { list-style: none; max-width: 780px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.82rem; color: #64748b; }
+    .breadcrumb li { display: flex; align-items: center; gap: 8px; }
+    .breadcrumb li:not(:last-child)::after { content: '/'; color: #cbd5e1; margin-left: 4px; }
+    .breadcrumb a { color: #2563eb; font-weight: 500; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb [aria-current="page"] { color: #0f172a; font-weight: 600; }
+
+    /* JUMP TO */
+    .jump-to {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+    }
+    .jump-to h2 { font-size: 0.78rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .jump-to ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+    .jump-to a {
+      display: inline-block;
+      background: #ffffff;
+      color: #2563eb;
+      border: 1px solid #bfdbfe;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .jump-to a:hover { background: #eff6ff; }
+
+    /* RELATED */
+    .related-block {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-top: 20px;
+    }
+    .related-block p { font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+    .related-block ul { list-style: none; display: flex; flex-wrap: wrap; gap: 16px; }
+    .related-block a { font-size: 0.875rem; color: #2563eb; font-weight: 500; }
+    .related-block a:hover { text-decoration: underline; }
+
     /* PAGE HEADER */
     .page-header {
       background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
@@ -294,11 +351,20 @@
     .btn-white:hover { background: #eff6ff; transform: translateY(-1px); }
 
     /* FOOTER */
-    footer { background: #0f172a; padding: 40px 24px; text-align: center; }
-    footer p { color: #64748b; font-size: 0.85rem; margin-bottom: 12px; }
-    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
-    .footer-links a { color: #94a3b8; font-size: 0.85rem; transition: color 0.15s; }
-    .footer-links a:hover { color: #ffffff; }
+    footer { background: #0f172a; padding: 56px 24px 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 40px; max-width: 1080px; margin: 0 auto 36px; }
+    .footer-brand h3 { color: #ffffff; font-size: 1.05rem; font-weight: 800; margin-bottom: 10px; }
+    .footer-brand p { color: #94a3b8; font-size: 0.85rem; line-height: 1.6; max-width: 280px; }
+    .footer-col h4 { color: #ffffff; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.875rem; transition: color 0.15s; }
+    .footer-col a:hover { color: #ffffff; }
+    .footer-bottom { max-width: 1080px; margin: 0 auto; padding-top: 24px; border-top: 1px solid #1e293b; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { color: #64748b; font-size: 0.8rem; }
+    .footer-bottom .footer-mini { display: flex; gap: 20px; }
+    .footer-bottom .footer-mini a { color: #64748b; font-size: 0.8rem; }
+    .footer-bottom .footer-mini a:hover { color: #ffffff; }
+    @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } .footer-brand { grid-column: 1 / -1; } }
 
     @media (max-width: 600px) {
       .nav-links a:not(.nav-cta) { display: none; }
@@ -320,6 +386,14 @@
   </div>
 </nav>
 
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li aria-current="page">FAQ</li>
+  </ol>
+</nav>
+
 <!-- HEADER -->
 <section class="page-header">
   <div class="container">
@@ -332,12 +406,25 @@
 <section class="faq-section">
   <div class="container">
 
+    <!-- JUMP TO SECTION -->
+    <div class="jump-to">
+      <h2>Jump to a section</h2>
+      <ul>
+        <li><a href="#safety">Safety &amp; Trust</a></li>
+        <li><a href="#usage">Setup &amp; Usage</a></li>
+        <li><a href="#gaming">Minecraft, Roblox &amp; Gaming</a></li>
+        <li><a href="#technical">Compatibility</a></li>
+        <li><a href="/download.html">Download page</a></li>
+        <li><a href="/about.html">About OP Auto Clicker</a></li>
+      </ul>
+    </div>
+
     <!-- Group 1: Safety -->
-    <div class="faq-group">
+    <div class="faq-group" id="safety">
       <p class="section-label">Safety &amp; Trust</p>
       <h2 class="faq-group-title">Is It Safe?</h2>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-safe">
         <button class="faq-question" onclick="toggleFaq(this)">
           Is OP Auto Clicker safe to use?
           <span class="faq-chevron">▼</span>
@@ -347,7 +434,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-virus">
         <button class="faq-question" onclick="toggleFaq(this)">
           Does OP Auto Clicker have a virus?
           <span class="faq-chevron">▼</span>
@@ -357,7 +444,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-smartscreen">
         <button class="faq-question" onclick="toggleFaq(this)">
           Why does Windows SmartScreen warn me about the download?
           <span class="faq-chevron">▼</span>
@@ -366,24 +453,32 @@
           SmartScreen warns about any app that doesn't have a publisher certificate — which is common for small, independent tools. The warning just means Microsoft hasn't seen enough downloads from this specific file to auto-trust it. Click "More info" then "Run anyway" to proceed. The file itself is safe.
         </div>
       </div>
+
+      <div class="related-block">
+        <p>Related</p>
+        <ul>
+          <li><a href="/download.html#safety">Read the safety section on the download page</a></li>
+          <li><a href="/about.html#philosophy">See what we won't do</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- Group 2: Usage -->
-    <div class="faq-group">
+    <div class="faq-group" id="usage">
       <p class="section-label">Setup &amp; Usage</p>
       <h2 class="faq-group-title">How to Use It</h2>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-how-to-use">
         <button class="faq-question" onclick="toggleFaq(this)">
           How do I use OP Auto Clicker?
           <span class="faq-chevron">▼</span>
         </button>
         <div class="faq-answer">
-          Download the .exe file, double-click to open it, set your click interval in the time fields, choose which mouse button to simulate, assign a hotkey, then switch to the target window and press your hotkey to start. Press it again to stop. No installation required — it runs directly from the file.
+          Download the .exe file, double-click to open it, set your click interval in the time fields, choose which mouse button to simulate, assign a hotkey, then switch to the target window and press your hotkey to start. Press it again to stop. No installation required — full <a href="/download.html#install-guide" style="color:#2563eb;font-weight:600;">install guide</a> walks through it visually.
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-hotkey">
         <button class="faq-question" onclick="toggleFaq(this)">
           What is the default hotkey for OP Auto Clicker?
           <span class="faq-chevron">▼</span>
@@ -393,7 +488,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-interval">
         <button class="faq-question" onclick="toggleFaq(this)">
           How do I change the click interval?
           <span class="faq-chevron">▼</span>
@@ -403,7 +498,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-stop-after">
         <button class="faq-question" onclick="toggleFaq(this)">
           Can I set it to stop after a certain number of clicks?
           <span class="faq-chevron">▼</span>
@@ -413,7 +508,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-fixed-position">
         <button class="faq-question" onclick="toggleFaq(this)">
           Can OP Auto Clicker click at a specific position on screen?
           <span class="faq-chevron">▼</span>
@@ -423,7 +518,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-fast">
         <button class="faq-question" onclick="toggleFaq(this)">
           How fast can OP Auto Clicker click?
           <span class="faq-chevron">▼</span>
@@ -432,24 +527,33 @@
           The minimum interval is 1 millisecond, which is theoretically 1,000 clicks per second. In practice, your hardware and the target application impose real limits. Most users find 10–100 ms (10–100 CPS) to be the practical range. Going below 10ms rarely produces faster actual results.
         </div>
       </div>
+
+      <div class="related-block">
+        <p>Related</p>
+        <ul>
+          <li><a href="/download.html#install-guide">Step-by-step install guide</a></li>
+          <li><a href="/#features">Browse all features</a></li>
+          <li><a href="/download.html#system-requirements">System requirements</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- Group 3: Gaming -->
-    <div class="faq-group">
+    <div class="faq-group" id="gaming">
       <p class="section-label">Gaming</p>
       <h2 class="faq-group-title">Minecraft, Roblox &amp; More</h2>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-minecraft">
         <button class="faq-question" onclick="toggleFaq(this)">
           What are the best auto clicker settings for Minecraft?
           <span class="faq-chevron">▼</span>
         </button>
         <div class="faq-answer">
-          For Minecraft, a click interval of 50–100 ms (10–20 clicks per second) is a solid starting point for most tasks like mining, farming, or PvP practice. If you're on a single-player world or a server that allows it, you can experiment with faster speeds. Avoid extremely fast clicking on anti-cheat protected servers.
+          For Minecraft (Java or Bedrock edition), a click interval of 50–100 ms (10–20 clicks per second) is a solid starting point for most tasks like mining, farming, AFK fishing, or PvP practice. If you're on a single-player world or a server that allows it, you can experiment with faster speeds. Avoid extremely fast clicking on anti-cheat protected servers like Hypixel. See the <a href="/#minecraft" style="color:#2563eb;font-weight:600;">Minecraft use case overview</a>.
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-roblox">
         <button class="faq-question" onclick="toggleFaq(this)">
           Can I use an auto clicker in Roblox?
           <span class="faq-chevron">▼</span>
@@ -459,7 +563,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-banned">
         <button class="faq-question" onclick="toggleFaq(this)">
           Will an auto clicker get me banned in games?
           <span class="faq-chevron">▼</span>
@@ -468,14 +572,23 @@
           It depends entirely on the game. Competitive games with anti-cheat (like Valorant, CS2, or some Minecraft servers) may detect and act on unusual click patterns. Idle games, farming games, and single-player games generally have no such restrictions. Always read the game's rules before using automation tools in multiplayer environments.
         </div>
       </div>
+
+      <div class="related-block">
+        <p>Related</p>
+        <ul>
+          <li><a href="/#minecraft">Minecraft use case</a></li>
+          <li><a href="/#roblox">Roblox use case</a></li>
+          <li><a href="/#use-cases">All use cases</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- Group 4: Technical -->
-    <div class="faq-group">
+    <div class="faq-group" id="technical">
       <p class="section-label">Technical</p>
       <h2 class="faq-group-title">Compatibility &amp; System Info</h2>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-windows-11">
         <button class="faq-question" onclick="toggleFaq(this)">
           Does OP Auto Clicker work on Windows 11?
           <span class="faq-chevron">▼</span>
@@ -485,7 +598,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item" id="q-free">
         <button class="faq-question" onclick="toggleFaq(this)">
           Is OP Auto Clicker free?
           <span class="faq-chevron">▼</span>
@@ -493,6 +606,14 @@
         <div class="faq-answer">
           Completely free. There are no premium tiers, no feature unlocks, no subscriptions, and no ads inside the application. Download it, use it, and that's it.
         </div>
+      </div>
+
+      <div class="related-block">
+        <p>Related</p>
+        <ul>
+          <li><a href="/download.html#system-requirements">Full system requirements</a></li>
+          <li><a href="/about.html#values">What we stand for</a></li>
+        </ul>
       </div>
     </div>
 
@@ -517,9 +638,43 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="container" style="max-width:1080px;margin:0 auto;">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>OP Auto Clicker</h3>
+      <p>Free, lightweight auto clicker software for Windows. Built to be simple, fast, and trustworthy.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="/download.html">Download for Windows</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#how-it-works">How it works</a></li>
+        <li><a href="/download.html#system-requirements">System requirements</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help &amp; Guides</h4>
+      <ul>
+        <li><a href="/faq.html">All FAQ answers</a></li>
+        <li><a href="/download.html#install-guide">Install guide</a></li>
+        <li><a href="/faq.html#q-minecraft">Minecraft settings</a></li>
+        <li><a href="/faq.html#q-roblox">Roblox compatibility</a></li>
+        <li><a href="/faq.html#q-safe">Is it safe?</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="/about.html#mission">Our mission</a></li>
+        <li><a href="/about.html#values">What we stand for</a></li>
+        <li><a href="/about.html#philosophy">Things we won't do</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
     <p>© 2025 OP Auto Clicker. Free auto clicker for Windows.</p>
-    <div class="footer-links">
+    <div class="footer-mini">
       <a href="/">Home</a>
       <a href="/download.html">Download</a>
       <a href="/faq.html">FAQ</a>
