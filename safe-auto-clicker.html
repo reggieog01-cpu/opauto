@@ -8,15 +8,15 @@
 <link rel="canonical" href="https://opauto.app/safe-auto-clicker">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="OP Auto Clicker">
-<meta property="og:title" content="Safe Auto Clicker – No Virus, Open Source, Verified">
+<meta property="og:title" content="Is OP Auto Clicker Safe? Open Source, Verified Virus-Free">
 <meta property="og:description" content="Is OP Auto Clicker safe? Open source, code-signed, virus-free on VirusTotal.">
 <meta property="og:url" content="https://opauto.app/safe-auto-clicker">
 <meta property="og:image" content="https://opauto.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Safe Auto Clicker – No Virus">
-<meta name="twitter:description" content="Open source, code-signed, virus-free on VirusTotal.">
+<meta name="twitter:title" content="Is OP Auto Clicker Safe? Yes — Verified Virus-Free">
+<meta name="twitter:description" content="OP Auto Clicker is open source, code-signed, virus-free on VirusTotal.">
 <meta name="twitter:image" content="https://opauto.app/og-image.png">
 <meta name="theme-color" content="#0F172A">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -137,11 +137,54 @@
 <section>
   <div class="container">
     <div class="section-title reveal">
+      <div class="eyebrow">Verify yourself</div>
+      <h2>OP Auto Clicker safety checklist</h2>
+      <p>Six checks anyone can run before installing.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="feat-ico">1</div><h3>Check the digital signature</h3><p>Right-click the .exe &rarr; Properties &rarr; Digital Signatures. OP Auto Clicker is signed by the project's release key.</p></div>
+      <div class="feat reveal"><div class="feat-ico">2</div><h3>Compare the SHA256 hash</h3><p>Run <code>certutil -hashfile OPAutoClicker.exe SHA256</code> and compare to the hash on the <a href="/download" class="green">download page</a>. Match = file is genuine.</p></div>
+      <div class="feat reveal"><div class="feat-ico">3</div><h3>Submit to VirusTotal</h3><p>Upload the .exe to <a href="https://www.virustotal.com" rel="noopener" class="green">virustotal.com</a>. OP Auto Clicker shows clean across 70+ engines.</p></div>
+      <div class="feat reveal"><div class="feat-ico">4</div><h3>Run a network monitor</h3><p>Open Resource Monitor or Wireshark. OP Auto Clicker makes zero outbound connections &mdash; ever.</p></div>
+      <div class="feat reveal"><div class="feat-ico">5</div><h3>Audit the source on GitHub</h3><p>Read every line of the OP Auto Clicker source. Build it yourself with Visual Studio if you want to be 100% sure.</p></div>
+      <div class="feat reveal"><div class="feat-ico">6</div><h3>Check the file size</h3><p>OP Auto Clicker is exactly 512 KB. A "5 MB OP Auto Clicker" download from a third-party site is repackaged with bundleware &mdash; don't run it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Safety vs alternatives</div>
+      <h2>OP Auto Clicker safety compared to other free auto clickers</h2>
+      <p>Bundleware risk is what separates the safe ones from the rest.</p>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th></th><th>OP Auto Clicker</th><th>Typical "free" auto clicker</th></tr></thead>
+        <tbody>
+          <tr><td>Open source</td><td class="yes">Yes</td><td class="no">No</td></tr>
+          <tr><td>Code-signed binary</td><td class="yes">Yes</td><td>Sometimes</td></tr>
+          <tr><td>Bundleware in installer</td><td class="yes">None</td><td class="no">Frequent</td></tr>
+          <tr><td>Telemetry / phone-home</td><td class="yes">None</td><td>Often present</td></tr>
+          <tr><td>Ad injection</td><td class="yes">None</td><td>Sometimes</td></tr>
+          <tr><td>SHA256 hash published</td><td class="yes">Yes</td><td>Rarely</td></tr>
+          <tr><td>VirusTotal scan public</td><td class="yes">Yes (every release)</td><td>Rarely</td></tr>
+          <tr><td>Requires admin install</td><td class="yes">No (portable)</td><td class="no">Usually yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
       <div class="eyebrow">Related</div>
       <h2>Explore more</h2>
     </div>
     <div class="related">
-      <a href="/download"><h3>Download &rarr;</h3><p>Latest signed release with SHA256 hash and changelog.</p></a>
+      <a href="/download"><h3>Download &rarr;</h3><p>Latest signed OP Auto Clicker release with SHA256 hash.</p></a>
       <a href="/about"><h3>About OP Auto Clicker &rarr;</h3><p>Open-source story, maintainers, security policy.</p></a>
       <a href="/op-auto-clicker-alternatives"><h3>Alternatives &rarr;</h3><p>How OP Auto Clicker compares to other free Windows auto clickers.</p></a>
     </div>

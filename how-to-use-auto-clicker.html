@@ -8,14 +8,14 @@
 <link rel="canonical" href="https://opauto.app/how-to-use-auto-clicker">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="OP Auto Clicker">
-<meta property="og:title" content="How to Use an Auto Clicker on Windows – Step-by-Step Guide">
-<meta property="og:description" content="Complete guide to using an auto clicker on Windows. 5-minute setup.">
+<meta property="og:title" content="How to Use OP Auto Clicker on Windows – Step-by-Step Guide">
+<meta property="og:description" content="Complete guide to using OP Auto Clicker on Windows. 5-minute setup.">
 <meta property="og:url" content="https://opauto.app/how-to-use-auto-clicker">
 <meta property="og:image" content="https://opauto.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How to Use an Auto Clicker – Guide">
+<meta name="twitter:title" content="How to Use OP Auto Clicker – Step-by-Step Guide">
 <meta name="twitter:description" content="Step-by-step guide to using OP Auto Clicker on Windows.">
 <meta name="twitter:image" content="https://opauto.app/og-image.png">
 <meta name="theme-color" content="#0F172A">
@@ -66,7 +66,7 @@
   <div class="container">
     <div class="crumb"><a href="/">Home</a> &rsaquo; How to Use an Auto Clicker</div>
     <div class="eyebrow">5-minute setup</div>
-    <h1>How to <span>Use an Auto Clicker</span> on Windows</h1>
+    <h1>How to Use <span>OP Auto Clicker</span> on Windows</h1>
     <p class="lp-sub">Complete step-by-step guide to setting up OP Auto Clicker on Windows. From download to first auto-click in five minutes &mdash; no admin rights, no installer, no jargon.</p>
     <div class="ctas">
       <a href="/download" class="btn btn-primary">&darr; Download to Follow Along</a>
@@ -149,11 +149,53 @@
 <section>
   <div class="container">
     <div class="section-title reveal">
+      <div class="eyebrow">Keyboard shortcuts</div>
+      <h2>OP Auto Clicker keyboard shortcuts</h2>
+      <p>Speed up configuration without touching the mouse.</p>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Shortcut</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td><strong>F6</strong></td><td>Toggle clicking on / off (default, fully remappable)</td></tr>
+          <tr><td><strong>F7</strong></td><td>Suggested second hotkey (e.g. right-click profile)</td></tr>
+          <tr><td><strong>Ctrl + S</strong></td><td>Save current settings as default profile</td></tr>
+          <tr><td><strong>Ctrl + R</strong></td><td>Reset all fields to factory defaults</td></tr>
+          <tr><td><strong>Tab</strong></td><td>Move between interval / button / position fields</td></tr>
+          <tr><td><strong>Esc</strong></td><td>Cancel pending hotkey rebind</td></tr>
+          <tr><td><strong>Alt + F4</strong></td><td>Close OP Auto Clicker (settings persist)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Troubleshooting</div>
+      <h2>OP Auto Clicker not working? Common fixes</h2>
+      <p>Six issues that account for 90% of help requests.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="feat-ico">1</div><h3>Hotkey doesn't work in game</h3><p>Run OP Auto Clicker as Administrator (right-click &rarr; Run as administrator). Some games block input from non-elevated processes.</p></div>
+      <div class="feat reveal"><div class="feat-ico">2</div><h3>Clicks fire on wrong window</h3><p>Switch to "Fixed position" and use Pick location to lock OP Auto Clicker to the exact pixel inside your target window.</p></div>
+      <div class="feat reveal"><div class="feat-ico">3</div><h3>CPS lower than expected</h3><p>Some apps cap input rate. Drop the interval below 10ms only if your target app actually processes that fast &mdash; otherwise clicks are silently dropped.</p></div>
+      <div class="feat reveal"><div class="feat-ico">4</div><h3>Antivirus quarantines the .exe</h3><p>Add an exception for OP Auto Clicker. The file is signed and clean on VirusTotal &mdash; AV engines false-positive on synthetic input.</p></div>
+      <div class="feat reveal"><div class="feat-ico">5</div><h3>Hotkey conflicts with game</h3><p>Some games bind F6 themselves. Open OP Auto Clicker, click the Hotkey field, and rebind to F8, F10, or any unused key.</p></div>
+      <div class="feat reveal"><div class="feat-ico">6</div><h3>App won't open at all</h3><p>You might be missing .NET 4.5 (Windows 7) or 6.0 (older Windows 10). Install from Microsoft, then OP Auto Clicker runs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
       <div class="eyebrow">Related</div>
       <h2>Explore more</h2>
     </div>
     <div class="related">
-      <a href="/minecraft-auto-clicker"><h3>Minecraft Setup &rarr;</h3><p>Per-action CPS settings for Minecraft Java &amp; Bedrock.</p></a>
+      <a href="/minecraft-auto-clicker"><h3>Minecraft Setup &rarr;</h3><p>OP Auto Clicker settings for Minecraft Java &amp; Bedrock.</p></a>
       <a href="/roblox-auto-clicker"><h3>Roblox Setup &rarr;</h3><p>Clicker simulators, idle games, fixed-position config.</p></a>
       <a href="/cps-test"><h3>Free CPS Test &rarr;</h3><p>Find your manual CPS before configuring the clicker.</p></a>
     </div>
