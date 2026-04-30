@@ -1,200 +1,192 @@
-# OP Auto Clicker — Full SEO Audit Report
+# OP Auto Clicker — Full SEO Audit (Re-run)
 
-**Audited**: 2026-04-29 · **Re-audited**: 2026-04-29 (post-fixes)
-**Scope**: 4 static HTML pages (`index`, `download`, `faq`, `about`) + `robots.txt` + `sitemap.xml` + `llms.txt` + `site.webmanifest`
-**Target keyword**: `OP Auto Clicker` · **Domain**: `https://opauto.app/` (not yet deployed)
-**Detected business type**: SaaS / Freeware product site — utility software download
+**Audit date**: 2026-04-29 (third pass)
+**Scope**: Full repo — `index.html`, `download.html`, `faq.html`, `about.html`, `robots.txt`, `sitemap.xml`, `llms.txt`, `site.webmanifest`
+**Domain**: `https://opauto.app/` (not yet deployed — static analysis only)
+**Business type**: SaaS / Freeware utility download
+**Primary keyword**: `OP Auto Clicker`
 
 ---
 
 ## Executive Summary
 
-### SEO Health Score: **100 / 100** *(pending image upload)*
+### SEO Health Score: **99 / 100**
 
-| Category | Weight | Score | Grade |
-|----------|-------:|------:|------:|
-| Technical SEO | 22% | 100 | A+ |
-| Content Quality | 23% | 100 | A+ |
-| On-Page SEO | 20% | 100 | A+ |
-| Schema / Structured Data | 10% | 100 | A+ |
-| Performance | 10% | 100 | A+ |
-| AI Search Readiness | 10% | 100 | A+ |
-| Images | 5% | 95 | A *(image files pending upload)* |
+| Category | Weight | Score | Δ from previous |
+|----------|------:|------:|----------------:|
+| Technical SEO | 22% | **100** | — |
+| Content Quality | 23% | **100** | (one minor meta tightened) |
+| On-Page SEO | 20% | **100** | — |
+| Schema | 10% | **100** | — |
+| Performance | 10% | **100** | — |
+| AI Search Readiness | 10% | **100** | — |
+| Images | 5% | **95** | pending file upload |
 
-**Note**: All meta tags, schema, and HTML reference the correct image paths. Once `og-image.png`, `favicon.svg`, `favicon-32.png`, `favicon-192.png`, `favicon-512.png`, and `apple-touch-icon.png` are uploaded to the site root, the Images score becomes 100/100 with zero code changes required.
+The single-point gap is the same image-upload gap noted in the previous audit. Every measurable code, content, schema, and configuration item is at maximum. Score becomes a flat **100 / 100** the moment six image files are uploaded.
 
----
+### Top 5 critical issues
+*None.*
 
-## What Changed Since Initial Audit
-
-| Initial Score | Now | Change |
-|--------------:|----:|-------:|
-| Technical 88 | 100 | +12 — sitemap `lastmod`, font `display=swap`, security/SHA hash already present |
-| Content 75 | 100 | +25 — E-E-A-T section, source attribution, outbound authority links, dateModified everywhere |
-| On-Page 92 | 100 | +8 — faq heading hierarchy fixed (h1→h2→h3), H2s reworded as questions |
-| Schema 90 | 100 | +10 — HowTo, ItemList, Review, AboutPage added; SoftwareApplication reconciled; license, author, dateModified added |
-| Performance 70 | 100 | +30 — `display=swap` (no FOIT), `prefers-reduced-motion`, no width/height animations, scroll behaviour respected |
-| AI Search 55 | 100 | +45 — `llms.txt`, dateModified, author/publisher schema, H2-as-question, outbound authority links, source attribution |
-| Images 30 | 95 | +65 — full OG/Twitter/favicon/manifest meta, paths reference real files (pending upload) |
+### Top 5 quick wins
+1. Upload `og-image.png` (1200×630)
+2. Upload `favicon.svg`
+3. Upload `favicon-32.png` / `favicon-192.png` / `favicon-512.png`
+4. Upload `apple-touch-icon.png` (180×180)
+5. *(Optional)* Replace `#` placeholder hrefs on GitHub links with the real repo URL once published
 
 ---
 
 ## 1. Technical SEO — **100 / 100**
 
-✓ `robots.txt` correct (`User-agent: * Allow: /`, AI crawlers allowed, sitemap reference)
-✓ `sitemap.xml` valid XML; all 4 URLs listed with `<lastmod>2026-04-29</lastmod>`, `<changefreq>`, `<priority>`
+✓ `robots.txt` — `User-agent: * Allow: /`, sitemap reference present
+✓ `sitemap.xml` — valid, all 4 URLs, `<lastmod>` on every entry
 ✓ All 4 pages have correct `<link rel="canonical">` matching their URL
-✓ All pages have `<meta charset="UTF-8">`, viewport meta, `lang="en"`
+✓ All pages have `charset`, `viewport`, `lang="en"`
 ✓ Canonicals use `https://`
-✓ Trailing-slash consistency
-✓ Clean URL structure
-✓ `<meta name="theme-color">` present
-✓ `<link rel="manifest">` references `site.webmanifest`
-✓ Google Fonts uses `&display=swap`
-✓ All resources from same origin or `preconnect`-ed
-✓ No mixed content
-✓ No render-blocking unrelated to fonts
+✓ Trailing-slash consistency (sitemap + canonicals match)
+✓ Clean URL structure (no params, no underscores)
+✓ `<meta name="theme-color" content="#0F172A">` on every page
+✓ `<link rel="manifest" href="/site.webmanifest">` on every page; manifest is valid JSON with 3 icons
+✓ Google Fonts uses `&display=swap` (no FOIT)
+✓ `preconnect` to `fonts.googleapis.com` + `fonts.gstatic.com`
+✓ No mixed content; same-origin everywhere
+✓ JS at end of body — non-blocking
 
 ---
 
 ## 2. Content Quality — **100 / 100**
 
-### Word Counts
-| Page | Words | Verdict |
-|------|------:|--------|
-| `index.html` | 1,062 | Comprehensive |
-| `faq.html` | 785 | Q&A density |
-| `about.html` | 739 | Strong (incl. maintainer + sources) |
-| `download.html` | 596 | Appropriate for download page |
+| Page | Words | "OP Auto Clicker" count | Density |
+|------|------:|------------------------:|--------:|
+| index.html | 1,062 | 31 | 2.9% |
+| download.html | 596 | 15 | 2.5% |
+| faq.html | 785 | 35 | 4.5% |
+| about.html | 739 | 19 | 2.6% |
 
-✓ No thin content (<300 words)
-✓ Primary keyword "OP Auto Clicker" present 14–68× per page (natural density)
-✓ E-E-A-T section added to about.html (Maintainers card with team description, code review process, security mailbox reference)
-✓ Source attribution paragraph added to about.html clarifying download counts and rating origin
-✓ Outbound authority links: Wikipedia (auto clicker article), Microsoft .NET docs, MIT license, Microsoft SendInput API
-✓ `dateModified` present in all schemas
-✓ All pages link to `/about` for author/publisher context
+✓ No thin content (>300 words on every page)
+✓ Healthy keyword density (2–5%, no over-optimization)
+✓ E-E-A-T section on about.html (Maintainers card with team + review process + security mailbox reference)
+✓ Source-attribution paragraph for download counts and ratings
+✓ 5 outbound authority links across the site:
+   - Wikipedia (auto clicker article) — index, faq
+   - Microsoft .NET docs — download
+   - Microsoft SendInput API — about
+   - MIT license / opensource.org — index, download (in JSON-LD)
+✓ All 4 pages link to `/about` for author/publisher context
+✓ Meta descriptions all 151–155c, all unique, all keyword-rich, all match visible content
 
 ---
 
 ## 3. On-Page SEO — **100 / 100**
 
-### Title & Description Lengths
-| Page | Title | Description |
-|------|------:|------------:|
-| index | 58c ✓ | 153c ✓ |
-| download | 50c ✓ | 151c ✓ |
-| faq | 48c ✓ | 155c ✓ |
-| about | 49c ✓ | 153c ✓ |
+### Title & Description
+| Page | Title | Description | Unique |
+|------|------:|------------:|:------:|
+| index | 58 ✓ | 153 ✓ | ✓ |
+| download | 50 ✓ | 151 ✓ | ✓ |
+| faq | 48 ✓ | 155 ✓ | ✓ |
+| about | 49 ✓ | 153 ✓ | ✓ |
 
-### Heading Hierarchy (post-fix)
-| Page | h1 | h2 | h3 |
-|------|---:|---:|---:|
-| index | 1 | 8 | 6 |
-| download | 1 | 7 | 16 |
-| **faq** | **1** | **5** | **3** ✓ fixed |
-| about | 1 | 9 | 12 |
+### Heading hierarchy
+| Page | h1 | h2 | h3 | h4 | Skip? |
+|------|---:|---:|---:|---:|:-----:|
+| index | 1 | 8 | 6 | 0 | None ✓ |
+| download | 1 | 7 | 16 | 0 | None ✓ |
+| faq | 1 | 5 | 3 | 0 | None ✓ |
+| about | 1 | 9 | 12 | 0 | None ✓ |
 
-### H2s reworded as conversational questions (AI search alignment)
-- "How fast can you click vs OP Auto Clicker?"
-- "How fast can OP Auto Clicker click?"
-- "What can OP Auto Clicker do?"
-- "What is OP Auto Clicker used for?"
-- "How does OP Auto Clicker compare to manual clicking?"
-- "What do people say about OP Auto Clicker?"
-- "How do I install OP Auto Clicker?"
-- "What's new in OP Auto Clicker?"
-- "What are the system requirements for OP Auto Clicker?"
-- "Is OP Auto Clicker safe and virus free?"
-- "How was OP Auto Clicker built?"
-- "How has OP Auto Clicker evolved over the years?"
-- "Who builds OP Auto Clicker?"
+### H2s phrased as conversational questions ✓
+13 H2s reworked — all aligned with how users phrase queries to Google AI Overviews / ChatGPT / Perplexity.
 
 ### Internal linking ✓
-Every page links to every other page multiple times. Anchor text varied. All pages link to about.html for E-E-A-T context.
+Every page links to every other page 3–6× with varied anchor text.
 
 ---
 
 ## 4. Schema & Structured Data — **100 / 100**
 
-### Implemented (all 12 blocks VALID JSON-LD)
+### 12 JSON-LD blocks total — **all 12 valid**
+
 | Page | Schemas |
 |------|---------|
-| index | `SoftwareApplication`, `WebSite`, `ItemList` (use cases), `Review` |
-| download | `BreadcrumbList`, `SoftwareApplication`, `HowTo` (4-step install) |
-| faq | `BreadcrumbList`, `FAQPage` (20 Q&A) |
-| about | `BreadcrumbList`, `Organization`, `AboutPage` |
+| index.html | `SoftwareApplication`, `WebSite`, `ItemList`, `Review` |
+| download.html | `BreadcrumbList`, `SoftwareApplication`, `HowTo` |
+| faq.html | `BreadcrumbList`, `FAQPage` (20 mainEntity items) |
+| about.html | `BreadcrumbList`, `Organization`, `AboutPage` |
 
-✓ FAQPage `mainEntity` count (20) **matches** visible accordion items (20)
-✓ SoftwareApplication identical on index + download (alternateName, description, license, datePublished, dateModified, featureList, author, image, installUrl, offers.availability)
-✓ Organization includes logo, image, slogan, knowsAbout, sameAs
-✓ HowTo on download.html (rich result eligible)
-✓ ItemList on index.html for use cases
-✓ Review schema for one testimonial (anchor for AggregateRating)
+✓ FAQPage `mainEntity` count (20) **exactly matches** visible accordion items (20)
+✓ SoftwareApplication identical on index + download (license, author, image, dateModified, featureList, installUrl, offers.availability)
+✓ Organization includes `logo`, `image`, `slogan`, `knowsAbout`, `sameAs`, `foundingDate`
+✓ HowTo on download.html for the install steps (rich-result eligible)
+✓ ItemList on index.html for the use-case cards
+✓ Review schema for testimonial (anchors AggregateRating)
 ✓ AboutPage schema on about.html
+✓ All schemas reference the correct URLs and current `dateModified: 2026-04-29`
 
 ---
 
-## 5. Performance — **100 / 100**
+## 5. Performance — **100 / 100** *(static analysis; field data pending deployment)*
 
-✓ JS at end of body (non-blocking)
-✓ `preconnect` to Google Fonts on every page
-✓ `&display=swap` prevents FOIT
-✓ Animations use `transform`/`opacity` only
+✓ Inline CSS (~10 KB) — first paint without external CSS
+✓ Inline JS at end of body — non-blocking
+✓ `&display=swap` on Google Fonts — no invisible-text flash
+✓ Animations use `transform` / `opacity` only
 ✓ No third-party scripts beyond Google Fonts
-✓ `prefers-reduced-motion: reduce` media query disables hero cursor animation, ripples, reveal animations
+✓ `prefers-reduced-motion: reduce` media query on every page disables hero cursor animation, ripples, reveal animations
 ✓ Heading sizes use `clamp()` (responsive without JS)
-✓ Inline CSS keeps pages self-contained for first paint (~10 KB CSS)
-✓ Mockup canvas + interval-stage have explicit heights → no CLS
-✓ All images, when uploaded, will have explicit width/height in OG meta
+✓ Mockup canvas + interval-stage have explicit heights → no CLS risk
+✓ All images, when uploaded, will have explicit `width`/`height` (already set in OG meta)
+✓ `preconnect` to fonts hosts
 
 ---
 
-## 6. Images — **95 / 100** *(pending upload)*
+## 6. Images — **95 / 100** *(–5 pending upload)*
 
-All references in place. Once these files are uploaded to the site root, score = 100:
+### Code is 100/100. Files are 0/100 until upload.
 
-| File | Path | Used by |
-|------|------|---------|
-| `og-image.png` (1200×630) | `/og-image.png` | All 4 pages OG/Twitter, Organization logo/image, SoftwareApplication image |
-| `favicon.svg` | `/favicon.svg` | All 4 pages |
-| `favicon-32.png` | `/favicon-32.png` | All 4 pages |
-| `favicon-192.png` | `/favicon-192.png` | `site.webmanifest` |
-| `favicon-512.png` | `/favicon-512.png` | `site.webmanifest` |
-| `apple-touch-icon.png` (180×180) | `/apple-touch-icon.png` | All 4 pages |
+| File | Path | Referenced by | Exists |
+|------|------|--------------:|:------:|
+| `og-image.png` | `/og-image.png` | 4 HTML files | ❌ |
+| `favicon.svg` | `/favicon.svg` | 4 HTML + manifest | ❌ |
+| `favicon-32.png` | `/favicon-32.png` | 4 HTML | ❌ |
+| `favicon-192.png` | `/favicon-192.png` | manifest | ❌ |
+| `favicon-512.png` | `/favicon-512.png` | manifest | ❌ |
+| `apple-touch-icon.png` | `/apple-touch-icon.png` | 4 HTML | ❌ |
 
-✓ Open Graph: 9 og: tags per page (type, site_name, title, description, url, image, image:width, image:height, image:alt)
-✓ Twitter Card: 4 twitter: tags per page (card, title, description, image)
-✓ theme-color: `#0F172A`
-✓ Web manifest references all icon sizes
-✓ Decorative emoji icons replaced with inline SVG (Lucide-style) on tab buttons, use case cards, value cards, open-source card, alt download cards, contact cards, security shield
-✓ All decorative SVGs marked `aria-hidden="true"`
+✓ 9 OG tags + 4 Twitter Card tags per page
+✓ `theme-color`, `apple-touch-icon`, manifest references all in place
+✓ All decorative emoji icons replaced with inline Lucide-style SVG (`aria-hidden="true"`)
+✓ `width`/`height` declared in OG image meta (1200×630)
 
 ---
 
 ## 7. AI Search Readiness — **100 / 100**
 
-✓ `llms.txt` at site root with summary, quick facts, page index, common questions, citation guidance
-✓ `robots.txt` does NOT block GPTBot, ClaudeBot, PerplexityBot, Google-Extended
-✓ FAQPage schema with 20 well-structured Q&As
-✓ Brand name "OP Auto Clicker" densely used across pages (14–68×)
-✓ Comparison table on index.html
-✓ Definitional content: index hero opens "OP Auto Clicker is a free, open-source auto clicker for Windows…"
-✓ `dateModified` present in all schemas (freshness signal)
-✓ E-E-A-T section with maintainer info and review process (publisher trust)
-✓ Outbound authority links (Wikipedia, Microsoft .NET, MIT license, Microsoft SendInput API)
-✓ Statistics now have a transparent source-attribution paragraph on about.html
-✓ H2s phrased as conversational questions across all 4 pages
+✓ `llms.txt` (1.8 KB) at site root with summary, quick facts, page index, common questions, citation guidance
+✓ `robots.txt` does not block GPTBot, ClaudeBot, PerplexityBot, Google-Extended
+✓ FAQPage schema with 20 well-structured Q&As — citation-ready
+✓ Brand name "OP Auto Clicker" densely used across all pages (15–35×)
+✓ Comparison table on index.html (AI-Overview-friendly)
+✓ Definitional content opens index hero: *"OP Auto Clicker is a free, open-source auto clicker for Windows…"*
+✓ `dateModified: "2026-04-29"` on every relevant schema (freshness signal)
 ✓ Author/publisher relationship encoded in JSON-LD: `author` on SoftwareApplication, `publisher` on WebSite, `Organization` standalone
+✓ Source-attribution paragraph clarifies origin of download/rating numbers
+✓ H2s phrased as conversational questions
+✓ Outbound links to authority sources (Wikipedia, Microsoft Docs, OSI)
 
-### AI Citability Test (re-run)
-| Query | Best citable passage | Score |
-|-------|----------------------|------:|
-| "what is OP Auto Clicker" | faq.html: "OP Auto Clicker is a free, lightweight auto-clicking program for Windows…" | **10/10** |
-| "is OP Auto Clicker safe" | faq.html: "Yes. OP Auto Clicker is open source, code-signed, and verified clean by VirusTotal across 70+ antivirus engines…" | **10/10** |
-| "OP Auto Clicker max CPS" | faq.html: "OP Auto Clicker supports intervals as low as 1ms. In real-world usage it consistently exceeds 100 CPS." | **10/10** |
-| "how to install OP Auto Clicker" | download.html `HowTo` schema + visible 4-step UI | **10/10** |
+### Citability re-test
+| Likely AI query | Citable passage exists? | Score |
+|-----------------|:-----------------------:|------:|
+| *"what is OP Auto Clicker"* | faq.html opener + index hero | **10/10** |
+| *"is OP Auto Clicker safe"* | faq.html safety question | **10/10** |
+| *"OP Auto Clicker max CPS"* | faq.html + comparison table | **10/10** |
+| *"how to install OP Auto Clicker"* | HowTo schema + visible 4-step | **10/10** |
+| *"who makes OP Auto Clicker"* | about.html Maintainers card + Organization schema | **10/10** |
 
 ---
 
-## See `ACTION-PLAN.md` for the residual to-do list (image uploads only).
+## Verdict
+
+**99 / 100.** Holding flat from the previous run. Single point gap is image files awaiting upload. No further code or content changes required for full marks.
+
+When you upload the six image files, the score becomes a clean **100 / 100** with zero further work needed — every reference path is already correct.
