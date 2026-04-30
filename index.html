@@ -90,20 +90,14 @@ section{padding:80px 0;position:relative}
 .mockup-bar{display:flex;align-items:center;gap:6px;padding:12px 14px;background:var(--muted);border-bottom:1px solid var(--border)}
 .mockup-dot{width:10px;height:10px;border-radius:50%;background:#475569}
 .mockup-dot:nth-child(1){background:#ef4444}.mockup-dot:nth-child(2){background:#eab308}.mockup-dot:nth-child(3){background:var(--accent)}
-.mockup-title{margin-left:12px;font-size:.85rem;color:var(--dim)}
-.mockup-body{padding:24px;display:grid;gap:14px}
-.mockup-row{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--muted);border-radius:8px;font-size:.9rem}
-.mockup-row label{color:var(--dim);font-size:.8rem}
-.mockup-row strong{color:var(--text)}
-.mockup-canvas{position:relative;height:160px;background:var(--muted);border-radius:8px;overflow:hidden}
-.mockup-cursor{position:absolute;width:18px;height:18px;background:var(--accent);border-radius:50%;box-shadow:0 0 16px var(--glow);top:50%;left:50%;transform:translate(-50%,-50%);animation:click 1s infinite}
-@keyframes click{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(.7)}}
-.mockup-ripple{position:absolute;width:18px;height:18px;border:2px solid var(--accent);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);animation:ripple 1s infinite}
-@keyframes ripple{0%{transform:translate(-50%,-50%) scale(1);opacity:1}100%{transform:translate(-50%,-50%) scale(4);opacity:0}}
-.mockup-start{padding:12px;background:var(--accent);color:#fff;border-radius:8px;text-align:center;font-weight:600;font-size:.9rem}
+.mockup-title{margin-left:12px;font-size:.85rem;color:var(--dim);display:flex;align-items:center;gap:8px}
+.mockup-title::after{content:"LIVE";font-size:.62rem;font-weight:700;letter-spacing:.08em;background:var(--accent);color:#fff;padding:2px 7px;border-radius:4px}
+.mockup-frame{width:100%;height:520px;border:0;display:block;background:#0a1230}
+@media(max-width:900px){.mockup-frame{height:460px}}
+@media(max-width:600px){.mockup-frame{height:400px}}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
 .reveal.show{opacity:1;transform:translateY(0)}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.mockup-cursor,.mockup-ripple,.iv-cursor,.iv-pulse{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.iv-cursor,.iv-pulse{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
 .stats{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
 @media(max-width:700px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
@@ -243,18 +237,12 @@ footer ul a:hover{color:var(--accent)}
         <div><strong>100% Free</strong>Forever</div>
       </div>
     </div>
-    <div class="mockup">
+    <div class="mockup" aria-label="Interactive 3D preview of OP Auto Clicker">
       <div class="mockup-bar">
         <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
-        <span class="mockup-title">OP Auto Clicker v3.0.0</span>
+        <span class="mockup-title">OP Auto Clicker 3D</span>
       </div>
-      <div class="mockup-body">
-        <div class="mockup-row"><label>Click interval</label><strong>10 ms</strong></div>
-        <div class="mockup-row"><label>Click type</label><strong>Left · Single</strong></div>
-        <div class="mockup-row"><label>Repeat</label><strong>Until stopped</strong></div>
-        <div class="mockup-canvas"><div class="mockup-ripple"></div><div class="mockup-cursor"></div></div>
-        <div class="mockup-start">▶ Running · F6 to stop</div>
-      </div>
+      <iframe class="mockup-frame" src="/op-auto-clicker-3d.html" title="OP Auto Clicker 3D — interactive preview" loading="eager" allow="accelerometer; gyroscope" referrerpolicy="same-origin"></iframe>
     </div>
   </div>
 </section>
