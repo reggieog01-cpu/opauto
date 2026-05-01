@@ -51,7 +51,7 @@
 ]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoObject","name":"How to Use OP Auto Clicker on Windows","description":"30-second walkthrough of OP Auto Clicker setup: download, configure interval, set hotkey, and start clicking.","thumbnailUrl":"https://opauto.app/og-image.png","uploadDate":"2026-04-30","contentUrl":"https://opauto.app/how-to-use-auto-clicker","embedUrl":"https://opauto.app/how-to-use-auto-clicker","duration":"PT30S","publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://opauto.app/og-image.png"}}}
+{"@context":"https://schema.org","@type":"VideoObject","name":"How to Use OP Auto Clicker on Windows","description":"60-second walkthrough of OP Auto Clicker setup: download, configure interval, set hotkey, and start clicking in any Windows app.","thumbnailUrl":"https://opauto.app/og-image.png","uploadDate":"2026-04-30","contentUrl":"https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID","embedUrl":"https://www.youtube-nocookie.com/embed/YOUTUBE_VIDEO_ID","duration":"PT1M","publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://opauto.app/og-image.png"}}}
 </script>
 </head>
 <body>
@@ -95,6 +95,24 @@
 </section>
 
 
+
+<section style="padding:20px 0 40px">
+  <div class="container">
+    <div class="video-wrap reveal" id="videoWrap" data-yt="YOUTUBE_VIDEO_ID">
+      <button class="video-play" type="button" aria-label="Play OP Auto Clicker setup video">
+        <svg viewBox="0 0 68 48" width="68" height="48" aria-hidden="true">
+          <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"></path>
+          <path d="M45 24 27 14v20" fill="#fff"></path>
+        </svg>
+      </button>
+      <picture>
+        <source type="image/webp" srcset="/photo-1024.webp">
+        <img src="/photo.jpg" alt="OP Auto Clicker setup walkthrough video — 60-second YouTube tutorial showing how to configure interval, hotkey, and start clicking" width="2078" height="1534" loading="lazy" decoding="async">
+      </picture>
+      <span class="video-label">Watch the 60-second setup walkthrough</span>
+    </div>
+  </div>
+</section>
 <section style="padding-top:30px">
   <div class="container">
     <div class="intro reveal">
@@ -250,7 +268,15 @@ document.getElementById('hamburger').addEventListener('click',()=>document.getEl
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
-</script>
+
+// Video facade — load YouTube iframe only on click
+document.querySelectorAll('.video-wrap[data-yt]').forEach(w=>{
+  w.addEventListener('click',()=>{
+    const id=w.dataset.yt;
+    if(id==='YOUTUBE_VIDEO_ID')return; // placeholder, no real ID yet
+    w.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1" title="OP Auto Clicker setup video" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+  });
+});</script>
 
 </body>
 </html>
