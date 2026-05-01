@@ -1,25 +1,25 @@
 # OP Auto Clicker Security Disclosure
 
-Contact: mailto:security@opauto.app
+Contact: mailto:security@op-autoclicker.com
 Contact: https://github.com/op-auto-clicker/security/advisories/new
 Expires: 2027-04-30T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://opauto.app/.well-known/security.txt
-Policy: https://opauto.app/about
-Acknowledgments: https://opauto.app/about
+Canonical: https://op-autoclicker.com/.well-known/security.txt
+Policy: https://op-autoclicker.com/about
+Acknowledgments: https://op-autoclicker.com/about
 
 # How to report a vulnerability
 #
 # 1. Open a Security Advisory on the GitHub repo (preferred — supports
 #    private disclosure and CVE assignment).
-# 2. Or email security@opauto.app with full details and a 5-day
+# 2. Or email security@op-autoclicker.com with full details and a 5-day
 #    response window.
 #
 # What we ask of you:
 # - Give us reasonable time to investigate before public disclosure.
 # - Don't access user data or systems beyond what's needed to
 #   demonstrate the vulnerability.
-# - Don't run automated scanners against opauto.app — they generate
+# - Don't run automated scanners against op-autoclicker.com — they generate
 #   false positives and noise. Submit findings from your own dev box.
 #
 # What you can expect from us:

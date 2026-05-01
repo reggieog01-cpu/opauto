@@ -8,7 +8,7 @@ If you've ever searched for a free auto clicker on Windows, you've seen the same
 
 Then you install it, set the interval to 1 millisecond, and watch it deliver maybe 35 clicks per second on a good day. The cursor stutters. Half the clicks register, half disappear into the void. The 1ms interval the UI accepted? It's actually running on a 30ms timer because the developer was lazy.
 
-I got tired of this and ended up benchmarking nine of the most popular free auto clickers on Windows. The results were worse than I expected. Then I built one that actually works the way the marketing promises — and put it online for free at [opauto.app](https://opauto.app).
+I got tired of this and ended up benchmarking nine of the most popular free auto clickers on Windows. The results were worse than I expected. Then I built one that actually works the way the marketing promises — and put it online for free at [op-autoclicker.com](https://op-autoclicker.com).
 
 This post is about what I learned, and why most auto clickers are quietly broken under the hood.
 
@@ -100,7 +100,7 @@ The result, on the same machine I benchmarked the others on:
 - 4.8 MB RAM idle
 - F6 to first click: 8 ms
 
-I made it free, open source ([github.com/op-auto-clicker](https://github.com)), and put it online at [opauto.app](https://opauto.app). The whole binary is 512 KB. No installer. No bundleware. No telemetry. Code-signed and verified clean by 70+ AV engines on every release.
+I made it free, open source ([github.com/op-auto-clicker](https://github.com)), and put it online at [op-autoclicker.com](https://op-autoclicker.com). The whole binary is 512 KB. No installer. No bundleware. No telemetry. Code-signed and verified clean by 70+ AV engines on every release.
 
 ---
 
@@ -133,7 +133,7 @@ Three things I wish someone had told me before I started:
 
 ## The Bottom Line
 
-If you need a Windows auto clicker that actually delivers what it promises, OP Auto Clicker is free, open source, and lives at [opauto.app](https://opauto.app). 512 KB, no installer, no ads, no bundleware. Works on Windows 7 through 11.
+If you need a Windows auto clicker that actually delivers what it promises, OP Auto Clicker is free, open source, and lives at [op-autoclicker.com](https://op-autoclicker.com). 512 KB, no installer, no ads, no bundleware. Works on Windows 7 through 11.
 
 If you don't trust me, do the benchmark yourself. The setup I described takes 10 minutes. I'll be unsurprised if your current auto clicker turns out to be doing 30 CPS when you asked for 100.
 
@@ -141,4 +141,4 @@ The whole category needed someone to do this honestly. I got tired of waiting fo
 
 ---
 
-*OP Auto Clicker is open source under the MIT License. Source code, downloads, and 65 frequently asked questions: [opauto.app](https://opauto.app)*
+*OP Auto Clicker is open source under the MIT License. Source code, downloads, and 65 frequently asked questions: [op-autoclicker.com](https://op-autoclicker.com)*

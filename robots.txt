@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://opauto.app/sitemap.xml
-Sitemap: https://opauto.app/sitemap-images.xml
+Sitemap: https://op-autoclicker.com/sitemap.xml
+Sitemap: https://op-autoclicker.com/sitemap-images.xml
