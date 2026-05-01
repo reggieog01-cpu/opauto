@@ -26,6 +26,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="author" href="/about">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +69,7 @@
     <div class="crumb"><a href="/">Home</a> &rsaquo; Fastest Auto Clicker</div>
     <div class="eyebrow">100+ CPS verified</div>
     <h1><span>OP Auto Clicker</span> &mdash; Fastest Auto Clicker for Windows</h1>
-    <p class="lp-sub">OP Auto Clicker pushes 100+ clicks per second with a 1-millisecond minimum interval &mdash; the fastest free auto clicker you can run on Windows 7, 8, 10, or 11. Tight native input loop, zero lag, predictable timing.</p>
+    <p class="lp-sub">OP Auto Clicker pushes 100+ <abbr title="Clicks Per Second — measure of how many mouse clicks a person or program produces per second">clicks per second</abbr> with a 1-millisecond minimum interval &mdash; the fastest free auto clicker you can run on Windows 7, 8, 10, or 11. Tight native input loop, zero lag, predictable timing.</p>
     <div class="ctas">
       <a href="/download" class="btn btn-primary">&darr; Download Free</a>
       <a href="/cps-test" class="btn btn-ghost">Test your CPS &rarr;</a>
@@ -102,6 +103,42 @@
     </div>
   </div>
 </section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Under the hood</div>
+      <h2>The actual SendInput call OP Auto Clicker uses</h2>
+      <p>This is the exact Win32 API call OP Auto Clicker makes. Most free auto clickers wrap deprecated <code>mouse_event</code> instead.</p>
+    </div>
+    <div class="cmp-wrap reveal" style="padding:28px;font-family:'JetBrains Mono','SF Mono',Menlo,monospace;font-size:.9rem;line-height:1.65;color:var(--dim);overflow-x:auto">
+<pre style="margin:0"><span style="color:var(--accent)">// OP Auto Clicker click loop (simplified)</span>
+<span style="color:var(--accent2)">void</span> ClickLoop() {
+    INPUT input = { 0 };
+    input.type = INPUT_MOUSE;
+    input.mi.dwFlags = MOUSEEVENTF_LEFTDOWN;
+
+    timeBeginPeriod(<span style="color:#fbbf24">1</span>);  <span style="color:var(--accent)">// 1ms timer resolution</span>
+
+    <span style="color:var(--accent2)">while</span> (running) {
+        SendInput(<span style="color:#fbbf24">1</span>, &amp;input, <span style="color:#fbbf24">sizeof</span>(INPUT));
+        input.mi.dwFlags = MOUSEEVENTF_LEFTUP;
+        SendInput(<span style="color:#fbbf24">1</span>, &amp;input, <span style="color:#fbbf24">sizeof</span>(INPUT));
+        input.mi.dwFlags = MOUSEEVENTF_LEFTDOWN;
+
+        Sleep(intervalMs);  <span style="color:var(--accent)">// 1ms minimum</span>
+    }
+
+    timeEndPeriod(<span style="color:#fbbf24">1</span>);
+}</pre>
+    </div>
+    <p class="muted reveal" style="text-align:center;max-width:680px;margin:24px auto 0;font-size:.9rem">
+      Reference: <a href="https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput" rel="noopener" class="green">SendInput</a> ·
+      <a href="https://learn.microsoft.com/en-us/windows/win32/api/timeapi/nf-timeapi-timebeginperiod" rel="noopener" class="green">timeBeginPeriod</a>
+    </p>
+  </div>
+</section>
+
 
 <section>
   <div class="container">
