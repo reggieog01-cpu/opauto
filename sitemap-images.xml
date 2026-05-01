@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://opauto.app/</loc>
+    <image:image>
+      <image:loc>https://opauto.app/photo.webp</image:loc>
+      <image:title>OP Auto Clicker app interface</image:title>
+      <image:caption>OP Auto Clicker desktop app showing custom click interval, mouse button selector, hotkey configuration, and start/stop controls</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://opauto.app/og-image.png</image:loc>
+      <image:title>OP Auto Clicker — Free Auto Clicker for Windows</image:title>
+      <image:caption>OP Auto Clicker brand image — the #1 free auto clicker for Windows</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://opauto.app/download</loc>
+    <image:image>
+      <image:loc>https://opauto.app/og-image.png</image:loc>
+      <image:title>Download OP Auto Clicker Free</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://opauto.app/about</loc>
+    <image:image>
+      <image:loc>https://opauto.app/og-image.png</image:loc>
+      <image:title>About OP Auto Clicker</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://opauto.app/minecraft-auto-clicker</loc>
+    <image:image>
+      <image:loc>https://opauto.app/og-image.png</image:loc>
+      <image:title>OP Auto Clicker for Minecraft</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://opauto.app/roblox-auto-clicker</loc>
+    <image:image>
+      <image:loc>https://opauto.app/og-image.png</image:loc>
+      <image:title>OP Auto Clicker for Roblox</image:title>
+    </image:image>
+  </url>
+</urlset>

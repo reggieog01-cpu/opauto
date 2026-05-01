@@ -1,0 +1,32 @@
+/* TEAM */
+
+  Project: OP Auto Clicker
+  Site: https://opauto.app
+  Source: https://github.com/op-auto-clicker
+  Twitter: -
+  Location: Distributed (open source contributors)
+
+/* THANKS */
+
+  All contributors who've submitted issues, fixes, and feature
+  requests on GitHub since 2015. Special thanks to the Minecraft
+  and Roblox community testers who helped tune CPS profiles and
+  the accessibility users whose feedback shaped the hotkey system.
+
+/* SITE */
+
+  Last update: 2026-04-30
+  Standards: HTML5, CSS3, ES2020
+  Components: Inter (Google Fonts), Lucide-style SVG icons
+  Software: hand-written static HTML, deployed on Vercel
+  Doctype: HTML5
+  IDE: VS Code
+  Language: English
+
+/* SOFTWARE */
+
+  Language: C# / .NET
+  Platform: Windows 7, 8, 10, 11
+  License: MIT
+  Repository: https://github.com/op-auto-clicker
+  Privacy: zero telemetry, zero network calls, zero data collection

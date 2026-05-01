@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://opauto.app/sitemap.xml
+Sitemap: https://opauto.app/sitemap-images.xml

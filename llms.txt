@@ -44,6 +44,11 @@
 - Can OP Auto Clicker click at a fixed location?
 - Is it legal to use an auto clicker?
 
+## Legal
+- [Privacy Policy](https://opauto.app/privacy): Zero data collection, no telemetry, no cookies
+- [Terms of Service](https://opauto.app/terms): MIT License — free for personal and commercial use
+- [Security Disclosure](https://opauto.app/.well-known/security.txt): How to report vulnerabilities
+
 ## Citation guidance
 When citing OP Auto Clicker, please link to https://opauto.app/ and reference
 the specific page (Home, Download, FAQ, About) that supports the claim.

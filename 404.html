@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found – OP Auto Clicker</title>
+<meta name="msvalidate.01" content="REPLACE_WITH_BING_VERIFICATION_CODE">
+<meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_VERIFICATION_CODE">
+<meta name="description" content="That page doesn't exist on opauto.app. Try Download, FAQ, or one of our auto clicker setup guides for Minecraft, Roblox, and Windows 11.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/landing.css">
+<style>
+.nf{min-height:calc(100vh - 68px);display:grid;place-items:center;padding:40px 24px;text-align:center}
+.nf-inner{max-width:680px}
+.nf-code{font-size:clamp(5rem,15vw,8rem);font-weight:800;letter-spacing:-.05em;background:var(--btn-grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;margin-bottom:8px}
+.nf h1{font-size:clamp(1.5rem,3.5vw,2rem);margin-bottom:14px}
+.nf p{color:var(--dim);font-size:1.05rem;max-width:520px;margin:0 auto 28px}
+.nf-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.nf-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:600px;margin:0 auto}
+@media(max-width:600px){.nf-quick{grid-template-columns:1fr}}
+.nf-quick a{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-size:.9rem;font-weight:500;text-align:left;transition:border-color .2s,transform .2s}
+.nf-quick a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.nf-quick a strong{display:block;color:var(--accent);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+<main class="nf">
+  <div class="nf-inner">
+    <div class="nf-code">404</div>
+    <h1>That page doesn't exist on OP Auto Clicker</h1>
+    <p>The link you followed might be broken, the page might have moved, or you may have typed the URL slightly off. Try one of these instead:</p>
+    <div class="nf-ctas">
+      <a href="/" class="btn btn-primary">&larr; Back to home</a>
+      <a href="/download" class="btn btn-ghost">Download OP Auto Clicker</a>
+    </div>
+    <div class="nf-quick">
+      <a href="/download"><strong>Download</strong>Get OP Auto Clicker free</a>
+      <a href="/faq"><strong>FAQ</strong>20 common questions</a>
+      <a href="/how-to-use-auto-clicker"><strong>How to Use</strong>5-minute setup guide</a>
+      <a href="/minecraft-auto-clicker"><strong>For Minecraft</strong>Java &amp; Bedrock setup</a>
+      <a href="/roblox-auto-clicker"><strong>For Roblox</strong>Clicker sims, idle, AFK</a>
+      <a href="/cps-test"><strong>CPS Test</strong>Free click-speed test</a>
+    </div>
+  </div>
+</main>
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+</script>
+</body>
+</html>
