@@ -1,7 +1,7 @@
 /* TEAM */
 
   Project: OP Auto Clicker
-  Site: https://op-autoclicker.com
+  Site: https://opauto-clicker.com
   Source: https://github.com/op-auto-clicker
   Twitter: -
   Location: Distributed (open source contributors)

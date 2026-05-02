@@ -2,9 +2,9 @@
 
 > The fastest free auto clicker for Windows. 100+ CPS, 1ms minimum interval, F6 hotkey, fixed-position clicking. Open source. 512 KB. No installation, no ads, no bundleware.
 
-🌐 **Website**: [op-autoclicker.com](https://op-autoclicker.com)
-📥 **Download**: [op-autoclicker.com/download](https://op-autoclicker.com/download)
-❓ **FAQ**: [op-autoclicker.com/faq](https://op-autoclicker.com/faq)
+🌐 **Website**: [opauto-clicker.com](https://opauto-clicker.com)
+📥 **Download**: [opauto-clicker.com/download](https://opauto-clicker.com/download)
+❓ **FAQ**: [opauto-clicker.com/faq](https://opauto-clicker.com/faq)
 💬 **Issues / Support**: [GitHub Issues](https://github.com/op-auto-clicker/op-auto-clicker/issues)
 
 ---
@@ -22,7 +22,7 @@ Unlike most free auto clickers, OP Auto Clicker:
 - **Open source** — full source code in this repo, every release signed and scanned by VirusTotal
 - **Works on every Windows version** — Windows 7 SP1, 8, 10, 11 (32-bit and 64-bit)
 
-📖 **Full docs and use-case guides**: [op-autoclicker.com](https://op-autoclicker.com)
+📖 **Full docs and use-case guides**: [opauto-clicker.com](https://opauto-clicker.com)
 
 ---
 
@@ -43,12 +43,12 @@ Unlike most free auto clickers, OP Auto Clicker:
 
 ## Quick Start
 
-1. **Download** the latest `.exe` from [op-autoclicker.com/download](https://op-autoclicker.com/download) or the [Releases](../../releases) page
+1. **Download** the latest `.exe` from [opauto-clicker.com/download](https://opauto-clicker.com/download) or the [Releases](../../releases) page
 2. **Double-click** the file to launch (no installer)
 3. Set your **click interval**, **mouse button**, and **hotkey**
 4. Press **F6** to start clicking. Press **F6** again to stop
 
-That's it. Full setup walkthrough with screenshots: [op-autoclicker.com/how-to-use-auto-clicker](https://op-autoclicker.com/how-to-use-auto-clicker)
+That's it. Full setup walkthrough with screenshots: [opauto-clicker.com/how-to-use-auto-clicker](https://opauto-clicker.com/how-to-use-auto-clicker)
 
 ---
 
@@ -56,10 +56,10 @@ That's it. Full setup walkthrough with screenshots: [op-autoclicker.com/how-to-u
 
 | Use case | Recommended setup | Guide |
 |----------|-------------------|-------|
-| **Minecraft** mining, fishing, breeding, PvP | 4–15 CPS depending on action | [op-autoclicker.com/minecraft-auto-clicker](https://op-autoclicker.com/minecraft-auto-clicker) |
-| **Roblox** clicker simulators, idle, pet hatching | 20–50 CPS, fixed-position | [op-autoclicker.com/roblox-auto-clicker](https://op-autoclicker.com/roblox-auto-clicker) |
-| **Cookie Clicker** / idle browser games | 15–30 CPS, fixed on cookie | [op-autoclicker.com/auto-clicker-for-games](https://op-autoclicker.com/auto-clicker-for-games) |
-| **Software / UI testing** | 1–5 CPS, scriptable via hotkey | [op-autoclicker.com/how-to-use-auto-clicker](https://op-autoclicker.com/how-to-use-auto-clicker) |
+| **Minecraft** mining, fishing, breeding, PvP | 4–15 CPS depending on action | [opauto-clicker.com/minecraft-auto-clicker](https://opauto-clicker.com/minecraft-auto-clicker) |
+| **Roblox** clicker simulators, idle, pet hatching | 20–50 CPS, fixed-position | [opauto-clicker.com/roblox-auto-clicker](https://opauto-clicker.com/roblox-auto-clicker) |
+| **Cookie Clicker** / idle browser games | 15–30 CPS, fixed on cookie | [opauto-clicker.com/auto-clicker-for-games](https://opauto-clicker.com/auto-clicker-for-games) |
+| **Software / UI testing** | 1–5 CPS, scriptable via hotkey | [opauto-clicker.com/how-to-use-auto-clicker](https://opauto-clicker.com/how-to-use-auto-clicker) |
 | **Accessibility** (RSI, limited mobility) | Custom interval, custom hotkey | — |
 
 ---
@@ -82,7 +82,7 @@ OP Auto Clicker uses a tight native input loop calling Windows' [`SendInput`](ht
 | F6 to first click (warm) | 8 ms | 100–300 ms |
 | RAM idle | 4.8 MB | 30–80 MB |
 
-Full benchmark methodology: [op-autoclicker.com/fastest-auto-clicker](https://op-autoclicker.com/fastest-auto-clicker)
+Full benchmark methodology: [opauto-clicker.com/fastest-auto-clicker](https://opauto-clicker.com/fastest-auto-clicker)
 
 ---
 
@@ -97,7 +97,7 @@ Yes:
 - **No bundleware** — the `.exe` is the entire app. No installer, no third-party offers
 - **SHA256 hash published** — verify your download matches before running
 
-Full safety analysis and how to verify: [op-autoclicker.com/safe-auto-clicker](https://op-autoclicker.com/safe-auto-clicker)
+Full safety analysis and how to verify: [opauto-clicker.com/safe-auto-clicker](https://opauto-clicker.com/safe-auto-clicker)
 
 ---
 
@@ -120,8 +120,8 @@ Full safety analysis and how to verify: [op-autoclicker.com/safe-auto-clicker](h
 | Bundleware in installer | None | Historically yes | None |
 | Easy for beginners | ✅ | ✅ | ❌ (scripting language) |
 
-Full comparison: [op-autoclicker.com/op-auto-clicker-vs-gs-auto-clicker](https://op-autoclicker.com/op-auto-clicker-vs-gs-auto-clicker)
-All alternatives compared: [op-autoclicker.com/op-auto-clicker-alternatives](https://op-autoclicker.com/op-auto-clicker-alternatives)
+Full comparison: [opauto-clicker.com/op-auto-clicker-vs-gs-auto-clicker](https://opauto-clicker.com/op-auto-clicker-vs-gs-auto-clicker)
+All alternatives compared: [opauto-clicker.com/op-auto-clicker-alternatives](https://opauto-clicker.com/op-auto-clicker-alternatives)
 
 ---
 
@@ -142,7 +142,7 @@ Yes — fully tested on Windows 11 (32-bit, 64-bit, builds 23H2 and 24H2).
 **Why does Windows SmartScreen warn me?**
 SmartScreen warns about any executable that hasn't built up a "reputation" through millions of installs via the Microsoft Store. Click "More info" then "Run anyway".
 
-20 more answers: [op-autoclicker.com/faq](https://op-autoclicker.com/faq)
+20 more answers: [opauto-clicker.com/faq](https://opauto-clicker.com/faq)
 
 ---
 
@@ -166,11 +166,11 @@ MIT License — see [LICENSE](LICENSE) for details. Free for personal and commer
 
 ## Links
 
-- **Website**: [op-autoclicker.com](https://op-autoclicker.com)
-- **Download**: [op-autoclicker.com/download](https://op-autoclicker.com/download)
-- **Documentation**: [op-autoclicker.com/how-to-use-auto-clicker](https://op-autoclicker.com/how-to-use-auto-clicker)
-- **FAQ**: [op-autoclicker.com/faq](https://op-autoclicker.com/faq)
-- **About the project**: [op-autoclicker.com/about](https://op-autoclicker.com/about)
+- **Website**: [opauto-clicker.com](https://opauto-clicker.com)
+- **Download**: [opauto-clicker.com/download](https://opauto-clicker.com/download)
+- **Documentation**: [opauto-clicker.com/how-to-use-auto-clicker](https://opauto-clicker.com/how-to-use-auto-clicker)
+- **FAQ**: [opauto-clicker.com/faq](https://opauto-clicker.com/faq)
+- **About the project**: [opauto-clicker.com/about](https://opauto-clicker.com/about)
 
 ---
 

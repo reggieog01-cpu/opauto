@@ -1,7 +1,7 @@
 # OP Auto Clicker — Full SEO Audit (Pass 4, Post-Expansion)
 
 **Audited**: 2026-04-30 · **Scope**: 14 HTML pages + `robots.txt` + `sitemap.xml` + `llms.txt` + `site.webmanifest` + `landing.css`
-**Domain**: `https://op-autoclicker.com/` (not yet deployed — static analysis only)
+**Domain**: `https://opauto-clicker.com/` (not yet deployed — static analysis only)
 **Business type**: SaaS / Freeware utility download
 **Primary keyword**: `OP Auto Clicker`
 
