@@ -1,0 +1,13 @@
+name: IndexNow ping
+
+on:
+  deployment_status:
+
+jobs:
+  ping:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ping IndexNow endpoints
+        run: bash scripts/indexnow-ping.sh
