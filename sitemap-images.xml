@@ -2,44 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://opauto-clicker.com/</loc>
+    <loc>https://www.opauto-clicker.com/</loc>
     <image:image>
-      <image:loc>https://opauto-clicker.com/photo.webp</image:loc>
+      <image:loc>https://www.opauto-clicker.com/photo.webp</image:loc>
       <image:title>OP Auto Clicker app interface</image:title>
       <image:caption>OP Auto Clicker desktop app showing custom click interval, mouse button selector, hotkey configuration, and start/stop controls</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://opauto-clicker.com/og-image.png</image:loc>
+      <image:loc>https://www.opauto-clicker.com/og-image.png</image:loc>
       <image:title>OP Auto Clicker — Free Auto Clicker for Windows</image:title>
       <image:caption>OP Auto Clicker brand image — the #1 free auto clicker for Windows</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://opauto-clicker.com/download</loc>
+    <loc>https://www.opauto-clicker.com/download</loc>
     <image:image>
-      <image:loc>https://opauto-clicker.com/og-image.png</image:loc>
+      <image:loc>https://www.opauto-clicker.com/og-image.png</image:loc>
       <image:title>Download OP Auto Clicker Free</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://opauto-clicker.com/about</loc>
+    <loc>https://www.opauto-clicker.com/about</loc>
     <image:image>
-      <image:loc>https://opauto-clicker.com/og-image.png</image:loc>
+      <image:loc>https://www.opauto-clicker.com/og-image.png</image:loc>
       <image:title>About OP Auto Clicker</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://opauto-clicker.com/minecraft-auto-clicker</loc>
+    <loc>https://www.opauto-clicker.com/minecraft-auto-clicker</loc>
     <image:image>
-      <image:loc>https://opauto-clicker.com/og-image.png</image:loc>
+      <image:loc>https://www.opauto-clicker.com/og-minecraft.png</image:loc>
       <image:title>OP Auto Clicker for Minecraft</image:title>
+      <image:caption>OP Auto Clicker for Minecraft — auto-mine, auto-farm, auto-craft free</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://opauto-clicker.com/roblox-auto-clicker</loc>
+    <loc>https://www.opauto-clicker.com/roblox-auto-clicker</loc>
     <image:image>
-      <image:loc>https://opauto-clicker.com/og-image.png</image:loc>
+      <image:loc>https://www.opauto-clicker.com/og-roblox.png</image:loc>
       <image:title>OP Auto Clicker for Roblox</image:title>
+      <image:caption>OP Auto Clicker for Roblox — clicker simulators and AFK farming free</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.opauto-clicker.com/windows-11-auto-clicker</loc>
+    <image:image>
+      <image:loc>https://www.opauto-clicker.com/og-windows11.png</image:loc>
+      <image:title>OP Auto Clicker for Windows 11</image:title>
+      <image:caption>OP Auto Clicker for Windows 11 — verified on builds 23H2 and 24H2</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.opauto-clicker.com/fastest-auto-clicker</loc>
+    <image:image>
+      <image:loc>https://www.opauto-clicker.com/og-fastest.png</image:loc>
+      <image:title>Fastest Auto Clicker for Windows</image:title>
+      <image:caption>Fastest auto clicker — 100+ CPS with 1ms minimum interval</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.opauto-clicker.com/safe-auto-clicker</loc>
+    <image:image>
+      <image:loc>https://www.opauto-clicker.com/og-safe.png</image:loc>
+      <image:title>Safe Auto Clicker — Open Source Verified</image:title>
+      <image:caption>100% safe auto clicker — open source, code-signed, virus-free</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.opauto-clicker.com/auto-clicker-for-mac</loc>
+    <image:image>
+      <image:loc>https://www.opauto-clicker.com/og-image.png</image:loc>
+      <image:title>Auto Clicker for Mac — Free macOS Alternatives</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.opauto-clicker.com/cookie-clicker-auto-clicker</loc>
+    <image:image>
+      <image:loc>https://www.opauto-clicker.com/og-image.png</image:loc>
+      <image:title>OP Auto Clicker for Cookie Clicker</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.opauto-clicker.com/auto-clicker-not-working</loc>
+    <image:image>
+      <image:loc>https://www.opauto-clicker.com/og-image.png</image:loc>
+      <image:title>Auto Clicker Troubleshooting Guide</image:title>
     </image:image>
   </url>
 </urlset>

@@ -1,6 +1,14 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "opauto-clicker.com"}],
+      "destination": "https://www.opauto-clicker.com/$1",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -21,7 +29,7 @@
     {
       "source": "/landing.css",
       "headers": [
-        {"key": "Cache-Control", "value": "public, max-age=86400, must-revalidate"}
+        {"key": "Cache-Control", "value": "public, max-age=300, must-revalidate, stale-while-revalidate=86400"}
       ]
     }
   ]
