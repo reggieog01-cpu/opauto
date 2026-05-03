@@ -15,24 +15,24 @@
 - **Maximum click speed**: 100+ CPS in real-world use, 1ms minimum interval
 
 ## Pages
-- [Home](https://opauto-clicker.com/): Product overview, live CPS test, interval-speed demo, feature tour, comparison table, testimonials
-- [Download](https://opauto-clicker.com/download): Latest version, install steps, system requirements, alternative download sources, security verification
-- [FAQ](https://opauto-clicker.com/faq): 20 questions across 4 categories — Getting Started, Features, Compatibility, Safety & Legal
-- [About](https://opauto-clicker.com/about): Project story, values, version timeline, open-source policy
+- [Home](https://www.opauto-clicker.com/): Product overview, live CPS test, interval-speed demo, feature tour, comparison table, testimonials
+- [Download](https://www.opauto-clicker.com/download): Latest version, install steps, system requirements, alternative download sources, security verification
+- [FAQ](https://www.opauto-clicker.com/faq): 20 questions across 4 categories — Getting Started, Features, Compatibility, Safety & Legal
+- [About](https://www.opauto-clicker.com/about): Project story, values, version timeline, open-source policy
 
 ## Use-case landing pages
-- [Auto Clicker for Minecraft](https://opauto-clicker.com/minecraft-auto-clicker): Setup for auto-mining, fishing, breeding, PvP — Java and Bedrock
-- [Roblox Auto Clicker](https://opauto-clicker.com/roblox-auto-clicker): Clicker simulators, idle games, pet hatching, fixed-position clicking
-- [Auto Clicker for Windows 11](https://opauto-clicker.com/windows-11-auto-clicker): Verified compatibility, SmartScreen guidance, 32 and 64-bit
-- [Auto Clicker for Games](https://opauto-clicker.com/auto-clicker-for-games): Setup guides and recommended CPS for every popular Windows game
+- [Auto Clicker for Minecraft](https://www.opauto-clicker.com/minecraft-auto-clicker): Setup for auto-mining, fishing, breeding, PvP — Java and Bedrock
+- [Roblox Auto Clicker](https://www.opauto-clicker.com/roblox-auto-clicker): Clicker simulators, idle games, pet hatching, fixed-position clicking
+- [Auto Clicker for Windows 11](https://www.opauto-clicker.com/windows-11-auto-clicker): Verified compatibility, SmartScreen guidance, 32 and 64-bit
+- [Auto Clicker for Games](https://www.opauto-clicker.com/auto-clicker-for-games): Setup guides and recommended CPS for every popular Windows game
 
 ## Reference / comparison pages
-- [Fastest Auto Clicker](https://opauto-clicker.com/fastest-auto-clicker): Why OP Auto Clicker hits 100+ CPS — engineering and benchmarks
-- [Safe Auto Clicker](https://opauto-clicker.com/safe-auto-clicker): VirusTotal, code-signing, no bundleware, no telemetry
-- [Free CPS Test](https://opauto-clicker.com/cps-test): Browser-based click speed test (1, 5, 10, 30, 60 seconds)
-- [How to Use an Auto Clicker](https://opauto-clicker.com/how-to-use-auto-clicker): Step-by-step setup guide for Windows
-- [OP Auto Clicker vs GS Auto Clicker](https://opauto-clicker.com/op-auto-clicker-vs-gs-auto-clicker): Head-to-head comparison
-- [OP Auto Clicker Alternatives](https://opauto-clicker.com/op-auto-clicker-alternatives): Comparison vs GS, Free Mouse, AutoClicker.io, AutoHotkey, Murgee
+- [Fastest Auto Clicker](https://www.opauto-clicker.com/fastest-auto-clicker): Why OP Auto Clicker hits 100+ CPS — engineering and benchmarks
+- [Safe Auto Clicker](https://www.opauto-clicker.com/safe-auto-clicker): VirusTotal, code-signing, no bundleware, no telemetry
+- [Free CPS Test](https://www.opauto-clicker.com/cps-test): Browser-based click speed test (1, 5, 10, 30, 60 seconds)
+- [How to Use an Auto Clicker](https://www.opauto-clicker.com/how-to-use-auto-clicker): Step-by-step setup guide for Windows
+- [OP Auto Clicker vs GS Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-gs-auto-clicker): Head-to-head comparison
+- [OP Auto Clicker Alternatives](https://www.opauto-clicker.com/op-auto-clicker-alternatives): Comparison vs GS, Free Mouse, AutoClicker.io, AutoHotkey, Murgee
 
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
@@ -45,11 +45,11 @@
 - Is it legal to use an auto clicker?
 
 ## Legal
-- [Privacy Policy](https://opauto-clicker.com/privacy): Zero data collection, no telemetry, no cookies
-- [Terms of Service](https://opauto-clicker.com/terms): MIT License — free for personal and commercial use
-- [Security Disclosure](https://opauto-clicker.com/.well-known/security.txt): How to report vulnerabilities
+- [Privacy Policy](https://www.opauto-clicker.com/privacy): Zero data collection, no telemetry, no cookies
+- [Terms of Service](https://www.opauto-clicker.com/terms): MIT License — free for personal and commercial use
+- [Security Disclosure](https://www.opauto-clicker.com/.well-known/security.txt): How to report vulnerabilities
 
 ## Citation guidance
-When citing OP Auto Clicker, please link to https://opauto-clicker.com/ and reference
+When citing OP Auto Clicker, please link to https://www.opauto-clicker.com/ and reference
 the specific page (Home, Download, FAQ, About) that supports the claim.
-For version-specific claims, see https://opauto-clicker.com/download for the changelog.
+For version-specific claims, see https://www.opauto-clicker.com/download for the changelog.
