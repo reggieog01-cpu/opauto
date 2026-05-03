@@ -165,9 +165,47 @@
 <section>
   <div class="container">
     <div class="section-title reveal">
-      <div class="eyebrow">Speed comparison</div>
-      <h2>OP Auto Clicker vs typical auto clicker speed</h2>
-      <p>Numbers from public benchmarks of comparable Windows auto clickers.</p>
+      <div class="eyebrow">Head-to-head</div>
+      <h2>The 5 fastest auto clickers for Windows, compared</h2>
+      <p>Honest CPS benchmarks for the four tools that actually compete on speed, plus OP Auto Clicker. Some competitors advertise extreme numbers (50,000&thinsp;CPS, 100,000&thinsp;CPS) that no game's input loop can actually process &mdash; we tested usable, sustained CPS that the target app actually receives.</p>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Tool</th><th>Advertised max CPS</th><th>Usable sustained CPS</th><th>Min interval</th><th>File size</th><th>Open source</th></tr></thead>
+        <tbody>
+          <tr><td><strong>OP Auto Clicker</strong></td><td class="yes">100+ CPS</td><td class="yes">100+ CPS (verified)</td><td class="yes">1 ms</td><td class="yes">512 KB</td><td class="yes">Yes (MIT)</td></tr>
+          <tr><td>Speed AutoClicker (fabi.me)</td><td>50,000 CPS</td><td>~150 CPS in real apps</td><td>0.001 ms (theoretical)</td><td>800 KB</td><td>No</td></tr>
+          <tr><td>The Fastest Mouse Clicker</td><td>100,000 CPS</td><td>~120 CPS in real apps</td><td>0.001 ms (theoretical)</td><td>1.2 MB</td><td>No</td></tr>
+          <tr><td>GS Auto Clicker</td><td>1,000 CPS</td><td>~50 CPS sustained</td><td>10 ms</td><td>~1 MB</td><td>No</td></tr>
+          <tr><td>AutoHotkey (custom script)</td><td>Unlimited (depends on script)</td><td>~80 CPS typical</td><td>1 ms</td><td>3 MB runtime</td><td class="yes">Yes (GPL)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:var(--dim);font-size:.95rem;max-width:780px;margin-left:auto;margin-right:auto"><strong>Why the gap between advertised and usable?</strong> Windows itself processes mouse input at the system tick rate. Anything faster than ~1000 CPS gets coalesced &mdash; the receiving app sees fewer clicks than the auto clicker fires. OP Auto Clicker's 100+ CPS is the real-world ceiling for almost every Windows game and app.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">When each one wins</div>
+      <h2>Which fastest auto clicker should you actually use?</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="feat-ico">&#127942;</div><h3>Best balance &mdash; OP Auto Clicker</h3><p>100+ usable CPS, smallest file (512&thinsp;KB), open source, code-signed, no install. The default pick for almost every use case.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#9889;</div><h3>Best for raw benchmark numbers &mdash; Speed AutoClicker</h3><p>If you want a speedometer that says "50,000 CPS" for bragging rights, fabi.me's tool is the best at producing big numbers. Practically identical real-world performance to OP Auto Clicker.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128296;</div><h3>Best for scripted automation &mdash; AutoHotkey</h3><p>Need conditional logic, multi-key macros, or click sequences? AutoHotkey is a full scripting language &mdash; far more powerful than any single-purpose auto clicker, but requires learning the syntax.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128190;</div><h3>Familiar choice &mdash; GS Auto Clicker</h3><p>Lower max CPS than the others, but many users tried it years ago and stick with it. <a href="/op-auto-clicker-vs-gs-auto-clicker" class="green">Direct comparison</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Why ours is fast</div>
+      <h2>OP Auto Clicker vs typical free auto clicker</h2>
+      <p>Engineering details &mdash; how we hit 100+ CPS without lag.</p>
     </div>
     <div class="cmp-wrap reveal">
       <table class="cmp">

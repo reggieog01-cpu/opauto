@@ -101,8 +101,63 @@
 <section id="main">
   <div class="container">
     <div class="intro reveal">
-      <p>Cookie Clicker is the original idle game &mdash; click the Big Cookie, buy upgrades, automate everything, watch the cookie counter spiral toward exponential infinity. The Steam version added achievements, cloud saves, and Steam Workshop mods, but the core loop is unchanged: <strong>more clicks per second = more cookies</strong>. That's where OP Auto Clicker fits in.</p>
+      <p>Cookie Clicker is the original idle game &mdash; click the Big Cookie, buy upgrades, automate everything, watch the cookie counter spiral toward exponential infinity. The Steam version added achievements, cloud saves, and Steam Workshop mods, but the core loop is unchanged: <strong>more clicks per second = more cookies</strong>. There are three ways to automate the clicking: a <strong>browser bookmarklet</strong> (zero install, browser only), a <strong>Chrome extension</strong> (Cookie Monster), or a <strong>desktop auto clicker</strong> like OP Auto Clicker (Steam version + every other game). All three are covered below.</p>
     </div>
+  </div>
+</section>
+
+<section id="bookmarklet">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Browser-only method (no download)</div>
+      <h2>Cookie Clicker auto-click bookmarklet &mdash; one click, no install</h2>
+      <p>If you're playing the browser version at <a href="https://orteil.dashnet.org/cookieclicker/" rel="noopener" class="green">orteil.dashnet.org/cookieclicker</a>, you don't need to install anything. Drag this snippet into a browser bookmark, then click it once on the Cookie Clicker tab to start auto-clicking the Big Cookie.</p>
+    </div>
+    <div class="story-grid">
+      <div class="story reveal">
+        <h3>The bookmarklet code</h3>
+        <pre style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;overflow-x:auto;font-size:.85rem;line-height:1.5"><code>javascript:(function(){
+  var c = document.getElementById('bigCookie');
+  if(!c){alert('Open Cookie Clicker first');return;}
+  if(window._cca){clearInterval(window._cca);window._cca=null;alert('Auto-click stopped');return;}
+  window._cca = setInterval(function(){c.click();}, 10);
+  alert('Auto-click started');
+})();</code></pre>
+        <p>The interval is set to <code>10</code> ms (about 100 CPS). Lower it to <code>1</code> for max speed during Click frenzies, raise it to <code>50</code> for idle mode. Click the bookmark once to start, click again to stop.</p>
+      </div>
+      <div class="story reveal">
+        <h3>How to install it</h3>
+        <ol style="padding-left:20px;line-height:1.8">
+          <li>Right-click your browser's bookmark bar &rarr; <strong>Add page</strong> (Chrome / Edge / Brave) or <strong>New bookmark</strong> (Firefox)</li>
+          <li>Name it <em>Cookie Auto-Click</em></li>
+          <li>Paste the entire <code>javascript:(function(){...})();</code> snippet into the URL/Location field</li>
+          <li>Save, then open Cookie Clicker in a new tab</li>
+          <li>Click your new bookmark once to start auto-clicking, again to stop</li>
+        </ol>
+        <p style="color:var(--dim);font-size:.88rem;margin-top:12px">Limitations: the bookmarklet only works on the browser version, not the Steam app. It can't trigger Golden Cookies (those spawn at random positions) and won't survive page refresh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Chrome extension method</div>
+      <h2>Cookie Clicker browser extensions worth installing</h2>
+      <p>If a bookmarklet feels too manual, two browser extensions handle the heavy lifting.</p>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Extension</th><th>What it does</th><th>Browsers</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cookie Monster</strong></td><td>Adds golden-cookie alerts, optimal-buy hints, and a Big Cookie auto-clicker</td><td>Chrome, Edge, Firefox</td><td>Players who want analysis + automation in one</td></tr>
+          <tr><td><strong>Auto Click for Cookie Clicker</strong></td><td>Pure auto-click on the Big Cookie, configurable CPS</td><td>Chrome, Edge</td><td>Single-purpose automation, lighter than Cookie Monster</td></tr>
+          <tr><td><strong>FrozenCookies</strong></td><td>Full-game automation script (buys upgrades, casts spells, harvests sugar lumps)</td><td>Chrome via Tampermonkey</td><td>Pure idle play with zero interaction</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:var(--dim);font-size:.95rem">Browser extensions can't help with the Steam version of Cookie Clicker &mdash; for that, you need a desktop auto clicker like OP Auto Clicker. Setup steps below.</p>
   </div>
 </section>
 
