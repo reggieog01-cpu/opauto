@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"/Applications/op auto/opauto\" && git add -A && (git diff --cached --quiet || (git commit -m \"auto: SEO update via Claude Code\" && git push origin HEAD)) >> /tmp/opauto-autopush.log 2>&1"
+          }
+        ]
+      }
+    ]
+  }
+}
