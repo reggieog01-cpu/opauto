@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Clicker Not Working? &mdash; Troubleshooting Guide | OP Auto Clicker</title>
+<meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_VERIFICATION_CODE">
+<meta name="description" content="Auto clicker not working in your game or app? Fix the 9 most common causes &mdash; admin rights, anti-cheat, full-screen mode, hotkey conflicts, and more. Step-by-step.">
+<link rel="canonical" href="https://opauto-clicker.com/auto-clicker-not-working">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OP Auto Clicker">
+<meta property="og:title" content="Auto Clicker Not Working? &mdash; 9 Fixes That Actually Work">
+<meta property="og:description" content="Auto clicker stopped working? Run as admin, switch to borderless mode, check anti-cheat, remap the hotkey. The 9 most common reasons an auto clicker fails on Windows.">
+<meta property="og:url" content="https://opauto-clicker.com/auto-clicker-not-working">
+<meta property="og:image" content="https://opauto-clicker.com/og-image.png">
+<meta property="og:image:alt" content="Auto clicker troubleshooting guide &mdash; 9 fixes for OP Auto Clicker">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auto Clicker Not Working? &mdash; 9 Fixes That Actually Work">
+<meta name="twitter:description" content="Auto clicker not registering clicks? Fix the 9 most common causes in 5 minutes.">
+<meta name="twitter:image" content="https://opauto-clicker.com/og-image.png">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="author" href="/about">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/landing.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://opauto-clicker.com/"},{"@type":"ListItem","position":2,"name":"Auto Clicker Not Working","item":"https://opauto-clicker.com/auto-clicker-not-working"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Auto Clicker Not Working? &mdash; 9 Fixes That Actually Work","description":"Troubleshooting guide for OP Auto Clicker on Windows. The nine most common reasons an auto clicker stops registering clicks and how to fix each one.","datePublished":"2026-02-14","dateModified":"2026-05-04","author":{"@type":"Person","name":"OP Auto Clicker Maintainer","alternateName":"@op-auto-clicker","url":"https://opauto-clicker.com/about","worksFor":{"@type":"Organization","name":"OP Auto Clicker","url":"https://opauto-clicker.com"}},"publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://opauto-clicker.com/og-image.png"}},"image":"https://opauto-clicker.com/og-image.png","mainEntityOfPage":"https://opauto-clicker.com/auto-clicker-not-working"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Why is my auto clicker not working in my game?","acceptedAnswer":{"@type":"Answer","text":"Three most common causes, ranked by frequency: (1) the game runs as administrator and OP Auto Clicker doesn't &mdash; right-click the .exe and Run as administrator. (2) The game uses kernel-level anti-cheat (Vanguard, Easy Anti-Cheat, BattlEye) that blocks all synthetic input. (3) The game is in exclusive full-screen mode &mdash; switch to borderless windowed."}},
+{"@type":"Question","name":"Why does my auto clicker stop after a few clicks?","acceptedAnswer":{"@type":"Answer","text":"Usually the click count limit is set. Check the Click count field in OP Auto Clicker &mdash; if it's a number, the clicker stops at that count. Set it to 0 (or leave blank) for unlimited clicks. If the field is blank and clicks still stop, your antivirus may be killing the process &mdash; whitelist OP-AutoClicker.exe."}},
+{"@type":"Question","name":"Why won't my F6 hotkey work?","acceptedAnswer":{"@type":"Answer","text":"Another app is bound to F6. Common conflicts: OBS Studio, Discord push-to-talk, Steam screenshot key, in-game keybinds. In OP Auto Clicker, click the Hotkey field and rebind to a less-used F-key like F8 or F11, or use a Ctrl/Alt combo."}},
+{"@type":"Question","name":"Why does Windows say OP Auto Clicker has stopped working?","acceptedAnswer":{"@type":"Answer","text":"Almost always a missing .NET runtime. OP Auto Clicker needs .NET Framework 4.7.2 or newer &mdash; install the latest .NET runtime from microsoft.com/net/download. After installing, restart your PC and re-run OP Auto Clicker."}},
+{"@type":"Question","name":"Can an auto clicker click in a browser tab?","acceptedAnswer":{"@type":"Answer","text":"Yes &mdash; OP Auto Clicker works in Chrome, Edge, Firefox, and any other Windows browser. Use cursor-follow mode for clicking around dynamic UI, or fixed-position mode for clicking a stable element like a Cookie Clicker cookie. Some sites use overlay scripts that intercept synthetic clicks &mdash; rare, but it happens on banking and Captcha pages by design."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="lp-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; Auto Clicker Not Working</div>
+    <div class="eyebrow">Troubleshooting</div>
+    <h1>Auto Clicker <span>Not Working?</span> 9 Fixes That Actually Work</h1>
+    <p class="lp-sub">If OP Auto Clicker isn't registering clicks in your game or app, the cause is almost always one of nine specific things &mdash; and each has a 30-second fix. Work through this list in order. By #5 you'll have it sorted.</p>
+    <div class="ctas">
+      <a href="#fixes" class="btn btn-primary">Jump to the fixes &darr;</a>
+      <a href="/download" class="btn btn-ghost">Download latest build &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="main" style="padding:30px 0">
+  <div class="container">
+    <div class="intro reveal">
+      <p>OP Auto Clicker uses the Windows <code>SendInput</code> API directly, which means it's about as reliable as auto clickers get on Windows. When clicks don't land, it's almost never a bug in the app &mdash; it's something blocking the synthetic input from reaching the target. Below: the nine causes, ranked by how often they trip up users in our GitHub Issues.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fixes">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Try these in order</div>
+      <h2>9 reasons your auto clicker isn't working &mdash; ranked by frequency</h2>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><div class="step-num">1</div><h3>Run OP Auto Clicker as administrator</h3><p>If your game runs as admin (most launchers, all anti-cheat games), Windows blocks input from non-admin apps. Right-click <code>OP-AutoClicker.exe</code> &rarr; <strong>Run as administrator</strong>. Solves about 50% of "no clicks" reports.</p></li>
+      <li class="step reveal"><div class="step-num">2</div><h3>Switch the game to borderless windowed</h3><p>Exclusive full-screen mode (DX11/DX12) gives the game a private input pipeline. Borderless windowed reverts to standard Windows input handling, which OP Auto Clicker can reach. In-game video settings &rarr; Display mode &rarr; <strong>Borderless</strong>.</p></li>
+      <li class="step reveal"><div class="step-num">3</div><h3>Check for kernel-level anti-cheat</h3><p>Riot Vanguard (Valorant, League), Easy Anti-Cheat (Apex, Fortnite, Fall Guys), and BattlEye (PUBG, Rust) actively block synthetic input. No auto clicker on the market gets through these without modifying the kernel itself &mdash; which would mean violating ToS and getting banned. <strong>This is by design.</strong></p></li>
+      <li class="step reveal"><div class="step-num">4</div><h3>Hotkey conflict &mdash; rebind from F6</h3><p>OBS, Discord push-to-talk, Steam screenshot, NVIDIA ShadowPlay, and many games bind F-keys. If pressing F6 doesn't toggle OP Auto Clicker, click the <strong>Hotkey</strong> field, press a less-common combination like <kbd>F8</kbd>, <kbd>F12</kbd>, or <kbd>Ctrl + Alt + A</kbd>.</p></li>
+      <li class="step reveal"><div class="step-num">5</div><h3>Click count limit accidentally set</h3><p>If clicks fire then stop after a fixed number, check the <strong>Click count</strong> field. Setting it to <code>10</code> means 10 clicks total. Clear the field or set it to <code>0</code> for unlimited clicks until F6 is pressed again.</p></li>
+      <li class="step reveal"><div class="step-num">6</div><h3>Antivirus killed the process</h3><p>Heuristic AV engines occasionally false-positive on auto clickers. If <code>OP-AutoClicker.exe</code> disappears from Task Manager mid-run, your antivirus quarantined it. Add an exception in Windows Defender (Settings &rarr; Privacy &amp; Security &rarr; Virus &amp; threat protection &rarr; Manage settings &rarr; Exclusions).</p></li>
+      <li class="step reveal"><div class="step-num">7</div><h3>Missing .NET runtime</h3><p>Older Windows installs (Win 7/8 without updates) lack .NET Framework 4.7.2. If OP Auto Clicker won't even open, install the latest .NET runtime from <a href="https://dotnet.microsoft.com/download" rel="noopener" class="green">microsoft.com/net/download</a>, restart, and try again.</p></li>
+      <li class="step reveal"><div class="step-num">8</div><h3>Wrong "Pick location" target</h3><p>If you set fixed-position mode and the clicks land on empty desktop instead of the game, the saved coordinate is from a previous window position. Click <strong>Pick location</strong> again with the game window in its current spot.</p></li>
+      <li class="step reveal"><div class="step-num">9</div><h3>High-DPI scaling broke the click target</h3><p>If you changed Windows display scaling (125% &rarr; 150%) without restarting, the saved fixed-position coordinate now points to the wrong pixel. Restart Windows once after any DPI scaling change, then re-pick your click location.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Diagnostic</div>
+      <h2>How to test if OP Auto Clicker is firing at all</h2>
+      <p>Before debugging the game, confirm the clicker actually emits clicks.</p>
+    </div>
+    <div class="story-grid">
+      <div class="story reveal">
+        <h3>The Notepad test</h3>
+        <p>Open Notepad. In OP Auto Clicker, set click type to <strong>Right click</strong>, interval <strong>1000&thinsp;ms</strong> (one click per second), cursor mode. Hover over Notepad. Press <strong>F6</strong>.</p>
+        <p>You should see the right-click context menu pop up once per second. If yes &mdash; OP Auto Clicker works perfectly; the issue is the target game blocking input. If no &mdash; the issue is OP Auto Clicker itself (work through fixes 6, 7, and 1 above).</p>
+      </div>
+      <div class="story reveal">
+        <h3>The CPS test</h3>
+        <p>Visit <a href="/cps-test" class="green">our CPS test page</a>. Set OP Auto Clicker to interval <strong>10&thinsp;ms</strong>, cursor mode, position over the test button. Press F6.</p>
+        <p>The CPS counter should jump to ~100 CPS instantly. If you see 100 CPS in the test but no clicks in your game, you've isolated the issue to the game's input blocking &mdash; check fix #2 (borderless mode) and fix #3 (anti-cheat).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Common questions</div>
+      <h2>Auto clicker troubleshooting &mdash; common questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q">Why is my auto clicker not working in my game?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Three most common causes, ranked by frequency: (1) the game runs as administrator and OP Auto Clicker doesn't &mdash; right-click the .exe and <strong>Run as administrator</strong>. (2) The game uses kernel-level anti-cheat (Vanguard, Easy Anti-Cheat, BattlEye) that blocks all synthetic input. (3) The game is in exclusive full-screen mode &mdash; switch to borderless windowed.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Why does my auto clicker stop after a few clicks?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Usually the <strong>Click count</strong> limit is set. Check the field in OP Auto Clicker &mdash; if it's a number, the clicker stops at that count. Set it to <code>0</code> (or leave blank) for unlimited clicks. If the field is blank and clicks still stop, your antivirus may be killing the process &mdash; whitelist <code>OP-AutoClicker.exe</code>.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Why won't my F6 hotkey work?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Another app is bound to F6. Common conflicts: OBS Studio, Discord push-to-talk, Steam screenshot key, in-game keybinds. In OP Auto Clicker, click the <strong>Hotkey</strong> field and rebind to a less-used F-key like F8 or F11, or a Ctrl/Alt combo.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Why does Windows say OP Auto Clicker has stopped working?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Almost always a missing .NET runtime. OP Auto Clicker needs .NET Framework 4.7.2 or newer &mdash; install the latest .NET runtime from <a href="https://dotnet.microsoft.com/download" rel="noopener" class="green">microsoft.com/net/download</a>. After installing, restart your PC and re-run OP Auto Clicker.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Can an auto clicker click in a browser tab?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes &mdash; OP Auto Clicker works in Chrome, Edge, Firefox, and any other Windows browser. Use cursor-follow mode for clicking around dynamic UI, or fixed-position mode for clicking a stable element like a Cookie Clicker cookie. Some sites use overlay scripts that intercept synthetic clicks &mdash; rare, but it happens on banking and CAPTCHA pages by design.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Related</div>
+      <h2>Explore more</h2>
+    </div>
+    <div class="related">
+      <a href="/how-to-use-auto-clicker"><h3>How to Use OP Auto Clicker &rarr;</h3><p>Step-by-step setup guide.</p></a>
+      <a href="/safe-auto-clicker"><h3>Is OP Auto Clicker Safe? &rarr;</h3><p>Verify the binary yourself before running.</p></a>
+      <a href="/faq"><h3>OP Auto Clicker FAQ &rarr;</h3><p>20 most-asked questions answered.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2>Still stuck? Re-download the latest build.</h2>
+  <p>Old versions sometimes break with Windows updates. The latest .exe is signed and tested.</p>
+  <a href="/download" class="btn">&darr; Download OP Auto Clicker Free</a>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+        <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="/download">Download</a></li><li><a href="/how-to-use-auto-clicker">How to Use</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+      <div><h3>Use cases</h3><ul><li><a href="/minecraft-auto-clicker">Minecraft</a></li><li><a href="/roblox-auto-clicker">Roblox</a></li><li><a href="/cookie-clicker-auto-clicker">Cookie Clicker</a></li><li><a href="/windows-11-auto-clicker">Windows 11</a></li></ul></div>
+      <div><h3>Compare</h3><ul><li><a href="/op-auto-clicker-vs-gs-auto-clicker">vs GS Auto Clicker</a></li><li><a href="/op-auto-clicker-alternatives">Alternatives</a></li><li><a href="/auto-clicker-for-mac">For Mac</a></li><li><a href="/auto-clicker-not-working">Troubleshooting</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>&copy; 2026 OP Auto Clicker &middot; MIT License &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="mailto:hello@opauto-clicker.com">Contact</a></div><div>Last updated: 2026-05-04</div></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+</script>
+
+</body>
+</html>
