@@ -34,6 +34,17 @@
 - [OP Auto Clicker vs GS Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-gs-auto-clicker): Head-to-head comparison
 - [OP Auto Clicker Alternatives](https://www.opauto-clicker.com/op-auto-clicker-alternatives): Comparison vs GS, Free Mouse, AutoClicker.io, AutoHotkey, Murgee
 
+- [Auto Clicker for Mac](https://www.opauto-clicker.com/auto-clicker-for-mac): Free macOS alternatives — OP Auto Clicker is Windows-only
+- [Auto Clicker for Chromebook](https://www.opauto-clicker.com/auto-clicker-for-chromebook): 3 working methods — built-in ChromeOS, extensions, Linux container
+- [Cookie Clicker Auto Clicker](https://www.opauto-clicker.com/cookie-clicker-auto-clicker): Setup for Steam + browser, with bookmarklet code
+- [Auto Clicker for Idle Games](https://www.opauto-clicker.com/auto-clicker-for-idle-games): Best CPS for Clicker Heroes, AdVenture Capitalist, Realm Grinder
+- [Minecraft AFK Auto Clicker](https://www.opauto-clicker.com/minecraft-auto-clicker-afk): AFK farming setups — fishing, mob grinder, iron farm
+- [Hypixel Auto Clicker](https://www.opauto-clicker.com/hypixel-auto-clicker): What's allowed and what bans you on Hypixel
+- [Kohi Click Test](https://www.opauto-clicker.com/kohi-click-test): 5-second CPS test used by Minecraft PvP players
+- [Auto Clicker Not Detected](https://www.opauto-clicker.com/auto-clicker-not-detected): Honest guide to anti-cheat detection by game
+- [Auto Clicker Not Working](https://www.opauto-clicker.com/auto-clicker-not-working): 9 fixes for the most common auto clicker issues
+- [OP Auto Clicker vs TinyTask](https://www.opauto-clicker.com/op-auto-clicker-vs-tinytask): Speed, features, safety compared head-to-head
+
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
 - How do I download OP Auto Clicker?
