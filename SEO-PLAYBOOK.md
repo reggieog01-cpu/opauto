@@ -132,6 +132,49 @@ Even if you don't open-source the binary, publish a public repo for the project:
 - `SECURITY.md` pointing to `https://www.yourdomain.com/.well-known/security.txt`
 - 5-10 relevant **topic tags** (e.g., `auto-clicker`, `windows-automation`, `mouse-clicker`) — surfaces the repo on `github.com/topics/[tag]` pages, which Google indexes
 
+## Stack Overflow / Stack Exchange playbook (also confirmed for opauto-clicker)
+
+Links from Stack are `rel="nofollow ugc"` so they don't pass direct PageRank — but Stack pages rank top-3 on Google for tons of queries, drive real referral traffic, and AI tools (Perplexity, ChatGPT) heavily cite Stack content.
+
+### Pick the right Stack site
+
+| Site | When to use |
+|---|---|
+| superuser.com | Windows/macOS power-user questions. Auto-clickers, productivity tools, scripts. Lower karma barrier than SO. |
+| stackoverflow.com | Developer/programming questions. Tools or libraries devs use. |
+| gaming.stackexchange.com (Arqade) | Gaming questions — perfect for Minecraft, Roblox, idle games, Cookie Clicker |
+| softwarerecommendations.stackexchange.com | "What tool should I use for X?" goldmine |
+| apple.stackexchange.com | Mac-specific questions |
+| askubuntu.com | Linux questions |
+
+### The non-spam answer formula
+
+Stack moderators ban link-only answers. Do this instead:
+
+1. **Find a question your tool genuinely solves.** Use `?tab=newest&q=keyword` + filter `unanswered:yes`. Aim for questions with 1k+ views.
+2. **Write a real answer (200+ words)** explaining the solution generically first — what to look for, what the setup looks like, what the gotchas are.
+3. **Then** mention your tool alongside 1-2 alternatives:
+   > "There are a few free options for this. I use OP Auto Clicker because [specific reason], but GS Auto Clicker and TinyTask also work."
+4. **Link to a deep page** on your site, not the homepage — e.g., `/cookie-clicker-auto-clicker` for a Cookie Clicker question.
+5. **Disclose affiliation** (Stack rules require it):
+   > "Disclosure: I help maintain OP Auto Clicker."
+
+### Realistic effort & cadence
+
+- 30 minutes per quality answer
+- 1-2 per week, NOT 10 in one day (burst posting = spam flag)
+- Build account reputation first (50+ rep before posting links) by answering WITHOUT links for the first 2 weeks
+- After 5-10 quality linked answers over 2-3 weeks, your account is credible
+- Long tail: a single great Stack answer can drive referral traffic for years
+
+### What NOT to do on Stack
+
+- Don't post the same answer to multiple questions
+- Don't create multiple accounts to upvote yourself
+- Don't comment "great tool, try X" on other answers — instant ban
+- Don't link homepage when a deep page is more relevant
+- Don't omit the affiliation disclosure
+
 ## Replicating this on a new site
 
 Use the skill: `/seo-launch-blueprint` — it contains the full templates (vercel.json, robots.txt, sitemap, llms.txt, page template, schema snippets) and the 8-phase execution playbook.
