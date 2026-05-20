@@ -85,6 +85,53 @@ Pattern: getting indexed and ranking was solved by the canonical/www fix + Bing 
 - Listed on tech sites in the GitHub orbit + Stack Overflow / Stack Exchange answers
 - Bing Webmaster Tools verification + IndexNow protocol
 
+## GitHub-backed backlink playbook (highest-ROI external work)
+
+### Awesome-list PRs
+
+PR your site to curated topical link directories. Each merged PR = permanent dofollow backlink from `github.com` (DA 96).
+
+Process:
+1. Search `github.com/topics/awesome-[your-niche]` to find lists in your space
+2. Fork the repo, add your entry alphabetically with a 1-sentence description, open a PR
+3. Follow the contributing guide (format rules: alphabetical, no marketing language, link to homepage only)
+
+Lists known to accept Windows utility / auto-clicker / productivity tools:
+- `Awesome-Windows`
+- `awesome-windows-apps`
+- `awesome-shareware`
+- `awesome-software`
+- `awesome-productivity-tools`
+- `awesome-mouse`
+- `awesome-gaming`
+- `awesome-open-source-mac-apps`
+
+Realistic outcome: 3-8 merged PRs from a single afternoon = 3-8 high-DA backlinks.
+
+### Microsoft `winget-pkgs` PR
+
+`github.com/microsoft/winget-pkgs` is Microsoft's official Windows package manager registry. Accepts community PRs.
+
+Requirements: a real installable `.exe` or `.msi` hosted at a stable URL.
+
+Process:
+1. Install `wingetcreate` CLI: `winget install wingetcreate`
+2. Run `wingetcreate new` and point at your installer URL — it scaffolds the manifest YAML
+3. Submit PR to `microsoft/winget-pkgs` following the manifest format
+
+On merge:
+- Your package becomes installable via `winget install YourTool` from any Windows 10/11 PC
+- The manifest YAML contains `PackageUrl` and `Homepage` fields → backlink from `microsoft.com` (DA 96)
+- Bonus: organic install traffic from `winget search [your category]`
+
+### Your own GitHub repo
+
+Even if you don't open-source the binary, publish a public repo for the project:
+- `README.md` describing the tool, linking to the site as primary download/info source
+- Issue tracker enabled for bug reports / feature requests
+- `SECURITY.md` pointing to `https://www.yourdomain.com/.well-known/security.txt`
+- 5-10 relevant **topic tags** (e.g., `auto-clicker`, `windows-automation`, `mouse-clicker`) — surfaces the repo on `github.com/topics/[tag]` pages, which Google indexes
+
 ## Replicating this on a new site
 
 Use the skill: `/seo-launch-blueprint` — it contains the full templates (vercel.json, robots.txt, sitemap, llms.txt, page template, schema snippets) and the 8-phase execution playbook.
