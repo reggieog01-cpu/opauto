@@ -148,10 +148,14 @@ def main():
         rows.append({"date": today, "keyword": kw, "rank": r})
         time.sleep(18)  # DDG rate-limits aggressively; long delay required
 
-    with open(LOG_FILE, "a", newline="") as f:
+    # Rewrite log, replacing any existing rows for today (no same-day dupes)
+    existing = []
+    if os.path.exists(LOG_FILE):
+        existing = [r for r in csv.DictReader(open(LOG_FILE)) if r["date"] != today]
+    with open(LOG_FILE, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["date", "keyword", "rank"])
-        if not new_exists:
-            writer.writeheader()
+        writer.writeheader()
+        writer.writerows(existing)
         writer.writerows(rows)
     print(f"\nLogged {len(rows)} rows to {LOG_FILE}")
     notify_discord(today, [(r["keyword"], r["rank"]) for r in rows], prev)
