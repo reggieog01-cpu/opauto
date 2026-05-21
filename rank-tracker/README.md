@@ -32,6 +32,19 @@ Rank values:
 - **0** = not found in top 50
 - **-1** = fetch error (network / rate-limit after retries)
 
+## Discord notifications
+
+Each run posts a summary to a Discord channel via webhook. The webhook URL
+lives in `rank-tracker/webhook.txt` (gitignored — never committed, since the
+repo is public).
+
+The notification shows each keyword's rank plus a day-over-day trend arrow
+(improved / dropped / no change vs the previous logged run).
+
+To change or disable: edit/delete `rank-tracker/webhook.txt`. To set up a new
+webhook: Discord → Server Settings → Integrations → Webhooks → New Webhook →
+Copy URL → paste into `webhook.txt`.
+
 ## Automate it (daily, macOS)
 
 Add a cron entry so it runs every morning at 9 AM:

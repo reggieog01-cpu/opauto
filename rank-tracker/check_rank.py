@@ -9,7 +9,7 @@ for each tracked keyword into rank-log.csv.
 Run manually:   python3 rank-tracker/check_rank.py
 Run via cron:   see rank-tracker/README.md
 """
-import csv, os, re, time, datetime, urllib.parse, urllib.request
+import csv, os, re, time, json, datetime, urllib.parse, urllib.request
 
 TARGET_DOMAIN = "opauto-clicker.com"
 KEYWORDS = [
@@ -24,6 +24,7 @@ KEYWORDS = [
 ]
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE = os.path.join(SCRIPT_DIR, "rank-log.csv")
+WEBHOOK_FILE = os.path.join(SCRIPT_DIR, "webhook.txt")
 MAX_RESULTS = 50  # how deep to look
 
 
@@ -70,8 +71,67 @@ def rank_for(keyword, retries=3):
                 return -1             # error sentinel after all retries
 
 
+
+def previous_ranks():
+    """Read the most recent prior date's ranks from the log: {keyword: rank}."""
+    if not os.path.exists(LOG_FILE):
+        return {}
+    rows = list(csv.DictReader(open(LOG_FILE)))
+    if not rows:
+        return {}
+    dates = sorted({r["date"] for r in rows})
+    if not dates:
+        return {}
+    last_date = dates[-1]
+    return {r["keyword"]: int(r["rank"]) for r in rows if r["date"] == last_date}
+
+
+def fmt_rank(r):
+    return f"#{r}" if r > 0 else "not in top 50" if r == 0 else "fetch error"
+
+
+def trend(old, new):
+    """Return an arrow comparing old vs new rank (lower number = better)."""
+    if old is None:
+        return ""
+    if old == new:
+        return " (no change)"
+    # Treat 0 (not found) as position 999 for comparison
+    o = old if old > 0 else 999
+    n = new if new > 0 else 999
+    if n < o:
+        return f" :arrow_up: improved from {fmt_rank(old)}"
+    return f" :arrow_down: dropped from {fmt_rank(old)}"
+
+
+def notify_discord(today, results, prev):
+    """Post a summary to the Discord webhook, if configured."""
+    if not os.path.exists(WEBHOOK_FILE):
+        print("No webhook.txt — skipping Discord notification.")
+        return
+    url = open(WEBHOOK_FILE).read().strip()
+    if not url.startswith("https://discord.com/api/webhooks/"):
+        print("webhook.txt does not contain a valid Discord webhook URL.")
+        return
+    lines = [f"**Rank check — {today}**  ·  opauto-clicker.com"]
+    for kw, r in results:
+        icon = ":white_check_mark:" if r > 0 else ":small_red_triangle_down:"
+        lines.append(f"{icon} {kw} — **{fmt_rank(r)}**{trend(prev.get(kw), r)}")
+    payload = {"content": "\n".join(lines)}
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json",
+                 "User-Agent": "opauto-rank-tracker/1.0 (+https://www.opauto-clicker.com)"})
+    try:
+        urllib.request.urlopen(req, timeout=15)
+        print("Discord notification sent.")
+    except Exception as e:
+        print(f"Discord notification failed: {e}")
+
+
 def main():
     today = datetime.date.today().isoformat()
+    prev = previous_ranks()
     new_exists = os.path.exists(LOG_FILE)
     rows = []
     print(f"Rank check — {today}")
@@ -92,6 +152,7 @@ def main():
             writer.writeheader()
         writer.writerows(rows)
     print(f"\nLogged {len(rows)} rows to {LOG_FILE}")
+    notify_discord(today, [(r["keyword"], r["rank"]) for r in rows], prev)
     print("rank meaning:  >0 = position  |  0 = not in top 50  |  -1 = fetch error")
 
 
