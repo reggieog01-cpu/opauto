@@ -106,10 +106,12 @@ def trend(old, new):
 
 def notify_discord(today, results, prev):
     """Post a summary to the Discord webhook, if configured."""
-    if not os.path.exists(WEBHOOK_FILE):
-        print("No webhook.txt — skipping Discord notification.")
+    url = os.environ.get("DISCORD_WEBHOOK", "").strip()
+    if not url and os.path.exists(WEBHOOK_FILE):
+        url = open(WEBHOOK_FILE).read().strip()
+    if not url:
+        print("No DISCORD_WEBHOOK env var or webhook.txt — skipping notification.")
         return
-    url = open(WEBHOOK_FILE).read().strip()
     if not url.startswith("https://discord.com/api/webhooks/"):
         print("webhook.txt does not contain a valid Discord webhook URL.")
         return

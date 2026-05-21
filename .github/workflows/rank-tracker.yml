@@ -1,0 +1,42 @@
+name: Daily Rank Tracker
+
+# Runs on GitHub's servers — no local machine needed.
+on:
+  schedule:
+    # 23:00 UTC daily = 9:00 AM Sydney (AEST, UTC+10).
+    # Adjust this if you are in a different timezone.
+    # GitHub Actions cron can run 5-15 min late under load — that's normal.
+    - cron: '0 23 * * *'
+  workflow_dispatch:   # also lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write       # needed to commit the updated rank-log.csv back
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run rank check
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python3 rank-tracker/check_rank.py
+
+      - name: Commit updated rank log
+        run: |
+          git config user.name "rank-tracker-bot"
+          git config user.email "actions@github.com"
+          git add rank-tracker/rank-log.csv
+          if git diff --cached --quiet; then
+            echo "No rank-log change to commit."
+          else
+            git commit -m "chore: daily rank log update [skip ci]"
+            git push
+          fi
