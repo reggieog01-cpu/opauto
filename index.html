@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Taboola Pixel Code -->
-<script type='text/javascript'>
-  window._tfa = window._tfa || [];
-  window._tfa.push({notify: 'event', name: 'page_view', id: 2035515});
-  !function (t, f, a, x) {
-         if (!document.getElementById(x)) {
-            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
-         }
-  }(document.createElement('script'),
-  document.getElementsByTagName('script')[0],
-  '//cdn.taboola.com/libtrc/unip/2035515/tfa.js',
-  'tb_tfa_script');
-</script>
-<!-- End of Taboola Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OP Auto Clicker – Free Auto Clicker for Windows | Download</title>
@@ -47,7 +33,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="/photo-1024.webp" imagesrcset="/photo-640.webp 640w, /photo-1024.webp 1024w, /photo-1600.webp 1600w" imagesizes="(max-width:600px) 100vw, (max-width:1100px) 90vw, 1100px" type="image/webp" fetchpriority="high">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opauto-clicker.com/"}]}
 </script>
@@ -107,7 +95,7 @@ section{padding:80px 0;position:relative}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
 .hero-trust{display:flex;gap:24px;flex-wrap:wrap;font-size:.9rem;color:var(--dim)}
 .hero-trust strong{color:var(--text);display:block;font-size:1.1rem}
-.hero-img{width:100%;max-width:1100px;height:auto;border-radius:14px;display:block;box-shadow:0 30px 80px rgba(0,0,0,.5);margin:0 auto}
+.hero-img{width:100%;max-width:1100px;height:auto;aspect-ratio:2078/1534;border-radius:14px;display:block;box-shadow:0 30px 80px rgba(0,0,0,.5);margin:0 auto;background:var(--card)}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
 .reveal.show{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.iv-cursor,.iv-pulse{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
@@ -264,10 +252,10 @@ footer ul a:hover{color:var(--accent)}
 <section style="padding:20px 0 60px">
   <div class="container">
     <picture>
-      <source type="image/webp"
-              srcset="/photo-640.webp 640w, /photo-1024.webp 1024w, /photo-1600.webp 1600w, /photo.webp 2078w"
-              sizes="(max-width: 600px) 100vw, (max-width: 1100px) 90vw, 1100px">
-      <img class="hero-img" src="/photo.jpg" alt="OP Auto Clicker app interface — custom click interval, mouse button selector, hotkey configuration, and start/stop controls" width="2078" height="1534" loading="eager" fetchpriority="high">
+      <source type="image/webp" media="(max-width: 600px)" srcset="/photo-640.webp">
+      <source type="image/webp" media="(max-width: 1100px)" srcset="/photo-1024.webp">
+      <source type="image/webp" srcset="/photo-1600.webp 1600w, /photo.webp 2078w" sizes="1100px">
+      <img class="hero-img" src="/photo.jpg" alt="OP Auto Clicker app interface — custom click interval, mouse button selector, hotkey configuration, and start/stop controls" width="2078" height="1534" loading="eager" fetchpriority="high" decoding="async">
     </picture>
   </div>
 </section>
