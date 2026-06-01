@@ -62,6 +62,15 @@
 - [Roblox Autoclicker — Alternative spelling guide](https://www.opauto-clicker.com/roblox-autoclicker)
 - [Super Fast Auto Clicker — High CPS techniques](https://www.opauto-clicker.com/super-fast-auto-clicker)
 
+## Clicking techniques & reference (2026-06)
+- [Clicks Per Second (CPS) Explained](https://www.opauto-clicker.com/clicks-per-second): Average is 4-7 CPS; jitter 10-14; butterfly 15-22; drag 25-35+; auto clicker 100+
+- [Jitter Clicking](https://www.opauto-clicker.com/jitter-clicking): 10-14 CPS technique; allowed on Hypixel; forearm-tension method
+- [Butterfly Clicking](https://www.opauto-clicker.com/butterfly-clicking): 15-22 CPS via two-finger alternation; banned on most competitive servers
+- [Drag Clicking](https://www.opauto-clicker.com/drag-clicking): 25-35+ CPS via mouse-button friction; wears switches fast; banned on Hypixel
+- [OP Auto Clicker Hotkeys & Shortcuts](https://www.opauto-clicker.com/auto-clicker-shortcuts): F6 default, full remap guide, conflict reference
+- [OP Auto Clicker vs AutoHotkey](https://www.opauto-clicker.com/op-auto-clicker-vs-autohotkey): Auto clicker vs scripting language head-to-head
+- [Clicker Heroes Auto Clicker](https://www.opauto-clicker.com/clicker-heroes-auto-clicker): 100 CPS settings, ascension reset workflow, ancient farming
+
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
 - How do I download OP Auto Clicker?
