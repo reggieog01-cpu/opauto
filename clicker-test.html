@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clicker Test &mdash; Free Mouse & Auto Clicker Benchmark</title>
+<meta name="description" content="Free clicker test: measure your mouse click rate (CPS), test an auto clicker's output speed, and verify mouse hardware performance. All in-browser.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.opauto-clicker.com/clicker-test">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OP Auto Clicker">
+<meta property="og:title" content="Clicker Test &mdash; Free Mouse & Auto Clicker Benchmark">
+<meta property="og:description" content="Test manual mouse click rate, verify auto clicker CPS, benchmark mouse hardware. Free browser tools.">
+<meta property="og:url" content="https://www.opauto-clicker.com/clicker-test">
+<meta property="og:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta property="og:image:alt" content="Clicker test &mdash; mouse and auto clicker benchmark suite">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clicker Test &mdash; Free Mouse & Auto Clicker Benchmark">
+<meta name="twitter:description" content="Test manual mouse click rate, verify auto clicker CPS, benchmark mouse hardware. Free browser tools.">
+<meta name="twitter:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="author" href="/about">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=optional">
+<link rel="stylesheet" href="/landing.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opauto-clicker.com/"},{"@type":"ListItem","position":2,"name":"Clicker Test","item":"https://www.opauto-clicker.com/clicker-test"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Clicker Test &mdash; Free Mouse & Auto Clicker Benchmark","description":"Free clicker test: measure your mouse click rate (CPS), test an auto clicker's output speed, and verify mouse hardware performance. All in-browser.","datePublished":"2026-06-01","dateModified":"2026-06-01","author":{"@type":"Organization","name":"OP Auto Clicker","url":"https://www.opauto-clicker.com/about"},"publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://www.opauto-clicker.com/og-image.png"}},"image":"https://www.opauto-clicker.com/og-image.png","mainEntityOfPage":"https://www.opauto-clicker.com/clicker-test"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a clicker test?","acceptedAnswer":{"@type":"Answer","text":"A clicker test measures click rate over a fixed duration and reports clicks per second (CPS). Works for both manual clicking (your hand speed) and auto clicker verification (measuring software-generated clicks). Same tool, different input source."}},
+{"@type":"Question","name":"How do I test an auto clicker's real CPS?","acceptedAnswer":{"@type":"Answer","text":"Open a browser CPS test, position the auto clicker (like OP Auto Clicker) on the click target with Fixed position mode, set your interval, and press the hotkey. The test measures actual clicks received over 10 seconds. Should match your set interval within 5%."}},
+{"@type":"Question","name":"Why is my auto clicker slower than advertised?","acceptedAnswer":{"@type":"Answer","text":"Three reasons: (1) browser or mouse hardware debounce filters cap raw CPS around 100&ndash;200; (2) OS input queue processing adds micro-delays under load; (3) some auto clickers advertise theoretical max (e.g., 50000 CPS) that no browser or app can actually receive."}},
+{"@type":"Question","name":"Can I test my mouse for double-clicking with a clicker test?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click slowly and deliberately (target 2 CPS). If the test reports 4 or more CPS, your mouse switch is double-actuating &mdash; a sign of switch wear. Time to open the mouse and replace the switch, or buy a new mouse."}},
+{"@type":"Question","name":"What's the fastest auto clicker on a clicker test?","acceptedAnswer":{"@type":"Answer","text":"Verified: OP Auto Clicker sustains 100+ CPS reliably in browser CPS tests. Speed Auto Clicker advertises 50000 CPS but browsers cap at ~120 CPS. In practice, no auto clicker can exceed what your mouse's debounce filter and the browser's event queue accept &mdash; typically 100&ndash;150 CPS."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="lp-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; Clicker Test</div>
+    <div class="eyebrow">Benchmark tool</div>
+    <h1><span>Clicker Test</span> &mdash; Mouse & Auto Clicker Benchmark</h1>
+    <p class="lp-sub">A <strong>clicker test</strong> measures the click rate of either your hand (manual clicking) or an <strong>auto clicker</strong> (software-generated clicks). Use the same browser-based CPS counter for both: press F6 on OP Auto Clicker or click manually, then read your CPS. Verify auto clicker output, benchmark your mouse, or compare techniques.</p>
+    <div class="byline" style="color:var(--dim);font-size:.85rem;margin:18px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><span>By <a href="/about" class="green">OP Auto Clicker Team</a></span><span aria-hidden="true">&middot;</span><span>Published <time datetime="2026-06-01">Jun 1, 2026</time></span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-06-01">Jun 1, 2026</time></span></div>
+    <div class="ctas">
+      <a href="#main" class="btn btn-primary">Jump to the guide &darr;</a>
+      <a href="/download" class="btn btn-ghost">Download OP Auto Clicker &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:30px 0">
+  <div class="container">
+    <div class="intro reveal" style="max-width:780px;margin:0 auto">
+      <h2 style="font-size:1.4rem;margin-bottom:14px">What is a clicker test?</h2>
+      <p>A <strong>clicker test</strong> is a browser tool that counts click events over a fixed duration and reports the rate as <strong>clicks per second (CPS)</strong>. The same tool works for both manual clicking (test your hand speed) and auto clicker testing (verify software output). For manual tests, average users score <strong>4&ndash;7 CPS</strong>; trained jitter clickers reach <strong>12&ndash;14 CPS</strong>. For <strong>auto clicker testing</strong>, most free auto clickers deliver their advertised CPS accurately &mdash; OP Auto Clicker at 10&thinsp;ms interval produces exactly 100 CPS; GS Auto Clicker maxes near 87 CPS; TinyTask macros run around 50&ndash;80 CPS due to scripting overhead. Auto clicker verification is useful before serious use: confirm the tool actually delivers on its speed claim, verify your mouse hardware can register that rate (some cheap mice have 5&thinsp;ms debounce filters that cap actual clicks around 100 CPS), and rule out browser throttling that can artificially depress reported CPS.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="main">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Two uses</div>
+      <h2>What can you use a clicker test for?</h2>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Use case</th><th>Test type</th><th>Expected result</th></tr></thead>
+        <tbody>
+          <tr><td>Measure your manual CPS</td><td>10-second manual click</td><td>4&ndash;14 CPS depending on technique</td></tr>
+          <tr><td>Verify auto clicker output</td><td>10-second auto-click</td><td>Should match set interval (e.g., 100 CPS)</td></tr>
+          <tr><td>Test mouse hardware CPS ceiling</td><td>60-second sustained</td><td>Mouse-limited around 100&ndash;200 CPS</td></tr>
+          <tr><td>Compare click techniques</td><td>5-second bursts each</td><td>Regular ~7, jitter ~12, butterfly ~18</td></tr>
+          <tr><td>Detect double-clicking</td><td>Slow manual clicks (2 CPS)</td><td>Should show 2 CPS &mdash; higher = double-click</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;margin-top:24px"><a href="/cps-test" class="btn btn-primary">Run the clicker test now &rarr;</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Auto clicker verification</div>
+      <h2>How to test an auto clicker's real CPS</h2>
+    </div>
+    <ol class="steps" style="max-width:1000px">
+      <li class="step reveal"><div class="step-num">1</div><h3>Open the CPS test</h3><p>Load our <a href="/cps-test" class="green">10-second CPS test</a> in your browser.</p></li>
+      <li class="step reveal"><div class="step-num">2</div><h3>Position OP Auto Clicker</h3><p>Set OP Auto Clicker to <strong>Fixed position</strong> on the click target area of the CPS test button.</p></li>
+      <li class="step reveal"><div class="step-num">3</div><h3>Set interval &amp; start</h3><p>Set interval (e.g., 10&thinsp;ms for 100 CPS target). Press F6. Auto clicker fires clicks at the target.</p></li>
+      <li class="step reveal"><div class="step-num">4</div><h3>Read the result</h3><p>After 10 seconds, the test reports total clicks. Expected: ~100 clicks at 10 ms interval. Actual usually matches within &plusmn;5%.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Auto clicker performance</div>
+      <h2>Free auto clickers benchmarked</h2>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Auto clicker</th><th>Advertised max CPS</th><th>Actual (verified)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>OP Auto Clicker</strong></td><td>1000</td><td class="yes">100+ verified (browser tests cap here)</td></tr>
+          <tr><td>GS Auto Clicker</td><td>500</td><td>~87</td></tr>
+          <tr><td>Speed Auto Clicker</td><td>50000</td><td>~120 (browser-limited)</td></tr>
+          <tr><td>Auto Clicker by Shocker</td><td>1000</td><td>~90</td></tr>
+          <tr><td>TinyTask (macro)</td><td>~150</td><td>~50&ndash;80 (scripting overhead)</td></tr>
+          <tr><td>AutoHotkey (Click loop)</td><td>~1000</td><td>~80</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Common questions</div>
+      <h2>Clicker test &mdash; common questions</h2>
+    </div>
+    <div class="faq-list" style="max-width:780px;margin:0 auto">
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What is a clicker test?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>A clicker test measures click rate over a fixed duration and reports clicks per second (CPS). Works for both manual clicking (your hand speed) and auto clicker verification (measuring software-generated clicks). Same tool, different input source.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">How do I test an auto clicker's real CPS?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Open a browser CPS test, position the auto clicker (like OP Auto Clicker) on the click target with Fixed position mode, set your interval, and press the hotkey. The test measures actual clicks received over 10 seconds. Should match your set interval within 5%.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Why is my auto clicker slower than advertised?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Three reasons: (1) browser or mouse hardware debounce filters cap raw CPS around 100&ndash;200; (2) OS input queue processing adds micro-delays under load; (3) some auto clickers advertise theoretical max (e.g., 50000 CPS) that no browser or app can actually receive.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Can I test my mouse for double-clicking with a clicker test?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes. Click slowly and deliberately (target 2 CPS). If the test reports 4 or more CPS, your mouse switch is double-actuating &mdash; a sign of switch wear. Time to open the mouse and replace the switch, or buy a new mouse.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What's the fastest auto clicker on a clicker test?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Verified: OP Auto Clicker sustains 100+ CPS reliably in browser CPS tests. Speed Auto Clicker advertises 50000 CPS but browsers cap at ~120 CPS. In practice, no auto clicker can exceed what your mouse's debounce filter and the browser's event queue accept &mdash; typically 100&ndash;150 CPS.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Related</div>
+      <h2>Explore more</h2>
+    </div>
+    <div class="related">
+      <a href="/cps-test"><h3>CPS Test &rarr;</h3><p>Take the click test.</p></a>
+      <a href="/fastest-auto-clicker"><h3>Fastest Auto Clicker &rarr;</h3><p>Why OP Auto Clicker wins on verified CPS.</p></a>
+      <a href="/mouse-speed-test"><h3>Mouse Speed Test &rarr;</h3><p>Full hardware benchmark suite.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2>Verified 100+ CPS. Free.</h2>
+  <p>OP Auto Clicker delivers advertised CPS. Free for Windows.</p>
+  <a href="/download" class="btn">&darr; Download OP Auto Clicker Free</a>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+        <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="/download">Download</a></li><li><a href="/how-to-use-auto-clicker">How to Use</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+      <div><h3>Use cases</h3><ul><li><a href="/minecraft-auto-clicker">Minecraft</a></li><li><a href="/roblox-auto-clicker">Roblox</a></li><li><a href="/cookie-clicker-auto-clicker">Cookie Clicker</a></li><li><a href="/auto-clicker-for-idle-games">Idle games</a></li></ul></div>
+      <div><h3>Compare</h3><ul><li><a href="/op-auto-clicker-vs-gs-auto-clicker">vs GS</a></li><li><a href="/op-auto-clicker-vs-tinytask">vs TinyTask</a></li><li><a href="/op-auto-clicker-alternatives">Alternatives</a></li><li><a href="/auto-clicker-not-working">Troubleshooting</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>&copy; 2026 OP Auto Clicker &middot; MIT License &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="mailto:hello@opauto-clicker.com">Contact</a></div><div>Last updated: 2026-06-01</div></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+</script>
+
+</body>
+</html>

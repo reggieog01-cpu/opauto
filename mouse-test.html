@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouse Test &mdash; Check Buttons, Wheel, Double-Click, & Speed</title>
+<meta name="description" content="Free mouse test: verify all buttons work, check scroll wheel, detect double-click issues, measure click speed. Complete browser diagnostic.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.opauto-clicker.com/mouse-test">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OP Auto Clicker">
+<meta property="og:title" content="Mouse Test &mdash; Check Buttons, Wheel, Double-Click, & Speed">
+<meta property="og:description" content="Complete mouse diagnostic in browser: buttons, scroll wheel, double-click detection, CPS speed, latency. Free.">
+<meta property="og:url" content="https://www.opauto-clicker.com/mouse-test">
+<meta property="og:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta property="og:image:alt" content="Mouse test &mdash; complete browser diagnostic suite">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mouse Test &mdash; Check Buttons, Wheel, Double-Click, & Speed">
+<meta name="twitter:description" content="Complete mouse diagnostic in browser: buttons, scroll wheel, double-click detection, CPS speed, latency. Free.">
+<meta name="twitter:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="author" href="/about">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=optional">
+<link rel="stylesheet" href="/landing.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opauto-clicker.com/"},{"@type":"ListItem","position":2,"name":"Mouse Test","item":"https://www.opauto-clicker.com/mouse-test"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Mouse Test &mdash; Complete Browser Diagnostic","description":"Free mouse test: verify all buttons work, check scroll wheel, detect double-click issues, measure click speed. Complete browser diagnostic.","datePublished":"2026-06-01","dateModified":"2026-06-01","author":{"@type":"Organization","name":"OP Auto Clicker","url":"https://www.opauto-clicker.com/about"},"publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://www.opauto-clicker.com/og-image.png"}},"image":"https://www.opauto-clicker.com/og-image.png","mainEntityOfPage":"https://www.opauto-clicker.com/mouse-test"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a mouse test?","acceptedAnswer":{"@type":"Answer","text":"A mouse test is a diagnostic tool that verifies your mouse's buttons, scroll wheel, double-click behavior, and click speed all work correctly. Full browser-based tests take 2 minutes and diagnose 90% of common hardware problems &mdash; missing clicks, worn switches, dead side buttons, jittery cursor."}},
+{"@type":"Question","name":"How do I test if my mouse is double-clicking?","acceptedAnswer":{"@type":"Answer","text":"Open our CPS test. Click slowly and deliberately &mdash; target 2 clicks per second (2 CPS). If the test reports 4+ CPS, your mouse switch is double-actuating on single physical presses. This is the classic sign of switch wear."}},
+{"@type":"Question","name":"Can I test my mouse buttons in browser?","acceptedAnswer":{"@type":"Answer","text":"Yes. Left, right, middle, and forward/back buttons all fire distinct events readable by browser JavaScript. Any page that responds to context menu (right-click) and standard clicks works as a button test. mouseaccuracy.com and buttonchecker.com are dedicated tools."}},
+{"@type":"Question","name":"How do I know if my scroll wheel is broken?","acceptedAnswer":{"@type":"Answer","text":"Scroll a long page slowly in both directions. Issues to watch for: reversed direction (encoder assembly backwards), missed scrolls (dead zones on the wheel), scrolling in the opposite direction (encoder failing). Persistent issues = encoder replacement or new mouse."}},
+{"@type":"Question","name":"What causes mouse double-clicking?","acceptedAnswer":{"@type":"Answer","text":"Micro-switch wear. Standard mouse switches (Omron D2FC series) are rated for 10&ndash;50 million clicks. Heavy gaming use burns through rated life in 1&ndash;3 years. When the metal contacts inside develop micro-arcing, single presses register as double actuations. Switch replacement is $2 in parts."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="lp-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; Mouse Test</div>
+    <div class="eyebrow">Diagnostic tool</div>
+    <h1><span>Mouse Test</span> &mdash; Buttons, Wheel, Double-Click & Speed</h1>
+    <p class="lp-sub">A complete <strong>mouse test</strong> covers four checks: <strong>button function</strong> (do all buttons work?), <strong>scroll wheel</strong> (smooth or notched?), <strong>double-click detection</strong> (is a worn switch double-firing?), and <strong>click speed (CPS)</strong>. All four run in your browser. Use for a new-mouse buyer check or to diagnose a mouse that's misbehaving.</p>
+    <div class="byline" style="color:var(--dim);font-size:.85rem;margin:18px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><span>By <a href="/about" class="green">OP Auto Clicker Team</a></span><span aria-hidden="true">&middot;</span><span>Published <time datetime="2026-06-01">Jun 1, 2026</time></span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-06-01">Jun 1, 2026</time></span></div>
+    <div class="ctas">
+      <a href="#main" class="btn btn-primary">Jump to the guide &darr;</a>
+      <a href="/download" class="btn btn-ghost">Download OP Auto Clicker &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:30px 0">
+  <div class="container">
+    <div class="intro reveal" style="max-width:780px;margin:0 auto">
+      <h2 style="font-size:1.4rem;margin-bottom:14px">What is a mouse test?</h2>
+      <p>A <strong>mouse test</strong> is a diagnostic tool that verifies your mouse's hardware is working correctly. Complete browser-based mouse tests cover: <strong>button function</strong> (left, right, middle, side buttons all register), <strong>scroll wheel</strong> (both directions work, no dead spots), <strong>double-click detection</strong> (single clicks aren't being registered as double), <strong>click speed (CPS)</strong> (how fast you or your mouse can produce clicks), and <strong>input latency</strong> (milliseconds from click to registration). The most common mouse problem is <strong>switch wear</strong> &mdash; over time, mouse switches develop a fault where a single physical press registers as two clicks. Symptoms: files opening twice, drag operations dropping, text-editor double-word selection. Test with a slow deliberate 2 CPS click loop; anything above 2 CPS reported means your switch is double-actuating. Other common issues: scroll wheel getting notchy or reversing direction (encoder wear), side buttons not registering (loose ribbon cable), inconsistent DPI (sensor drift). Mouse tests take 2 minutes and diagnose 90% of hardware problems.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="main">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Four checks</div>
+      <h2>What does a mouse test cover?</h2>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Check</th><th>What it verifies</th><th>Failure sign</th></tr></thead>
+        <tbody>
+          <tr><td>Button function</td><td>All buttons register on press</td><td>Missing click events</td></tr>
+          <tr><td>Scroll wheel</td><td>Both directions smooth, no notches</td><td>Reversed, skipping, or dead scroll</td></tr>
+          <tr><td>Double-click detection</td><td>Single presses = single clicks</td><td>Slow 2 CPS test showing 4+ CPS</td></tr>
+          <tr><td>Click speed (CPS)</td><td>Full-rate click detection</td><td>Dropped clicks at high CPS</td></tr>
+          <tr><td>Cursor tracking</td><td>Smooth movement, no jump</td><td>Cursor jitter, dead zones, warp</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Steps</div>
+      <h2>How to do a full mouse test in your browser</h2>
+    </div>
+    <ol class="steps" style="max-width:1000px">
+      <li class="step reveal"><div class="step-num">1</div><h3>Button test</h3><p>Open any page. Left-click, right-click, and middle-click on non-clickable text. All should trigger context menus or highlight actions. Side buttons should navigate browser history.</p></li>
+      <li class="step reveal"><div class="step-num">2</div><h3>Scroll wheel test</h3><p>Scroll a long page up and down. Should be smooth in both directions. Test middle-click (autoscroll on Windows).</p></li>
+      <li class="step reveal"><div class="step-num">3</div><h3>Double-click detection</h3><p>Open our <a href="/cps-test" class="green">CPS test</a>. Click slowly and deliberately, targeting 2 CPS. If the test reports 4 or more CPS, your mouse switch is double-firing.</p></li>
+      <li class="step reveal"><div class="step-num">4</div><h3>Click speed test</h3><p>Set the CPS test to 10 seconds. Click as fast as you can. This benchmarks both your hand and your mouse's ability to keep up.</p></li>
+      <li class="step reveal"><div class="step-num">5</div><h3>Tracking test</h3><p>Move the cursor slowly in a square pattern. Watch for jitter, dead spots, or warping. Use mouseaccuracy.com for a quick precision test.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Common issues</div>
+      <h2>What mouse test results mean</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="feat-ico">&#128737;</div><h3>Double-clicking on single press</h3><p>Switch wear. Replace the switch (Omron or Kailh D2FC-F-7N, $2 each) or replace the mouse. Optical-switch mice (Razer Viper) don't have this problem.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128268;</div><h3>Scroll wheel skips or reverses</h3><p>Encoder wear or debris. Blow compressed air through the wheel. If persistent, encoder replacement or new mouse.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#127918;</div><h3>Side buttons don't work</h3><p>Loose ribbon cable inside the mouse. Open the case, reseat the connector. Common on 3+ year old mice.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128203;</div><h3>Cursor jumps randomly</h3><p>Dirty sensor lens (blow air), bad mousepad surface (glossy = bad for optical), or dying sensor (replace mouse).</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Common questions</div>
+      <h2>Mouse test &mdash; common questions</h2>
+    </div>
+    <div class="faq-list" style="max-width:780px;margin:0 auto">
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What is a mouse test?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>A mouse test is a diagnostic tool that verifies your mouse's buttons, scroll wheel, double-click behavior, and click speed all work correctly. Full browser-based tests take 2 minutes and diagnose 90% of common hardware problems &mdash; missing clicks, worn switches, dead side buttons, jittery cursor.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">How do I test if my mouse is double-clicking?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Open our CPS test. Click slowly and deliberately &mdash; target 2 clicks per second (2 CPS). If the test reports 4+ CPS, your mouse switch is double-actuating on single physical presses. This is the classic sign of switch wear.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Can I test my mouse buttons in browser?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes. Left, right, middle, and forward/back buttons all fire distinct events readable by browser JavaScript. Any page that responds to context menu (right-click) and standard clicks works as a button test. mouseaccuracy.com and buttonchecker.com are dedicated tools.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">How do I know if my scroll wheel is broken?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Scroll a long page slowly in both directions. Issues to watch for: reversed direction (encoder assembly backwards), missed scrolls (dead zones on the wheel), scrolling in the opposite direction (encoder failing). Persistent issues = encoder replacement or new mouse.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What causes mouse double-clicking?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Micro-switch wear. Standard mouse switches (Omron D2FC series) are rated for 10&ndash;50 million clicks. Heavy gaming use burns through rated life in 1&ndash;3 years. When the metal contacts inside develop micro-arcing, single presses register as double actuations. Switch replacement is $2 in parts.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Related</div>
+      <h2>Explore more</h2>
+    </div>
+    <div class="related">
+      <a href="/mouse-speed-test"><h3>Mouse Speed Test &rarr;</h3><p>Latency, polling rate, DPI benchmark.</p></a>
+      <a href="/cps-test"><h3>CPS Test &rarr;</h3><p>Click speed diagnosis.</p></a>
+      <a href="/auto-clicker-not-working"><h3>Troubleshooting &rarr;</h3><p>Fix mouse and auto-clicker issues.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2>Mouse dying? Auto-click without pressing</h2>
+  <p>OP Auto Clicker &mdash; no wear on your switches. Free for Windows.</p>
+  <a href="/download" class="btn">&darr; Download OP Auto Clicker Free</a>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+        <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="/download">Download</a></li><li><a href="/how-to-use-auto-clicker">How to Use</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+      <div><h3>Use cases</h3><ul><li><a href="/minecraft-auto-clicker">Minecraft</a></li><li><a href="/roblox-auto-clicker">Roblox</a></li><li><a href="/cookie-clicker-auto-clicker">Cookie Clicker</a></li><li><a href="/auto-clicker-for-idle-games">Idle games</a></li></ul></div>
+      <div><h3>Compare</h3><ul><li><a href="/op-auto-clicker-vs-gs-auto-clicker">vs GS</a></li><li><a href="/op-auto-clicker-vs-tinytask">vs TinyTask</a></li><li><a href="/op-auto-clicker-alternatives">Alternatives</a></li><li><a href="/auto-clicker-not-working">Troubleshooting</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>&copy; 2026 OP Auto Clicker &middot; MIT License &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="mailto:hello@opauto-clicker.com">Contact</a></div><div>Last updated: 2026-06-01</div></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+</script>
+
+</body>
+</html>

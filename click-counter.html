@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Counter &mdash; Free Online Tally Counter (with CPS)</title>
+<meta name="description" content="Free click counter: track total clicks with running CPS rate. Works on desktop and mobile. Auto-save session, share results, no signup.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.opauto-clicker.com/click-counter">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OP Auto Clicker">
+<meta property="og:title" content="Click Counter &mdash; Free Online Tally Counter (with CPS)">
+<meta property="og:description" content="Free click counter with running CPS. Session auto-save, shareable results, works on desktop and mobile. No signup.">
+<meta property="og:url" content="https://www.opauto-clicker.com/click-counter">
+<meta property="og:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta property="og:image:alt" content="Click counter &mdash; free tally counter with CPS tracking">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Click Counter &mdash; Free Online Tally Counter (with CPS)">
+<meta name="twitter:description" content="Free click counter with running CPS. Session auto-save, shareable results, works on desktop and mobile. No signup.">
+<meta name="twitter:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="author" href="/about">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=optional">
+<link rel="stylesheet" href="/landing.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opauto-clicker.com/"},{"@type":"ListItem","position":2,"name":"Click Counter","item":"https://www.opauto-clicker.com/click-counter"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Click Counter &mdash; Free Online Tally Counter","description":"Free click counter: track total clicks with running CPS rate. Works on desktop and mobile. Auto-save session, share results, no signup.","datePublished":"2026-06-01","dateModified":"2026-06-01","author":{"@type":"Organization","name":"OP Auto Clicker","url":"https://www.opauto-clicker.com/about"},"publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://www.opauto-clicker.com/og-image.png"}},"image":"https://www.opauto-clicker.com/og-image.png","mainEntityOfPage":"https://www.opauto-clicker.com/click-counter"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a click counter?","acceptedAnswer":{"@type":"Answer","text":"A click counter is a digital tally counter that increments a running total each time you click. Used for inventory counting, sports scoring, exercise rep tracking, and click-speed benchmarking. Free browser-based counters replace physical thumb-tally clickers."}},
+{"@type":"Question","name":"Is there a click counter with CPS display?","acceptedAnswer":{"@type":"Answer","text":"Yes &mdash; modern click counters include a rolling CPS rate that updates every second or two, showing your current click speed alongside the total count. Useful for both benchmarking and knowing when to stop (fatigue reduces CPS)."}},
+{"@type":"Question","name":"Can I use a click counter on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most browser-based click counters accept touchscreen taps as clicks. Mobile taps register slightly slower than mouse clicks (finger contact time), capping practical mobile CPS around 8&ndash;10 tap/sec vs 14+ on desktop."}},
+{"@type":"Question","name":"Does the click counter save my count?","acceptedAnswer":{"@type":"Answer","text":"Well-designed click counters use browser localStorage to persist the count across page refreshes and tab closes. Look for one that mentions &quot;session save&quot; or &quot;auto-save.&quot; Don't rely on scroll-back or manual notes."}},
+{"@type":"Question","name":"What's the fastest click counter can reach?","acceptedAnswer":{"@type":"Answer","text":"Manually: 14&ndash;22 CPS with technique (jitter, butterfly). With an <a href='/'>auto clicker</a>: 100+ CPS effortlessly. Browsers cap synthetic event registration around 100&ndash;200 CPS due to event queue processing, so 100 CPS is the practical ceiling for click counters."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="lp-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; Click Counter</div>
+    <div class="eyebrow">Free tool</div>
+    <h1><span>Click Counter</span> &mdash; Tally + CPS Rate</h1>
+    <p class="lp-sub">A <strong>click counter</strong> tracks the total number of times you click, with an optional <strong>CPS rate</strong> display. Use for counting inventory, tally sports scores, timing physical exercises, or measuring how fast you can click for any application. Free, browser-based, no signup.</p>
+    <div class="byline" style="color:var(--dim);font-size:.85rem;margin:18px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><span>By <a href="/about" class="green">OP Auto Clicker Team</a></span><span aria-hidden="true">&middot;</span><span>Published <time datetime="2026-06-01">Jun 1, 2026</time></span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-06-01">Jun 1, 2026</time></span></div>
+    <div class="ctas">
+      <a href="#main" class="btn btn-primary">Jump to the guide &darr;</a>
+      <a href="/download" class="btn btn-ghost">Download OP Auto Clicker &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:30px 0">
+  <div class="container">
+    <div class="intro reveal" style="max-width:780px;margin:0 auto">
+      <h2 style="font-size:1.4rem;margin-bottom:14px">What is a click counter?</h2>
+      <p>A <strong>click counter</strong> is a browser tool that increments a running total every time you click. It's the digital equivalent of a physical tally counter (the metal thumb-clicker inventory workers carry). Uses include counting inventory, tallying scores in games or sports, tracking exercise reps, counting cars passing on a road, and measuring how many times you performed a repetitive action. Modern click counters also display <strong>clicks per second (CPS)</strong> as a rolling rate, doubling as a click-speed benchmark. Advanced click counters offer <strong>increment step size</strong> (count by 1, 5, 10, etc.), <strong>decrement</strong> (subtract on right-click), <strong>reset</strong>, <strong>session save</strong> (browser localStorage persists your count across visits), and <strong>shareable permalinks</strong> (URL-encoded state for sending your count to others). Click counters are used in retail (inventory), scientific research (behavioral observation), sports (game scoring), and gaming (idle games, click-speed practice).</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="main">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Uses</div>
+      <h2>What can you use a click counter for?</h2>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Use case</th><th>Why a click counter fits</th></tr></thead>
+        <tbody>
+          <tr><td>Inventory counting</td><td>Digital tally counter, no lost data</td></tr>
+          <tr><td>Sports scoring</td><td>Track goals, points, laps in games</td></tr>
+          <tr><td>Exercise reps</td><td>Count push-ups, sit-ups, squats</td></tr>
+          <tr><td>Traffic surveys</td><td>Count vehicles, pedestrians passing</td></tr>
+          <tr><td>Behavioral research</td><td>Log observations without paper tally</td></tr>
+          <tr><td>Idle game manual clicks</td><td>Track total clicks for statistics</td></tr>
+          <tr><td>Click speed practice</td><td>See your CPS live during practice</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Features</div>
+      <h2>What makes a good click counter?</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="feat-ico">&#128290;</div><h3>Large clickable area</h3><p>Big button or full-screen click zone. Should work with both mouse and touchscreen tap.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128257;</div><h3>Reset button</h3><p>One-tap zero-out. Prevents accidental double-reset with a confirm prompt.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#9198;</div><h3>Undo / decrement</h3><p>Miscounted? Right-click or tap decrement to subtract 1. Essential for accurate counts.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128190;</div><h3>Session save</h3><p>Count persists across page refresh via localStorage. Don't lose your count from an accidental tab close.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128337;</div><h3>Optional CPS display</h3><p>Rolling rate over the last 5 or 10 seconds. Doubles as a click-speed benchmark.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128279;</div><h3>Share via URL</h3><p>URL-encoded state lets you send your count via link.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Automate</div>
+      <h2>Can I use an auto clicker with a click counter?</h2>
+    </div>
+    <div class="intro reveal" style="max-width:780px;margin:0 auto">
+      <p>Yes. If you're using a click counter to farm clicks in an idle game or complete a click-based challenge, an <a href="/" class="green">auto clicker</a> at 100 CPS produces one click per 10&thinsp;ms. In 60 seconds you'll register 6,000 clicks &mdash; a task that would take an untrained user 15+ minutes of continuous manual clicking. Set OP Auto Clicker to <strong>Fixed position</strong> on the counter's click zone, 10&thinsp;ms interval, F6 to start. The counter increments as long as the auto clicker fires.</p>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Common questions</div>
+      <h2>Click counter &mdash; common questions</h2>
+    </div>
+    <div class="faq-list" style="max-width:780px;margin:0 auto">
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What is a click counter?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>A click counter is a digital tally counter that increments a running total each time you click. Used for inventory counting, sports scoring, exercise rep tracking, and click-speed benchmarking. Free browser-based counters replace physical thumb-tally clickers.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Is there a click counter with CPS display?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes &mdash; modern click counters include a rolling CPS rate that updates every second or two, showing your current click speed alongside the total count. Useful for both benchmarking and knowing when to stop (fatigue reduces CPS).</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Can I use a click counter on mobile?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes. Most browser-based click counters accept touchscreen taps as clicks. Mobile taps register slightly slower than mouse clicks (finger contact time), capping practical mobile CPS around 8&ndash;10 tap/sec vs 14+ on desktop.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Does the click counter save my count?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Well-designed click counters use browser localStorage to persist the count across page refreshes and tab closes. Look for one that mentions 'session save' or 'auto-save.' Don't rely on scroll-back or manual notes.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What's the fastest click counter can reach?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Manually: 14&ndash;22 CPS with technique (jitter, butterfly). With an auto clicker: 100+ CPS effortlessly. Browsers cap synthetic event registration around 100&ndash;200 CPS due to event queue processing, so 100 CPS is the practical ceiling for click counters.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Related</div>
+      <h2>Explore more</h2>
+    </div>
+    <div class="related">
+      <a href="/cps-test"><h3>CPS Test &rarr;</h3><p>Click-speed benchmark.</p></a>
+      <a href="/clicks-per-second"><h3>CPS Explained &rarr;</h3><p>What CPS means and how it's measured.</p></a>
+      <a href="/"><h3>OP Auto Clicker &rarr;</h3><p>Automate click counting.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2>Automate the counting</h2>
+  <p>OP Auto Clicker &mdash; 6,000 clicks per minute. Free for Windows.</p>
+  <a href="/download" class="btn">&darr; Download OP Auto Clicker Free</a>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+        <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="/download">Download</a></li><li><a href="/how-to-use-auto-clicker">How to Use</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+      <div><h3>Use cases</h3><ul><li><a href="/minecraft-auto-clicker">Minecraft</a></li><li><a href="/roblox-auto-clicker">Roblox</a></li><li><a href="/cookie-clicker-auto-clicker">Cookie Clicker</a></li><li><a href="/auto-clicker-for-idle-games">Idle games</a></li></ul></div>
+      <div><h3>Compare</h3><ul><li><a href="/op-auto-clicker-vs-gs-auto-clicker">vs GS</a></li><li><a href="/op-auto-clicker-vs-tinytask">vs TinyTask</a></li><li><a href="/op-auto-clicker-alternatives">Alternatives</a></li><li><a href="/auto-clicker-not-working">Troubleshooting</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>&copy; 2026 OP Auto Clicker &middot; MIT License &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="mailto:hello@opauto-clicker.com">Contact</a></div><div>Last updated: 2026-06-01</div></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+</script>
+
+</body>
+</html>

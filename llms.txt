@@ -83,6 +83,18 @@
 - [What is CPS in Gaming?](https://www.opauto-clicker.com/what-is-cps-in-gaming): Definition, why it matters by genre, technique summary
 - [Auto Clicker vs Macro](https://www.opauto-clicker.com/auto-clicker-vs-macro): Definitional comparison, ban risk, top free tools
 
+## Testing tools & benchmarks (2026-06, Bing-demand driven)
+- [Click Test](https://www.opauto-clicker.com/click-test): Free 1/5/10/30/60-second click speed tester
+- [Mouse Speed Test](https://www.opauto-clicker.com/mouse-speed-test): CPS, latency, polling rate, DPI benchmark
+- [Click Speed Test](https://www.opauto-clicker.com/click-speed-test): Free CPS tester across multiple durations
+- [Clicker Test](https://www.opauto-clicker.com/clicker-test): Manual + auto clicker benchmark suite
+- [Mouse Test](https://www.opauto-clicker.com/mouse-test): Buttons, wheel, double-click, speed diagnostics
+- [Click Counter](https://www.opauto-clicker.com/click-counter): Free tally counter with CPS rate
+
+## Competitor comparisons (Bing-demand driven)
+- [OP Auto Clicker vs GT Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-gt-auto-clicker): 512 KB open-source vs 3 MB closed-source
+- [OP Auto Clicker vs Speed Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-speed-auto-clicker): Verified 100+ CPS both; 50,000 CPS myth explained
+
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
 - How do I download OP Auto Clicker?

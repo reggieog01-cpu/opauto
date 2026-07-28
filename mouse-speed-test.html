@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouse Speed Test &mdash; Test Click Rate, Latency, & DPI</title>
+<meta name="description" content="Free mouse speed test: measure click rate (CPS), input latency, polling rate, and DPI. Full mouse performance benchmark suite in your browser.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.opauto-clicker.com/mouse-speed-test">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="OP Auto Clicker">
+<meta property="og:title" content="Mouse Speed Test &mdash; Test Click Rate, Latency, & DPI">
+<meta property="og:description" content="Complete browser-based mouse benchmark: CPS, input latency, polling rate, DPI. All tests instant, no signup.">
+<meta property="og:url" content="https://www.opauto-clicker.com/mouse-speed-test">
+<meta property="og:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta property="og:image:alt" content="Mouse speed test &mdash; click rate, latency, DPI benchmark">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mouse Speed Test &mdash; Test Click Rate, Latency, & DPI">
+<meta name="twitter:description" content="Complete browser-based mouse benchmark: CPS, input latency, polling rate, DPI. All tests instant, no signup.">
+<meta name="twitter:image" content="https://www.opauto-clicker.com/og-image.png">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="author" href="/about">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=optional">
+<link rel="stylesheet" href="/landing.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.opauto-clicker.com/"},{"@type":"ListItem","position":2,"name":"Mouse Speed Test","item":"https://www.opauto-clicker.com/mouse-speed-test"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Mouse Speed Test &mdash; Complete Browser Benchmark","description":"Free mouse speed test: measure click rate (CPS), input latency, polling rate, and DPI. Full mouse performance benchmark suite in your browser.","datePublished":"2026-06-01","dateModified":"2026-06-01","author":{"@type":"Organization","name":"OP Auto Clicker","url":"https://www.opauto-clicker.com/about"},"publisher":{"@type":"Organization","name":"OP Auto Clicker","logo":{"@type":"ImageObject","url":"https://www.opauto-clicker.com/og-image.png"}},"image":"https://www.opauto-clicker.com/og-image.png","mainEntityOfPage":"https://www.opauto-clicker.com/mouse-speed-test"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a mouse speed test?","acceptedAnswer":{"@type":"Answer","text":"A mouse speed test benchmarks how fast your mouse combines with your hand to produce input. The three main metrics are click rate (CPS), input latency (milliseconds), and polling rate (Hz). Good gaming mice hit 1000&thinsp;Hz polling with under 5 ms latency; your hand's click rate depends on training (4&ndash;14 CPS)."}},
+{"@type":"Question","name":"How do I test my mouse polling rate?","acceptedAnswer":{"@type":"Answer","text":"Use the ZOWIE mouse rate checker at zowie.benq.com/mouse-rate-checker. Move your mouse in a small circle &mdash; the page reports real-time polling in Hz. Modern gaming mice run 1000&thinsp;Hz (report every 1 ms); older mice run 125&ndash;500 Hz."}},
+{"@type":"Question","name":"What's a good mouse latency?","acceptedAnswer":{"@type":"Answer","text":"Under 5 ms end-to-end for wired gaming mice, under 10 ms for wireless. Total system latency (click to on-screen action) is 15&ndash;30 ms on a good setup, 50&ndash;100 ms on a bad one. Reaction-time tests measure the combined mouse + display + game latency."}},
+{"@type":"Question","name":"Does polling rate affect click speed?","acceptedAnswer":{"@type":"Answer","text":"Only marginally. A 1000&thinsp;Hz mouse can register up to 1000 clicks per second theoretically, but human clicking caps around 14&ndash;22 CPS regardless. Polling rate matters more for aim tracking (smoother cursor updates) than for click rate."}},
+{"@type":"Question","name":"Can I test my mouse for double-clicking?","acceptedAnswer":{"@type":"Answer","text":"Yes. MouseTester (Windows, free) captures every click event with precise timestamps &mdash; you'll see accidental double-actuations from worn switches. Also test with a CPS test: unexpectedly high scores (e.g., 20 CPS on regular clicking) usually mean your mouse is double-clicking."}}
+]}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#features">Features</a>
+      <a href="/download">Download</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a href="/download" class="btn btn-primary nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<section class="lp-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; Mouse Speed Test</div>
+    <div class="eyebrow">Free benchmark</div>
+    <h1><span>Mouse Speed Test</span> &mdash; Full Browser Benchmark</h1>
+    <p class="lp-sub">A <strong>mouse speed test</strong> measures how fast your mouse and hand combine to produce input. There are three separate metrics: <strong>click rate (CPS)</strong>, <strong>input latency (ms)</strong>, and <strong>polling rate (Hz)</strong>. This guide covers what each measures, how to test it, and what scores are considered good.</p>
+    <div class="byline" style="color:var(--dim);font-size:.85rem;margin:18px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><span>By <a href="/about" class="green">OP Auto Clicker Team</a></span><span aria-hidden="true">&middot;</span><span>Published <time datetime="2026-06-01">Jun 1, 2026</time></span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-06-01">Jun 1, 2026</time></span></div>
+    <div class="ctas">
+      <a href="#main" class="btn btn-primary">Jump to the guide &darr;</a>
+      <a href="/download" class="btn btn-ghost">Download OP Auto Clicker &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:30px 0">
+  <div class="container">
+    <div class="intro reveal" style="max-width:780px;margin:0 auto">
+      <h2 style="font-size:1.4rem;margin-bottom:14px">What is a mouse speed test?</h2>
+      <p>A <strong>mouse speed test</strong> benchmarks your mouse's real-world performance across three dimensions: <strong>click rate</strong> (clicks per second, measured by CPS tests), <strong>input latency</strong> (milliseconds from physical click to on-screen registration), and <strong>polling rate</strong> (how often the mouse reports position to the OS, measured in Hz). Modern gaming mice typically poll at <strong>1000&thinsp;Hz</strong> (1 report per millisecond), older office mice at 125&ndash;500&thinsp;Hz. Input latency on a good wired gaming mouse is <strong>1&ndash;5 ms</strong>; wireless mice add 2&ndash;8 ms depending on the receiver. Human click rate averages <strong>4&ndash;7 CPS</strong> untrained, up to <strong>14 CPS</strong> with jitter clicking. The three metrics are independent &mdash; a fast polling rate doesn't help if your hand clicks slowly, and high CPS doesn't help if input latency is 30 ms. Full benchmark tests all three separately.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="main">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Three metrics</div>
+      <h2>What does a mouse speed test measure?</h2>
+    </div>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead><tr><th>Metric</th><th>Unit</th><th>Good score</th><th>How to test</th></tr></thead>
+        <tbody>
+          <tr><td>Click rate (CPS)</td><td>clicks/sec</td><td>8+ regular, 12+ jitter</td><td><a href="/cps-test" class="green">CPS test</a></td></tr>
+          <tr><td>Input latency</td><td>milliseconds</td><td>&lt;5 ms wired, &lt;10 ms wireless</td><td>humanbenchmark.com reaction test</td></tr>
+          <tr><td>Polling rate</td><td>Hertz</td><td>1000&thinsp;Hz gaming, 500&thinsp;Hz office</td><td>zowie.benq.com/mouse-rate-checker</td></tr>
+          <tr><td>DPI accuracy</td><td>DPI vs actual</td><td>&plusmn;3% or better</td><td>MouseTester (desktop app)</td></tr>
+          <tr><td>Jitter (sensor)</td><td>pixels off-axis</td><td>&lt;2 px per inch travel</td><td>MouseTester tracking test</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Setup</div>
+      <h2>How do you run a mouse speed test?</h2>
+    </div>
+    <ol class="steps" style="max-width:1000px">
+      <li class="step reveal"><div class="step-num">1</div><h3>Start with the CPS test</h3><p>Take the <a href="/cps-test" class="green">10-second CPS test</a>. This measures your effective click rate &mdash; the metric that matters most for gaming.</p></li>
+      <li class="step reveal"><div class="step-num">2</div><h3>Check polling rate</h3><p>Use zowie.benq.com/mouse-rate-checker (external). Move your mouse in a small circle. The site shows real-time Hz &mdash; you want 1000&thinsp;Hz stable for gaming.</p></li>
+      <li class="step reveal"><div class="step-num">3</div><h3>Test reaction time</h3><p>humanbenchmark.com/tests/reactiontime combines mouse latency with your human reaction. Expect 200&ndash;300 ms on a good wired gaming mouse.</p></li>
+      <li class="step reveal"><div class="step-num">4</div><h3>Check DPI accuracy</h3><p>For serious testing use MouseTester (Windows). Verifies your mouse's rated DPI matches actual counts. Off-brand mice often report 3000 DPI but deliver 2400.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Bottlenecks</div>
+      <h2>Why your mouse might feel slow</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="feat-ico">&#128268;</div><h3>Low polling rate</h3><p>USB 125&thinsp;Hz mice add 8 ms latency vs 1000&thinsp;Hz. Set to 1000&thinsp;Hz in Logitech G HUB or Razer Synapse.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#128241;</div><h3>Wireless dongle placement</h3><p>Dongle behind the monitor adds latency. Move to a front USB port or use the included USB extender cable.</p></li></div>
+      <div class="feat reveal"><div class="feat-ico">&#127777;</div><h3>Old mouse switches</h3><p>Worn switches double-click or drop clicks. Optical switches (Razer Viper, Glorious Model O) last far longer than mechanical.</p></div>
+      <div class="feat reveal"><div class="feat-ico">&#127918;</div><h3>Game running at low FPS</h3><p>Low FPS makes any mouse feel slow. Cap the FPS to your monitor refresh rate for consistent input feel.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Common questions</div>
+      <h2>Mouse speed test &mdash; common questions</h2>
+    </div>
+    <div class="faq-list" style="max-width:780px;margin:0 auto">
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What is a mouse speed test?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>A mouse speed test benchmarks how fast your mouse combines with your hand to produce input. The three main metrics are click rate (CPS), input latency (milliseconds), and polling rate (Hz). Good gaming mice hit 1000&thinsp;Hz polling with under 5 ms latency; your hand's click rate depends on training (4&ndash;14 CPS).</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">How do I test my mouse polling rate?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Use the ZOWIE mouse rate checker at zowie.benq.com/mouse-rate-checker. Move your mouse in a small circle &mdash; the page reports real-time polling in Hz. Modern gaming mice run 1000&thinsp;Hz (report every 1 ms); older mice run 125&ndash;500 Hz.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">What's a good mouse latency?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Under 5 ms end-to-end for wired gaming mice, under 10 ms for wireless. Total system latency (click to on-screen action) is 15&ndash;30 ms on a good setup, 50&ndash;100 ms on a bad one. Reaction-time tests measure the combined mouse + display + game latency.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Does polling rate affect click speed?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Only marginally. A 1000&thinsp;Hz mouse can register up to 1000 clicks per second theoretically, but human clicking caps around 14&ndash;22 CPS regardless. Polling rate matters more for aim tracking (smoother cursor updates) than for click rate.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><h3 style="display:inline;font-size:inherit;font-weight:inherit;margin:0">Can I test my mouse for double-clicking?</h3><span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes. MouseTester (Windows, free) captures every click event with precise timestamps &mdash; you'll see accidental double-actuations from worn switches. Also test with a CPS test: unexpectedly high scores (e.g., 20 CPS on regular clicking) usually mean your mouse is double-clicking.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Related</div>
+      <h2>Explore more</h2>
+    </div>
+    <div class="related">
+      <a href="/cps-test"><h3>CPS Test &rarr;</h3><p>Measure your click rate now.</p></a>
+      <a href="/kohi-click-test"><h3>Kohi 5-Second Test &rarr;</h3><p>Peak burst benchmark.</p></a>
+      <a href="/clicks-per-second"><h3>CPS Explained &rarr;</h3><p>Full ranges by technique.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2>Skip the human limit</h2>
+  <p>OP Auto Clicker &mdash; 100+ CPS, 0 ms consistency. Free for Windows.</p>
+  <a href="/download" class="btn">&darr; Download OP Auto Clicker Free</a>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><span>OP</span> Auto Clicker</a>
+        <p class="foot-tag">The fastest, most reliable free auto clicker for Windows. Built by gamers, used by millions.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="/download">Download</a></li><li><a href="/how-to-use-auto-clicker">How to Use</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/faq">FAQ</a></li></ul></div>
+      <div><h3>Use cases</h3><ul><li><a href="/minecraft-auto-clicker">Minecraft</a></li><li><a href="/roblox-auto-clicker">Roblox</a></li><li><a href="/cookie-clicker-auto-clicker">Cookie Clicker</a></li><li><a href="/auto-clicker-for-idle-games">Idle games</a></li></ul></div>
+      <div><h3>Compare</h3><ul><li><a href="/op-auto-clicker-vs-gs-auto-clicker">vs GS</a></li><li><a href="/op-auto-clicker-vs-tinytask">vs TinyTask</a></li><li><a href="/op-auto-clicker-alternatives">Alternatives</a></li><li><a href="/auto-clicker-not-working">Troubleshooting</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><div>&copy; 2026 OP Auto Clicker &middot; MIT License &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="mailto:hello@opauto-clicker.com">Contact</a></div><div>Last updated: 2026-06-01</div></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>10));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+</script>
+
+</body>
+</html>
