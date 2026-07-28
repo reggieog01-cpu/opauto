@@ -76,6 +76,12 @@
 - [Auto Clicker for Linux](https://www.opauto-clicker.com/auto-clicker-for-linux): xdotool, ydotool, wtype, OP Auto Clicker via Wine
 - [Auto Clicker vs Mouse Recorder](https://www.opauto-clicker.com/auto-clicker-mouse-recorder): When to use each, top free tools compared
 - [OP Auto Clicker Safe Download](https://www.opauto-clicker.com/op-auto-clicker-safe-download): Trusted sources, SHA-256 verification, false-positive AV explained
+- [Auto Clicker for Android](https://www.opauto-clicker.com/auto-clicker-for-android): No-root Accessibility clickers vs root high-CPS options
+- [Auto Clicker Detection Guide](https://www.opauto-clicker.com/auto-clicker-detection-guide): How anti-cheats catch synthetic input; ban policy per game
+- [Roblox Clicker Simulator Auto Clicker](https://www.opauto-clicker.com/roblox-clicker-simulator-auto-clicker): 40 CPS sweet spot, Byfron risk, best settings
+- [AdVenture Capitalist Auto Clicker](https://www.opauto-clicker.com/adventure-capitalist-auto-clicker): Angel investor farming, Time Warp bursts
+- [What is CPS in Gaming?](https://www.opauto-clicker.com/what-is-cps-in-gaming): Definition, why it matters by genre, technique summary
+- [Auto Clicker vs Macro](https://www.opauto-clicker.com/auto-clicker-vs-macro): Definitional comparison, ban risk, top free tools
 
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
