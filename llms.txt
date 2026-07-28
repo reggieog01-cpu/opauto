@@ -70,6 +70,12 @@
 - [OP Auto Clicker Hotkeys & Shortcuts](https://www.opauto-clicker.com/auto-clicker-shortcuts): F6 default, full remap guide, conflict reference
 - [OP Auto Clicker vs AutoHotkey](https://www.opauto-clicker.com/op-auto-clicker-vs-autohotkey): Auto clicker vs scripting language head-to-head
 - [Clicker Heroes Auto Clicker](https://www.opauto-clicker.com/clicker-heroes-auto-clicker): 100 CPS settings, ascension reset workflow, ancient farming
+- [CPS Test Online](https://www.opauto-clicker.com/cps-test-online): Free 1/5/10/30/60-second CPS tester, instant results, no signup
+- [How Many Clicks Per Second Can a Human Do?](https://www.opauto-clicker.com/how-many-clicks-per-second): Averages 4-7 CPS; verified records 17/22/35 CPS by technique
+- [Minecraft PvP CPS](https://www.opauto-clicker.com/minecraft-pvp-cps): 20-tick server cap; casual 8-10, Hypixel top 12-14 CPS
+- [Auto Clicker for Linux](https://www.opauto-clicker.com/auto-clicker-for-linux): xdotool, ydotool, wtype, OP Auto Clicker via Wine
+- [Auto Clicker vs Mouse Recorder](https://www.opauto-clicker.com/auto-clicker-mouse-recorder): When to use each, top free tools compared
+- [OP Auto Clicker Safe Download](https://www.opauto-clicker.com/op-auto-clicker-safe-download): Trusted sources, SHA-256 verification, false-positive AV explained
 
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
