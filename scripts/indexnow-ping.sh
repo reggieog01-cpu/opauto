@@ -1,47 +1,39 @@
 #!/usr/bin/env bash
-# IndexNow ping — submits the sitemap-listed URLs to Bing/Yandex/Naver.
+# IndexNow ping — auto-pulls URLs from sitemap.xml and submits to Bing/Yandex/IndexNow.
 # Run after each Vercel deploy: bash scripts/indexnow-ping.sh
 set -euo pipefail
 
 HOST="opauto-clicker.com"
 KEY="60970e5e83ece9727d8acbbff9150316"
 KEY_LOCATION="https://${HOST}/${KEY}.txt"
+SITEMAP="$(dirname "$0")/../sitemap.xml"
 
-URLS=(
-  "https://${HOST}/"
-  "https://${HOST}/download"
-  "https://${HOST}/faq"
-  "https://${HOST}/about"
-  "https://${HOST}/cps-test"
-  "https://${HOST}/how-to-use-auto-clicker"
-  "https://${HOST}/minecraft-auto-clicker"
-  "https://${HOST}/roblox-auto-clicker"
-  "https://${HOST}/windows-11-auto-clicker"
-  "https://${HOST}/fastest-auto-clicker"
-  "https://${HOST}/safe-auto-clicker"
-  "https://${HOST}/auto-clicker-for-games"
-  "https://${HOST}/op-auto-clicker-vs-gs-auto-clicker"
-  "https://${HOST}/op-auto-clicker-alternatives"
-  "https://${HOST}/privacy"
-  "https://${HOST}/terms"
+# Pull all <loc> URLs from sitemap and build the JSON payload with Python.
+PAYLOAD=$(python3 - <<PY
+import json, re, sys
+with open("${SITEMAP}") as f:
+    urls = re.findall(r"<loc>([^<]+)</loc>", f.read())
+print(json.dumps({
+    "host": "${HOST}",
+    "key": "${KEY}",
+    "keyLocation": "${KEY_LOCATION}",
+    "urlList": urls,
+}))
+PY
 )
 
-JSON_URLS=$(printf '"%s",' "${URLS[@]}")
-JSON_URLS="[${JSON_URLS%,}]"
-
-PAYLOAD=$(cat <<EOF
-{"host":"${HOST}","key":"${KEY}","keyLocation":"${KEY_LOCATION}","urlList":${JSON_URLS}}
-EOF
-)
+echo "Submitting $(python3 -c "import json;print(len(json.loads('''${PAYLOAD}''')['urlList']))") URLs from sitemap.xml"
 
 for endpoint in \
   "https://api.indexnow.org/indexnow" \
-  "https://www.bing.com/indexnow" \
-  "https://yandex.com/indexnow"
+  "https://www.bing.com/indexnow"
 do
-  echo "Pinging ${endpoint}"
+  echo "== ${endpoint} =="
   curl -sS -X POST "${endpoint}" \
     -H "Content-Type: application/json; charset=utf-8" \
     -d "${PAYLOAD}" \
-    -w "\n  HTTP %{http_code}\n" || true
+    -w "HTTP %{http_code}\n" || true
 done
+
+# Yandex is intentionally omitted — it rejects www.opauto-clicker.com bulk submissions.
+# If you want Yandex coverage, submit individual URLs via yandex.com/indexnow?url=<u>&key=<k>
