@@ -94,6 +94,16 @@
 ## Competitor comparisons (Bing-demand driven)
 - [OP Auto Clicker vs GT Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-gt-auto-clicker): 512 KB open-source vs 3 MB closed-source
 - [OP Auto Clicker vs Speed Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-speed-auto-clicker): Verified 100+ CPS both; 50,000 CPS myth explained
+- [OP Auto Clicker vs Blur Auto Clicker](https://www.opauto-clicker.com/op-auto-clicker-vs-blur-auto-clicker): Open-source vs closed-source; same 100-120 CPS ceiling
+
+## Download safety & alternatives (2026-08)
+- [OP Auto Clicker SourceForge](https://www.opauto-clicker.com/op-auto-clicker-sourceforge): Why SourceForge mirrors are unofficial; verified safe download sources
+- [Auto Clicker Online](https://www.opauto-clicker.com/auto-clicker-online): Browser-based tools vs desktop; what no-download options can and cannot do
+- [Auto Clicker Unblocked](https://www.opauto-clicker.com/auto-clicker-unblocked): Portable .exe (no admin rights) and browser tools for school/work environments
+
+## Click speed reference (2026-08)
+- [Right Click CPS Test](https://www.opauto-clicker.com/right-click-cps-test): Right-click speed benchmarks; average 3-5 CPS vs left-click 4-7 CPS
+- [How Fast Can You Click](https://www.opauto-clicker.com/how-fast-can-you-click): Human CPS records by technique; average 4-7, jitter 10-14, butterfly 15-22, auto 100+
 
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
