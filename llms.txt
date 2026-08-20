@@ -105,6 +105,17 @@
 - [Right Click CPS Test](https://www.opauto-clicker.com/right-click-cps-test): Right-click speed benchmarks; average 3-5 CPS vs left-click 4-7 CPS
 - [How Fast Can You Click](https://www.opauto-clicker.com/how-fast-can-you-click): Human CPS records by technique; average 4-7, jitter 10-14, butterfly 15-22, auto 100+
 
+## Platform & device guides (2026-08)
+- [Auto Clicker for iPhone & iOS](https://www.opauto-clicker.com/auto-clicker-ios): Why OP Auto Clicker is Windows-only; AssistiveTouch and App Store alternatives for iPhone; iOS sandbox limits auto tapping to ~10–15 tps
+- [Auto Clicker for Windows 10](https://www.opauto-clicker.com/auto-clicker-windows-10): Full compatibility with all Windows 10 editions (32-bit and 64-bit); SmartScreen bypass; identical 100–120 CPS ceiling to Windows 11
+
+## Game-specific guides (2026-08)
+- [Valorant Auto Clicker](https://www.opauto-clicker.com/valorant-auto-clicker): Riot Vanguard kernel anti-cheat detects synthetic input; auto clicking in Valorant matches is bannable; legitimate pre-launch use cases only
+- [Stardew Valley Auto Clicker](https://www.opauto-clicker.com/stardew-valley-auto-clicker): Single-player, no anti-cheat; recommended CPS per activity (watering 2–4, mining 10–20, fishing 1 fixed-pos)
+
+## Feature guides (2026-08)
+- [Double Click Auto Clicker](https://www.opauto-clicker.com/auto-clicker-double-click): OP Auto Clicker's built-in Double Click mode; fires two rapid clicks per trigger; use cases for Minecraft inventory, file managers, accessibility
+
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
 - How do I download OP Auto Clicker?
