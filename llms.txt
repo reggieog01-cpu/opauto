@@ -115,6 +115,13 @@
 
 ## Feature guides (2026-08)
 - [Double Click Auto Clicker](https://www.opauto-clicker.com/auto-clicker-double-click): OP Auto Clicker's built-in Double Click mode; fires two rapid clicks per trigger; use cases for Minecraft inventory, file managers, accessibility
+- [Auto Clicker Chrome Extension](https://www.opauto-clicker.com/auto-clicker-chrome-extension): Chrome extensions sandboxed to browser tab; cannot click outside Chrome; OP Auto Clicker desktop app clicks any window at 100+ CPS
+- [Auto Clicker for Accessibility](https://www.opauto-clicker.com/auto-clicker-for-accessibility): RSI, carpal tunnel, essential tremor, motor disabilities; fixed-position mode, hotkey trigger, repeat count limit; free supplement to Windows Ease of Access
+
+## Game-specific guides — extended (2026-08)
+- [Runescape Auto Clicker](https://www.opauto-clicker.com/runescape-auto-clicker): OSRS and RS3 AFK skilling; Jagex macro detection targets uniform click patterns; 1–2 CPS with randomised intervals for woodcutting, fishing, mining
+- [Fortnite Auto Clicker](https://www.opauto-clicker.com/fortnite-auto-clicker): Easy Anti-Cheat (EAC) bans in-match synthetic input; hardware bans on violation; lower risk in launcher/menus before game launch
+- [Blox Fruits Auto Clicker](https://www.opauto-clicker.com/blox-fruits-auto-clicker): Roblox's #2 game; Byfron targets script executors; 5–7 CPS for mastery grind, 1–2 CPS for Devil Fruit pickup
 
 ## Common questions OP Auto Clicker answers
 - What is OP Auto Clicker?
