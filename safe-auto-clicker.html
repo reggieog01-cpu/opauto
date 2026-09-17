@@ -72,7 +72,7 @@
     <div class="eyebrow">Safety, audited</div>
     <h1>Is <span>OP Auto Clicker safe?</span> Yes &mdash; here's why.</h1>
     <p class="lp-sub">The app is open source, code-signed, and verified clean on <a href="https://www.virustotal.com" rel="noopener" class="green">VirusTotal</a> across 70+ antivirus engines. No bundleware. No telemetry. No ads. No internet connection. Every release is reviewed publicly on GitHub before distribution.</p>
-    <div class="byline" style="color:var(--dim);font-size:.85rem;margin:18px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><span>By <a href="/about" class="green">@op-auto-clicker</a></span><span aria-hidden="true">·</span><span>Published <time datetime="Jul 18, 2025">Jul 18, 2025</time></span><span aria-hidden="true">·</span><span>Updated <time datetime="2026-05-04">May 4, 2026</time></span></div>
+    <div class="byline" style="color:var(--dim);font-size:.85rem;margin:18px 0 10px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><span>By <a href="/about" class="green">@op-auto-clicker</a></span><span aria-hidden="true">·</span><span>Published <time datetime="Jul 18, 2025">Jul 18, 2025</time></span><span aria-hidden="true">·</span><span>Updated <time datetime="2026-09-17">Sep 17, 2026</time></span></div>
     <div class="ctas">
       <a href="/download" class="btn btn-primary">&darr; Download Verified-Safe Build</a>
       <a href="#proof" class="btn btn-ghost">See the proof &rarr;</a>
@@ -158,24 +158,6 @@
       <div class="faq-item reveal"><button class="faq-q">Is OP Auto Clicker open source?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes. The full source code is publicly available on GitHub under a permissive open-source license. Anyone can audit the code, build their own copy, or contribute fixes.</p></div></div>
       <div class="faq-item reveal"><button class="faq-q">Why does Windows SmartScreen warn me?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>SmartScreen warns about any executable that hasn't built up a Microsoft "reputation" through millions of installs via the Microsoft Store. The warning is based on novelty, not threat. Click "More info" then "Run anyway" to launch.</p></div></div>
       <div class="faq-item reveal"><button class="faq-q">Does OP Auto Clicker work with Windows Defender real-time protection on?<span class="faq-chev">&#x2304;</span></button><div class="faq-a"><p>Yes, in most cases. Windows Defender passes OP Auto Clicker without issue on the majority of systems. If Defender quarantines the file, first verify the SHA256 hash matches the value on /download, then add the .exe as a file exclusion in Virus &amp; threat protection settings &mdash; this keeps all other Defender protection active while allowing the clicker to run.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-title reveal">
-      <div class="eyebrow">Verify yourself</div>
-      <h2>Safety checklist</h2>
-      <p>Six checks anyone can run before installing.</p>
-    </div>
-    <div class="feat-grid">
-      <div class="feat reveal"><div class="feat-ico">1</div><h3>Check the digital signature</h3><p>Right-click the .exe &rarr; Properties &rarr; Digital Signatures. The binary is signed by the project's release key.</p></div>
-      <div class="feat reveal"><div class="feat-ico">2</div><h3>Compare the SHA256 hash</h3><p>Run <code>certutil -hashfile OPAutoClicker.exe SHA256</code> and compare to the hash on the <a href="/download" class="green">download page</a>. Match = file is genuine.</p></div>
-      <div class="feat reveal"><div class="feat-ico">3</div><h3>Submit to VirusTotal</h3><p>Upload the .exe to <a href="https://www.virustotal.com" rel="noopener" class="green">virustotal.com</a>. The file shows clean across 70+ engines.</p></div>
-      <div class="feat reveal"><div class="feat-ico">4</div><h3>Run a network monitor</h3><p>Open Resource Monitor or Wireshark. The app makes zero outbound connections &mdash; ever.</p></div>
-      <div class="feat reveal"><div class="feat-ico">5</div><h3>Audit the source on GitHub</h3><p>Read every line of the source. Build it yourself with Visual Studio if you want to be 100% sure.</p></div>
-      <div class="feat reveal"><div class="feat-ico">6</div><h3>Check the file size</h3><p>The official build is exactly 512 KB. A "5 MB" download from a third-party site is repackaged with bundleware &mdash; don't run it.</p></div>
     </div>
   </div>
 </section>
